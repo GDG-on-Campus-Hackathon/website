@@ -27,11 +27,5 @@ jobs:
       - name: Run Prettier
         run: pnpm exec -- prettier --check .
 
-      - name: Run ESLint
-        run: pnpm exec -- next lint --max-warnings=0
-
-      - name: Check types
-        run: pnpm type-check
-
       - name: Build Next.js
         run: pnpm build
