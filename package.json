@@ -2,6 +2,10 @@
   "name": "gdg-on-campus-hackathon-website",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@9.15.3",
+  "engines": {
+    "node": ">=20.17.0"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
