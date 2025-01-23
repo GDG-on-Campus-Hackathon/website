@@ -1,101 +1,215 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div>
+          <h1>GDG on Campus Hackathon</h1>
+          <div>主視覺圖</div>
+          <div>
+            <div>活動時間：2025/6/7~2025/6/8</div>
+            <div>活動地點：待定（可以考慮放上google map的iframe地圖）</div>
+            <div>參與對象：
+              <ol>
+                <li>1.報名資格：全國大專院校學生（碩班可）</li>
+                <li>2.報名方式：透過官網報名</li>
+                <li>3.報名截止日期：4/6（日）23:59</li>
+              </ol>
+            </div>
+            <button>立即報名按鈕</button>
+          </div>
+        </div>
+        
+        <div>
+          <h2>什麼是 GDG on Campus Hackathon?</h2>
+          <div>
+            <ul>
+              <li>
+                a.促進創新與跨領域合作<br/>
+                提供學生開發者及產業界的交流平台，激發創新想法，並結合多元專業技能，解決實際問題。
+              </li>
+              <li>
+                b.推動技術應用<br/>
+                鼓勵參賽者使用最新的技術工具與框架，促進新興科技在日常生活中的應用，展現技術價值。
+              </li>
+              <li>
+                c.解決實際問題<br/>
+                將挑戰主題聚焦於產業痛點，透過團隊協作提出具創意且可行的解決方案，助力實現社會效益與商業價值。
+              </li>
+              <li>
+                d.推廣開源與共享精神<br/>
+                鼓勵開源文化，提倡共享知識與資源，鼓勵跨校交流，共同促進技術社群的成長。
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div>
+          <h2>活動流程</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>6/7（六）</td>
+                <td>6/7（六）</td>
+                <td>6/7（六）</td>
+              </tr>
+              <tr>
+                <td>時間</td>
+                <td>項目</td>
+                <td>活動內容</td>
+              </tr>
+              <tr>
+                <td>07:30 - 08:30</td>
+                <td>工作人員報到與準備</td>
+                <td>工作人員到場報到並進行活動準備，佈置場地、設置資料區等。</td>
+              </tr>
+              <tr>
+                <td>08:30 - 09:00</td>
+                <td>參賽者、贊助商報到</td>
+                <td>參賽者報到並領取參賽資料包、手冊、名牌等。
+                  組別不可公開學校名稱。
+                  必須至少兩名成員到場才能報到。分派人員帶參賽者入場。
+                </td>
+              </tr>
+              <tr>
+                <td>09:00 - 10:00</td>
+                <td>開場致詞、抽獎</td>
+                <td>主辦方致歡迎詞，介紹活動目的、規則、日程安排等。
+                  贊助商致詞
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>廠商攤位擺設</td>
+                <td>（整天）</td>
+              </tr>
+              <tr>
+                <td>10:30- 12:00</td>
+                <td>競賽開始（第一階段）</td>
+                <td>參賽隊伍開始根據所選題目進行開發與設計，開始編程與構建原型。</td>
+              </tr>
+              <tr>
+                <td>12:00 - 13:30</td>
+                <td>午餐</td>
+                <td>提供午餐，參賽者可放鬆並與其他隊伍進行非正式交流。</td>
+              </tr>
+              <tr>
+                <td>13:00 - 18:00</td>
+                <td>競賽繼續（第二階段）</td>
+                <td>參賽隊伍開始根據所選題目進行開發與設計，開始編程與構建原型。</td>
+              </tr>
+              <tr>
+                <td>18:00 - 19:00</td>
+                <td>晚餐</td>
+                <td>提供晚餐，參賽者可休息並準備進入競賽的最後階段。</td>
+              </tr>
+              <tr>
+                <td>19:00 - 22:00</td>
+                <td>競賽進行（第三階段）</td>
+                <td>進行最後的開發、測試與優化，完成作品並準備最終展示。</td>
+              </tr>
+              <tr>
+                <td>22:00 - 23:00</td>
+                <td>宵夜</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>6/8（日）</td>
+                <td>6/8（日）</td>
+                <td>6/8（日）</td>
+              </tr>
+              <tr>
+                <td>07:30 - 08:30</td>
+                <td>早餐與報到確認</td>
+                <td>提供早餐，參賽者進行簡報前的準備，並確認各隊伍的報到情況。</td>
+              </tr>
+              <tr>
+                <td>08:30 - 12:00</td>
+                <td>競賽進行（最終階段）</td>
+                <td>提供午餐，為後續的簡報與評選做準備。</td>
+              </tr>
+              <tr>
+                <td>12:00 - 13:00</td>
+                <td>午餐</td>
+                <td>抽報告順序</td>
+              </tr>
+              <tr>
+                <td>12:00 - 13:00</td>
+                <td>評審、贊助商報到</td>
+                <td>事先確定到場人數幫忙訂餐。</td>
+              </tr>
+              <tr>
+                <td>13:00 - 16:00</td>
+                <td>團隊簡報＆評審審查</td>
+                <td>每隊有10分鐘展示，隨後進行5分鐘問答。中場休息10分鐘。</td>
+              </tr>
+              <tr>
+                <td>16:00 - 16:30</td>
+                <td>抽獎</td>
+                <td>抽獎</td>
+              </tr>
+              <tr>
+                <td>16:30 - 17:00</td>
+                <td>頒獎典禮與大合照</td>
+                <td>頒發獎項並進行合照，宣布獲獎隊伍並分享實習機會、獎品等。
+                  獎狀、獎盃
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        
+        
+        </div>
+        
+        <div>
+          <h2>獎項設置</h2>
+          各組分別取前三名
+          <ol>
+            <li>a.第一名：新台幣 15,000 元整、企業實體獎品、實習或實習面試機會</li>
+            <li>b.第二名：新台幣 10,000 元整、企業實體獎品</li>
+            <li>c.第三名：新台幣 5,000 元整、企業實體獎品</li>
+          </ol>
+        </div>
+        
+        <div>
+          <h2>主辦單位</h2>
+          <p>GDG On Campus NCCU、 GDG On Campus NTHU、 GDG On Campus NTUST （可以做成grid的形式，補上各個學校的 GDGC 的 LOGO，並且加上超連結指向各個學校的 GDGC 社團主頁）</p>
+          <p>（另外要注意順序問題）</p>
+        </div>
+        
+        <div>
+          <h2>協辦單位</h2>
+          全台GDG On Campus（共23間學校）、KONSTTECH 康斯特科技股份有限公司 ，同上，做成grid的形式，補上各個學校的 GDGC 的 LOGO，並且加上超連結指向各個學校的 GDGC 社團主頁
+        </div>
+        
+        <div>
+          <h2>贊助商</h2>
+          <p>貼上贊助商LOGO，連結, 並且按照贊助商的等級進行排序。</p>
+        </div>
+        
+        <div>
+          <h2>注意事項</h2>
+          <ol>
+            <li>1.參賽者僅能加入一個隊伍，不得重複報名。</li>
+            <li>2.當日各隊伍出席人員不可穿著可供辨識學校系所之服裝，成果展示展覽之作品、文件及佈展不得標示校名、校徽、指導教師姓名等相關圖文字樣。評審委員進行評分時指導教師須迴避。</li>
+            <li>3.各獎項由評審委員議定，必要時得以「從缺」方式辦理，各獎項得從缺或以增加名額方式辦理，但以不超過獎金總額為原則。</li>
+            <li>4.主辦單位得於本活動及其他相關活動中，公開展示所有參賽作品。</li>
+            <li>5.參賽團隊成員資料若查有不實者，主辦單位可隨時取消其競賽資格。參賽團隊成員經提報後若有變更，須送交書面資料經主辦單位審查同意。</li>
+            <li>6.入圍作品如有仿冒抄襲或違反本競賽相關規定等，經查證屬實者，將追回資格與獎勵，並由參賽者自負法律責任，主辦單位不負任何法律責任。</li>
+            <li>7.違反相關規範者，可能導致扣分、取消參賽資格、入圍或得獎資格，並追回其已領取之獎座、獎金及自活動網頁移除其作品。</li>
+            <li>8.主辦單位保留修改本辦法之權利，參加活動者一旦參加本活動，則表示同意接受本辦法之拘束，如有未盡事宜，主辦單位保留各項競賽辦法解釋及變更之權利。</li>
+          </ol>
+        </div>
+        
+        <div>
+          <h2>FAQ</h2>
+        
+        </div>
+        
+        <div>
+          <h2>聯絡方式 / 意見回饋</h2>
+        
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
