@@ -2,7 +2,7 @@
   "name": "gdg-on-campus-hackathon-website",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@9.15.3",
+  "packageManager": "pnpm@10.5.2",
   "engines": {
     "node": ">=20.17.0"
   },
@@ -10,27 +10,33 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "upgrade": "pnpx npm-check-updates -i"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/material": "^6.4.1",
-    "next": "15.1.6",
+    "@mui/material": "^6.4.6",
+    "next": "15.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
+    "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.1.6",
-    "eslint-config-prettier": "^10.0.1",
+    "eslint-config-next": "15.2.0",
+    "eslint-config-prettier": "^10.0.2",
     "postcss": "^8",
-    "prettier": "^3.4.2",
-    "tailwindcss": "^3.4.1",
+    "prettier": "^3.5.2",
+    "tailwindcss": "^4.0.9",
     "typescript": "^5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
   }
 }
