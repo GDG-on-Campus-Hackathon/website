@@ -5,11 +5,9 @@ import { cn } from "@/lib/utils";
 export default function HomeInformation() {
   return (
     <>
-      <h2 className="text-[36px] font-bold mb-10 text-[4C4C4C] pl-20">
-        活動資訊
-      </h2>
+      <h2 className="text-[36px] font-bold mb-10 pl-20">活動資訊</h2>
       <section className="py-12 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl">
-        <h3 className="text-[28px] font-bold text-[4C4C4C]">/主題分類/</h3>
+        <h3 className="text-[28px] font-bold">/主題分類/</h3>
         <div className="flex flex-col gap-[41px] mt-[36px]">
           {/* AI Card */}
           <InformationCard
@@ -50,15 +48,9 @@ interface InformationCardProps {
 const InformationCard = ({ className, title, text }: InformationCardProps) => {
   return (
     <div className={cn("flex w-full", className)}>
-      <div
-        className={cn(
-          `flex flex-col p-[28px] gap-[28px] w-full sm:w-[712px] bg-[rgba(242,241,239,0.2)] shadow-[3px_4px_7px_rgba(0,0,0,0.08),inset_-4px_-4px_8px_rgba(0,0,0,0.08),inset_4px_4px_8px_rgba(255,255,255,0.28)] rounded-[9px] flex-none order-0 flex-grow-0`,
-        )}
-      >
-        <h3 className="w-[30px] font-bold text-[28px] leading-[34px] tracking-[0.1em] text-[#4C4C4C] flex-none order-0 flex-grow-0">
-          {title}
-        </h3>
-        <p className="text-sm sm:text-[18px] leading-[44px] break-words tracking-[0.1em] text-justify text-[#4C4C4C] flex-none order-1 align-self-stretch flex-grow-0">
+      <div className={cn("sm:w-[712px] card")}>
+        <h3 className="font-bold text-[28px]">{title}</h3>
+        <p className="text-sm sm:text-[18px] leading-[44px] text-justify font-semibold">
           {text}
         </p>
       </div>

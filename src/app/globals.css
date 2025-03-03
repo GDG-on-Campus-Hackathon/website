@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    color: #4c4c4c;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    gap: 28px;
+    background-color: rgba(242, 241, 239, 0.2);
+    box-shadow:
+      3px 4px 7px rgba(0, 0, 0, 0.08),
+      inset -4px -4px 8px rgba(0, 0, 0, 0.08),
+      inset 4px 4px 8px rgba(255, 255, 255, 0.28);
+    border-radius: 9px;
+  }
+}
