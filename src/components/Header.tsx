@@ -2,11 +2,7 @@ import React from "react"
 import Image from "next/image"
 import svg_devjam from "@/assets/devjam.svg"
 
-export interface IProps {
-
-}
-
-export const Header: React.FC<IProps> = (props) => {
+export const Header: React.FC = () => {
   const menus = [
     {label: "黑客松介紹", value: "introduction"},
     {label: "活動資訊", value: "information"},

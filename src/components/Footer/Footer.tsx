@@ -8,11 +8,7 @@ import svg_icon_instagram from "@/assets/icon_instagram.svg"
 import svg_icon_facebook from "@/assets/icon_facebook.svg"
 import svg_icon_email from "@/assets/icon_email.svg"
 
-export interface IProps {
-
-}
-
-export const Footer: React.FC<IProps> = (props) => {
+export const Footer: React.FC = () => {
   const links = [
     {title: "主辦單位", children: [
       {icon: svg_icon_instagram, label: "gdg.nccu", url: "https://gdg.nccu.edu.tw"},
