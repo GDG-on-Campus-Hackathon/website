@@ -4,33 +4,51 @@ import svg_devjam_tw_2025 from "./devjam_tw_2025.svg";
 export default function HomeIntroduction() {
   return (
     <div className="text-center">
-      <h1 className="text-4xl text-gray-700 font-extrabold font-sans py-2 text-left pl-20 pt-24">黑客松介紹</h1>
-      <h2 className="text-3xl text-gray-700 font-bold font-sans py-2 text-center pt-16">關於 GDG on Campus</h2>
+      <h1 className="text-4xl text-gray-700 font-extrabold font-sans py-2 text-left pl-20 pt-24">
+        黑客松介紹
+      </h1>
+      <h2 className="text-3xl text-gray-700 font-bold font-sans py-2 text-center pt-16">
+        關於 GDG on Campus
+      </h2>
       <div className="text-lg tracking-wider leading-10 pt-10">
-        Google Developer Groups on Campus (GDG on Campus) 是一個由Google支持的學生社群，<br/>
-        通過學生與專業開發人員聯繫，促進學生對 Google 開發人員技術的學習和應用，為學生提供與技術專家互動機會。 GDG on Campus <br/>
-        在全球有超過 100 個國家/地區的 1000 多個社群。GDG on Campus 是學生們學習和分享技術的理想社群，並且能夠與<br/>
+        Google Developer Groups on Campus (GDG on Campus)
+        是一個由Google支持的學生社群，
+        <br />
+        通過學生與專業開發人員聯繫，促進學生對 Google
+        開發人員技術的學習和應用，為學生提供與技術專家互動機會。 GDG on Campus{" "}
+        <br />
+        在全球有超過 100 個國家/地區的 1000 多個社群。GDG on Campus
+        是學生們學習和分享技術的理想社群，並且能夠與
+        <br />
         技術行業的其他開發人員和專家建立聯繫。
       </div>
       <div className="flex justify-center items-center pt-20 pb-10">
-        <Image src={svg_devjam_tw_2025.src} alt={"DevJam TW 2025"} width={340} height={38} />
+        <Image
+          src={svg_devjam_tw_2025.src}
+          alt={"DevJam TW 2025"}
+          width={340}
+          height={38}
+        />
       </div>
       <div className="text-lg tracking-wider leading-10 ">
         <p>
-          DevJam TW 2025 是由全台 23 所大學的 Google Developer Groups on Campus 合作舉辦，<br/>
+          DevJam TW 2025 是由全台 23 所大學的 Google Developer Groups on Campus
+          合作舉辦，
+          <br />
           專為學生開發者打造的黑客松舞台。
         </p>
         <p className="pt-5">
-          活動將集結來自不同領域的熱血好手，透過技術與創意解決真實世界的挑戰<br/>
+          活動將集結來自不同領域的熱血好手，透過技術與創意解決真實世界的挑戰
+          <br />
           這不僅是一場腦力激盪的競賽，更是與業界專業人士交流、探索新興技術應用的寶貴機會！
         </p>
         <p className="pt-5">
-          參賽者將在密集的開發過程中，運用最新的工具與創意想法，針對產業痛點提出具社會與商業價值的解決方案，<br/>
-          活動中更有機會向業界、投資者展示成果，促進跨校合作、共同推動技術社群茁壯的同時，開啟未來更多可能。<br/>
+          參賽者將在密集的開發過程中，運用最新的工具與創意想法，針對產業痛點提出具社會與商業價值的解決方案，
+          <br />
+          活動中更有機會向業界、投資者展示成果，促進跨校合作、共同推動技術社群茁壯的同時，開啟未來更多可能。
+          <br />
         </p>
-        <p>
-        如果你渴望用科技實現創新，千萬別錯過這場讓點子成真的挑戰！
-        </p>
+        <p>如果你渴望用科技實現創新，千萬別錯過這場讓點子成真的挑戰！</p>
         <hr className="pt-10" />
       </div>
     </div>
