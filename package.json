@@ -12,7 +12,7 @@
     "start": "next start",
     "format": "prettier --write .",
     "lint": "next lint",
-    "upgrade": "pnpx npm-check-updates -i"
+    "upgrade": "pnpx npm-check-updates -i",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
