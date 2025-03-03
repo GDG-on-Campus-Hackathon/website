@@ -10,8 +10,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "format": "prettier --write .",
     "lint": "next lint",
     "upgrade": "pnpx npm-check-updates -i"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
