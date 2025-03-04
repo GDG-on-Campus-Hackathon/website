@@ -51,6 +51,23 @@ export default function HomeInformation() {
             text="正賽（6/7、8）兩天一夜，於北醫杏春樓（暫定）舉行，20個組別會在6/7當天早上開幕式的最後得知題目，再來就逕行為期一天半的開發，6/8中午將會由該題目領域之相關教授、廠商代表、業界專業人士組成之評審團進行現場發表評選，大概需要分成兩間教室同時進行，一間教室至少有四位評審。 最後由總分最高的前10組進入最終決選，預計於台北101 Google辦公室舉行最終pitch，而評審團預計由Googler、GDE、廠商代表共三位進行。"
           />
         </div>
+
+        {/* event awards */}
+        <h3 className="text-title mt-[60px]">/競賽獎項/</h3>
+        <div className="flex flex-col">
+          <EventAward
+            description="第一名：獎金 15,000 元、實體獎品、實習面試機會(暫定）"
+            prize="gold"
+          />
+          <EventAward
+            description="第二名：獎金 10,000 元、實體獎品(暫定）"
+            prize="silver"
+          />
+          <EventAward
+            description="第三名：獎金 5,000 元、實體獎品(暫定）"
+            prize="bronze"
+          />
+        </div>
       </section>
     </>
   );
@@ -120,6 +137,22 @@ const EventDescription = ({
       <p className="text-sm sm:text-[18px] leading-[44px] text-justify ml-[29px]">
         {renderText(text, keyword || "")}
       </p>
+    </div>
+  );
+};
+
+interface EventAwardProps {
+  description: string;
+  prize: "gold" | "silver" | "bronze";
+}
+
+const EventAward = ({ description, prize }: EventAwardProps) => {
+  return (
+    <div className="flex gap-[36px] mt-[36px]">
+      <div className={`award-circle ${prize}`}>
+        <p>{prize === "gold" ? "1" : prize === "silver" ? "2" : "3"}</p>
+      </div>
+      <div className="flex items-center text-subsubtitle">{description}</div>
     </div>
   );
 };
