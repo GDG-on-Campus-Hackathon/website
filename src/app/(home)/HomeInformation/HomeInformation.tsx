@@ -7,7 +7,8 @@ export default function HomeInformation() {
     <>
       <h2 className="text-[36px] font-bold mb-10 pl-20">活動資訊</h2>
       <section className="py-12 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl">
-        <h3 className="text-[28px] font-bold">/主題分類/</h3>
+        {/* topic category */}
+        <h3 className="text-title">/主題分類/</h3>
         <div className="flex flex-col gap-[41px] mt-[36px]">
           {/* AI Card */}
           <InformationCard
@@ -35,7 +36,8 @@ export default function HomeInformation() {
           />
         </div>
 
-        <h3 className="text-[28px] font-bold mt-[60px]">/賽程規劃/</h3>
+        {/* event arrangement */}
+        <h3 className="text-title mt-[60px]">/賽程規劃/</h3>
         <div className="flex flex-col mt-[36px]">
           <EventDescription
             title="第一階段 - 個人篩選："
@@ -83,7 +85,7 @@ const InformationCard = ({ className, title, text }: InformationCardProps) => {
   return (
     <div className={cn("flex w-full", className)}>
       <div className={cn("sm:w-[712px] card")}>
-        <h3 className="font-bold text-[28px]">{title}</h3>
+        <h3 className="text-title">{title}</h3>
         <p className="text-sm sm:text-[18px] leading-[44px] text-justify font-semibold">
           {text}
         </p>
@@ -130,7 +132,7 @@ const EventDescription = ({
         className,
       )}
     >
-      <div className="flex font-bold text-[20px]">
+      <div className="flex text-subtitle">
         <div className="block w-[5px] bg-[#4c4c4c]"></div>
         <p className="ml-[24px]">{title}</p>
       </div>
