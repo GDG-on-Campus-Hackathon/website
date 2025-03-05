@@ -13,25 +13,21 @@ export default function HomeInformation() {
           <InformationCard
             className="justify-start"
             title="AI"
-            text="探索人工智慧的無限潛力，從機器學習、自然語言處理到電腦視覺，運用 AI
-            技術解決實際問題。無論是提升使用者體驗、優化決策流程，或開發智能應用，讓
-            AI 成為推動創新核心動力！(待改)"
+            text="探索人工智慧的無限潛力，從機器學習、自然語言處理到電腦視覺，運用AI技術解決實際問題。無論是提升使用者體驗、優化決策流程，或開發智能應用，讓AI成為推動創新核心動力！(待改)"
           />
 
           {/* Web3 Card */}
           <InformationCard
             className="justify-end"
             title="Web3"
-            text="踏入去中心化時代，利用區塊鏈技術打造更透明、安全且自主的應用。從 NFT
-            到去中心化金融 (DeFi)，挑戰傳統經濟與技術，創造全新的數位價值與商業模式！(待改)"
+            text="踏入去中心化時代，利用區塊鏈技術打造更透明、安全且自主的應用。從NFT到去中心化金融(DeFi)，挑戰傳統經濟與技術，創造全新的數位價值與商業模式！(待改)"
           />
 
           {/* DevOps Card */}
           <InformationCard
             className="justify-start"
             title="DevOps"
-            text="加速軟體開發與部署流程，提升效能與穩定性。透過 CI/CD、基礎設施即碼化
-            (IaC)、容器技術等實踐優化流程，推動敏捷運作與高品質交付！(待改)"
+            text="加速軟體開發與部署流程，提升效能與穩定性。透過CI/CD、基礎設施即碼化(IaC)、容器技術等實踐優化流程，推動敏捷運作與高品質交付！(待改)"
           />
         </div>
       </section>
