@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer/Footer";
 
 const notoSansTC = Noto_Sans_TC({
   weight: "variable",
+  preload: false,
 });
 
 export const metadata: Metadata = {
