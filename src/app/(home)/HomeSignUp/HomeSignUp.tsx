@@ -9,7 +9,7 @@ export default function HomeSignUp() {
           /報名方式/
         </h2>
         <div className="text-lg pt-10 flex flex-row">
-          <p>報名表單&nbsp; : &nbsp;</p>
+          <p>報名表單：</p>
           <p className="underline">https://forms.gle/LtZqTbtp3eBkLUuN9</p>
         </div>
         <p className="text-lg pt-4 tracking-wide">
