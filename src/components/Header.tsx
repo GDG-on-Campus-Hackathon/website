@@ -4,10 +4,10 @@ import svg_devjam from "@/assets/devjam.svg";
 
 export const Header: React.FC = () => {
   const menus = [
-    { label: "黑客松介紹", value: "introduction" },
-    { label: "活動資訊", value: "information" },
-    { label: "報名資訊", value: "signup" },
-    { label: "成果展現", value: "achievements" },
+    { label: "黑客松介紹", value: "home-introduction" },
+    { label: "活動資訊", value: "home-information" },
+    { label: "報名資訊", value: "home-sign-up" },
+    { label: "成果展現", value: "home-achievements" },
   ];
   return (
     <div className="w-full fixed top-0 bg-white/10 backdrop-blur-lg z-50">

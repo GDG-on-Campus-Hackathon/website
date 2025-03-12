@@ -3,7 +3,7 @@ import image_cover from "./cover.png";
 
 export default function HomeAchievements() {
   return (
-    <div className="text-center">
+    <div className="text-center" id="home-achievements">
       <h1>成果展現</h1>
       <div>
         <h2>/活動花絮/</h2>

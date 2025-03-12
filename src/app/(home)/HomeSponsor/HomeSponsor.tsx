@@ -3,7 +3,7 @@ import image__gdg_on_campus_nccu from "./gdg_on_campus_nccu.png";
 
 export default function HomeSponsor() {
   return (
-    <div className="text-center">
+    <div className="text-center pb-10" id="home-sponsor">
       <h1 className="text-4xl text-gray-700 font-extrabold font-sans py-2 text-left pl-20 pt-20 pr-20">
         贊助單位
       </h1>

@@ -16,17 +16,17 @@ export const Footer: React.FC = () => {
         {
           icon: svg_icon_instagram,
           label: "gdg.nccu",
-          url: "https://gdg.nccu.edu.tw",
+          url: "https://www.instagram.com/gdg.nccu/",
         },
         {
           icon: svg_icon_instagram,
           label: "gdg.nthu",
-          url: "https://gdg.nccu.edu.tw",
+          url: "https://www.instagram.com/gdsc.nthu/",
         },
         {
           icon: svg_icon_instagram,
           label: "gdg.tmu",
-          url: "https://gdg.nccu.edu.tw",
+          url: "https://www.instagram.com/tmu_gdgoncampus/",
         },
       ],
     },
@@ -40,8 +40,8 @@ export const Footer: React.FC = () => {
         },
         {
           icon: svg_icon_instagram,
-          label: "https://instagram.com/devjam.tw",
-          url: "@devjam.tw",
+          label: "@devjam.tw",
+          url: "https://www.instagram.com/devjam.tw/",
         },
       ],
     },

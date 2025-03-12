@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 export default function HomeInformation() {
   return (
     <>
-      <h2 className="text-[36px] font-bold mb-10 pl-20">活動資訊</h2>
+      <h2 id="home-information" className="text-[36px] font-bold mb-10 pl-20">活動資訊</h2>
       <section className="py-12 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl">
         {/* topic category */}
         <h3 className="text-title">/主題分類/</h3>
