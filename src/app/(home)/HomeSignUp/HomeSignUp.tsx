@@ -10,7 +10,9 @@ export default function HomeSignUp() {
         </h2>
         <div className="text-lg pt-10 flex flex-row">
           <p>報名表單：</p>
-          <a className="underline" href="https://forms.gle/LtZqTbtp3eBkLUuN9">Sign Up Form</a>
+          <a className="underline" href="https://forms.gle/LtZqTbtp3eBkLUuN9">
+            Sign Up Form
+          </a>
         </div>
         <p className="text-lg pt-4 tracking-wide">
           活動一律透過線上表單報名，並於表單內繳交相關參考資料，主辦方將以表單填寫內容作為錄取參考依據，
@@ -53,11 +55,9 @@ export default function HomeSignUp() {
         </h2>
         <div>
           <p className="text-lg pt-4 tracking-wide">
-          決賽：臺北醫學大學跨領域學院杏春樓（台北市信義區吳興街250號杏春樓）
+            決賽：臺北醫學大學跨領域學院杏春樓（台北市信義區吳興街250號杏春樓）
           </p>
-          <p className="text-lg pt-4 tracking-wide">
-          成果發表: 未定
-          </p>
+          <p className="text-lg pt-4 tracking-wide">成果發表: 未定</p>
         </div>
       </div>
     </div>
