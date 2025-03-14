@@ -3,7 +3,7 @@ import svg_devjam_tw_2025 from "./devjam_tw_2025.svg";
 
 export default function HomeIntroduction() {
   return (
-    <div  className="text-center" id="home-introduction">
+    <div className="text-center" id="home-introduction">
       <h1 className="text-4xl text-gray-700 font-extrabold font-sans py-2 text-left pl-20 pt-24">
         黑客松介紹
       </h1>
@@ -49,10 +49,8 @@ export default function HomeIntroduction() {
           <br />
         </p>
         <p>如果你渴望用科技實現創新，千萬別錯過這場讓點子成真的挑戰！</p>
-        
       </div>
       <hr className="pt-10" />
     </div>
-    
   );
 }
