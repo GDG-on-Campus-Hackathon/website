@@ -3,6 +3,7 @@ import HomeIntroduction from "@/app/(home)/HomeIntroduction/HomeIntroduction";
 import HomeInformation from "./HomeInformation/HomeInformation";
 import HomeSignUp from "@/app/(home)/HomeSignUp/HomeSignUp";
 import HomeSponsor from "@/app/(home)/HomeSponsor/HomeSponsor";
+import HomeNotice from "@/app/(home)/HomeNotice/HomeNotice";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HomeInformation />
       <HomeSignUp />
       <HomeSponsor />
+      <HomeNotice />
     </div>
   );
 }
