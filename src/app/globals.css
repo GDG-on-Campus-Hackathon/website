@@ -7,13 +7,14 @@
 }
 
 @layer base {
-  html, body{
+  html,
+  body {
     overflow-x: hidden;
   }
   body {
     color: #4c4c4c;
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
   }

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import svg_devjam_tw_2025 from "./devjam_tw_2025.svg";
 

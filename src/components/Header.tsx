@@ -8,7 +8,9 @@ export const Header: React.FC = () => {
     { label: "活動資訊", value: "home-information", mobileLabel: "資訊" },
     { label: "報名資訊", value: "home-sign-up", mobileLabel: "報名" },
   ];
-  {/* label: "成果展現", value: "home-achievements", mobileLabel: "成果" }*/}
+  {
+    /* label: "成果展現", value: "home-achievements", mobileLabel: "成果" }*/
+  }
 
   return (
     <div className="w-full fixed top-0 bg-white/40 backdrop-blur-lg z-50 overflow-hidden px-4">
@@ -19,12 +21,17 @@ export const Header: React.FC = () => {
         <div>
           <ul className="flex space-x-4 list-none justify-between">
             {menus.map((menu, index) => (
-              <li key={index} className="border-b-[5px] border-gray-300 m-[0.25rem] border-b-[#4c4c4c]">
-                <a
-                  href={`#${menu.value}`}
-                >
-                  <span className="hidden md:block text-[1.5rem] p-[1rem]">{menu.label}</span>   
-                  <span className="block md:hidden text-[1rem] p-[0.2rem]">{menu.mobileLabel}</span>
+              <li
+                key={index}
+                className="border-b-[5px] border-gray-300 m-[0.25rem] border-b-[#4c4c4c]"
+              >
+                <a href={`#${menu.value}`}>
+                  <span className="hidden md:block text-[1.5rem] p-[1rem]">
+                    {menu.label}
+                  </span>
+                  <span className="block md:hidden text-[1rem] p-[0.2rem]">
+                    {menu.mobileLabel}
+                  </span>
                 </a>
               </li>
             ))}

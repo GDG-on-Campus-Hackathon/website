@@ -1,6 +1,6 @@
 import Image from "next/image";
 import image_nccu from "./gdg_on_campus_nccu.svg";
-import image_nthu from "./gdg_on_campus_nthu.svg"
+import image_nthu from "./gdg_on_campus_nthu.svg";
 
 export default function HomeSponsor() {
   return (
@@ -9,9 +9,7 @@ export default function HomeSponsor() {
         贊助單位
       </h1>
       <div className="mx-5 md:py-40">
-        <h2 className="text-title text-left pt-10 ">
-          /主辦單位/
-        </h2>
+        <h2 className="text-title text-left pt-10 ">/主辦單位/</h2>
         <div className="justify-center items-center pt-10 flex flex-col md:flex-row">
           <Image
             src={image_nccu.src}
@@ -32,16 +30,14 @@ export default function HomeSponsor() {
             height={60}
           />
         </div>
-        <h2 className="text-title text-left pt-10 ">
-          /協辦單位/
-        </h2>
+        <h2 className="text-title text-left pt-10 ">/協辦單位/</h2>
         <div>
           <p className="text-title text-center py-10">
             全台 GDG On Campus（共23間學校）
           </p>
         </div>
       </div>
-      <hr/>
+      <hr />
     </div>
   );
 }
