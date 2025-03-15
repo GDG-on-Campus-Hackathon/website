@@ -1,16 +1,17 @@
+"use client";
 import Image from "next/image";
 import svg_devjam_tw_2025 from "./devjam_tw_2025.svg";
 
 export default function HomeIntroduction() {
   return (
     <div className="text-center" id="home-introduction">
-      <h1 className="text-4xl text-gray-700 font-extrabold font-sans py-2 text-left pl-20 pt-24">
+      <h1 className="text-5xl pt-20 font-bold font-sans text-center md:text-left md:pl-20">
         黑客松介紹
       </h1>
       <h2 className="text-3xl text-gray-700 font-bold font-sans py-2 text-center pt-16">
         關於 GDG on Campus
       </h2>
-      <div className="text-lg tracking-wider leading-10 pt-10">
+      <div className="text-lg tracking-wider md:leading-10 pt-10">
         Google Developer Groups on Campus (GDG on Campus)
         是一個由Google支持的學生社群，
         <br />
@@ -30,7 +31,7 @@ export default function HomeIntroduction() {
           height={38}
         />
       </div>
-      <div className="text-lg tracking-wider leading-10 pb-10">
+      <div className="text-lg tracking-wider md:leading-10 pb-10">
         <p>
           DevJam TW 2025 是由全台 23 所大學的 Google Developer Groups on Campus
           合作舉辦，
@@ -50,7 +51,7 @@ export default function HomeIntroduction() {
         </p>
         <p>如果你渴望用科技實現創新，千萬別錯過這場讓點子成真的挑戰！</p>
       </div>
-      <hr className="pt-10" />
+      <hr className="" />
     </div>
   );
 }

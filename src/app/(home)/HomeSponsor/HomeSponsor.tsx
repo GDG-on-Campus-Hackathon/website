@@ -1,45 +1,43 @@
 import Image from "next/image";
-import image__gdg_on_campus_nccu from "./gdg_on_campus_nccu.png";
+import image_nccu from "./gdg_on_campus_nccu.svg";
+import image_nthu from "./gdg_on_campus_nthu.svg";
 
 export default function HomeSponsor() {
   return (
-    <div className="text-center pb-10" id="home-sponsor">
-      <h1 className="text-4xl text-gray-700 font-extrabold font-sans py-2 text-left pl-20 pt-20 pr-20">
+    <div className="text-center pt-10" id="home-sponsor">
+      <h1 className="text-5xl text-title text-center md:text-left md:p-20">
         贊助單位
       </h1>
-      <div className="pl-40 pr-40">
-        <h2 className="text-3xl text-left text-gray-700 font-bold font-sans pt-10 ">
-          /主辦單位/
-        </h2>
-        <div className="items-center pt-10 flex flex-row">
+      <div className="mx-5 md:py-40">
+        <h2 className="text-title text-left pt-10 ">/主辦單位/</h2>
+        <div className="justify-center items-center pt-10 flex flex-col md:flex-row">
           <Image
-            src={image__gdg_on_campus_nccu.src}
+            src={image_nccu.src}
             alt={"GDG on Campus NCCU"}
             width={360}
             height={60}
           />
           <Image
-            src={image__gdg_on_campus_nccu.src}
-            alt={"GDG on Campus NCCU"}
+            src={image_nthu.src}
+            alt={"GDG on Campus NTHU"}
             width={360}
             height={60}
           />
           <Image
-            src={image__gdg_on_campus_nccu.src}
-            alt={"GDG on Campus NCCU"}
+            src={image_nthu.src}
+            alt={"GDG on Campus NTUST"}
             width={360}
             height={60}
           />
         </div>
-        <h2 className="text-3xl text-left text-gray-700 font-bold font-sans pt-10 ">
-          /協辦單位/
-        </h2>
+        <h2 className="text-title text-left pt-10 ">/協辦單位/</h2>
         <div>
-          <p className="text-lg text-left text-gray-700 font-sans pt-10">
+          <p className="text-title text-center py-10">
             全台 GDG On Campus（共23間學校）
           </p>
         </div>
       </div>
+      <hr />
     </div>
   );
 }

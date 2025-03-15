@@ -25,8 +25,8 @@ export const Footer: React.FC = () => {
         },
         {
           icon: svg_icon_instagram,
-          label: "gdg.tmu",
-          url: "https://www.instagram.com/tmu_gdgoncampus/",
+          label: "gdg.ntust",
+          url: "https://www.instagram.com/gdg.ntust/",
         },
       ],
     },
@@ -59,10 +59,10 @@ export const Footer: React.FC = () => {
   return (
     <div
       className="w-full bg-cover bg-center bg-no-repeat pt-[72px] pb-[16px]"
-      style={{ backgroundImage: "url(./background.png)" }}
+      style={{ backgroundImage: "./background.png" }}
     >
-      <div className="max-w-[1440px] w-full mx-auto flex flex-col justify-center items-center">
-        <div className="w-full flex justify-between items-start">
+      <div className="max-w-[1440px] w-full mx-auto flex flex-col  justify-center items-center">
+        <div className="w-full flex flex-col md:flex-row justify-between">
           <div className="text-center flex flex-col justify-center items-center space-y-4">
             <Image
               src={svg_text_devjam.src}
@@ -86,13 +86,13 @@ export const Footer: React.FC = () => {
               />
             </div>
           </div>
-          <div className="space-y-[32px]">
+          <div className="space-y-[32px] p-5">
             {links.map((link, index) => (
-              <div key={index} className="space-x-4 flex ">
-                <div className="text-[#4C4C4C] text-[20px] font-bold">
+              <div key={index} className="space-x-4 md:flex-col">
+                <div className="text-[#4C4C4C] text-[1rem] font-bold no-wrap">
                   {link.title}
                 </div>
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 flex-wrap md:no-wrap">
                   {link.children.map((child, index) => (
                     <a
                       key={index}
