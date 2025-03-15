@@ -1,42 +1,66 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-
+import EventArrangement from "./event_arrangement";
 export default function HomeInformation() {
   return (
     <>
-      <h2 id="home-information" className="text-[36px] font-bold mb-10 pl-20">
+      <h2 id="home-information" className="text-5xl pt-20 font-bold md:pl-20 text-center md:text-left">
         活動資訊
       </h2>
-      <section className="py-12 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl">
+      <section className="py-4 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl">
         {/* topic category */}
-        <h3 className="text-title">/主題分類/</h3>
-        <div className="flex flex-col gap-[41px] mt-[36px]">
-          {/* AI Card */}
-          <InformationCard
-            className="justify-start"
-            title="AI"
-            text="探索人工智慧的無限潛力，從機器學習、自然語言處理到電腦視覺，運用 AI 技術解決實際問題。無論是提升使用者體驗、優化決策流程，或開發智能應用，讓 AI 成為推動創新核心動力！(待改)"
-          />
+        <div className="pt-10  md:p-20">
+          <h2 className="mt-4 text-title text-left ">
+            /核心理念/
+          </h2>
+          <div>
+            <p className="text-lg pt-4 tracking-wide md:leading-10 md:text-justify">
+            DevJam TW 2025 以 「Google 技術創
+            新 x 全球影響力」 為核心，打造一場 24 小時黑客松，邀請來自全台各大專院校的開發者，運用 Google Cloud（Vertex AI）、Gemini API（AI Studio）、Flutter、Firebase、Google Maps API、TensorFlow、Google Earth Engine 等 Google 旗下技術，針對這些全球挑戰提出創新解決方案。
+            </p>
+          </div>
+        </div>
+        
+        <div className="pt-10  md:p-20">
+          <h3 className="text-title mt-4">/主題分類/</h3>
+          <div className="flex flex-col gap-[1rem] pt-10 ">
+            
+            {/* AI Card */}
+            <InformationCard
+              className="justify-start"
+              title="Google Cloud (Vertex AI)"
+              text="雲端 AI 平台，用於機器學習訓練、模型開發、數據分析與 AI 應用。"
+            />
 
-          {/* Web3 Card */}
-          <InformationCard
-            className="justify-end"
-            title="Web3"
-            text="踏入去中心化時代，利用區塊鏈技術打造更透明、安全且自主的應用。從 NFT 到去中心化金融 (DeFi)，挑戰傳統經濟與技術，創造全新的數位價值與商業模式！(待改)"
-          />
+            {/* Web3 Card */}
+            <InformationCard
+              className="justify-end"
+              title="Gemini API (AI Studio)"
+              text="Google 最先進的大型語言模型（LLM），用於智能助理、對話 AI、自動化應用等創新解決方案。"
+            />
 
-          {/* DevOps Card */}
-          <InformationCard
-            className="justify-start"
-            title="DevOps"
-            text="加速軟體開發與部署流程，提升效能與穩定性。透過 CI/CD、基礎設施即碼化 (IaC)、容器技術等實踐優化流程，推動敏捷運作與高品質交付！(待改)"
-          />
+            {/* DevOps Card */}
+            <InformationCard
+              className="justify-start"
+              title="其他 Google 相關技術"
+              text="其他 Google 相關技術，如 Flutter、Firebase、Google Maps API、TensorFlow、Android、Google Earth Engine 等，用於強化應用的功能與可行性。"
+            />
+          </div>
         </div>
 
         {/* event arrangement */}
-        <h3 className="text-title mt-[60px]">/賽程規劃/</h3>
-        <div className="flex flex-col mt-[36px]">
+        <div className="flex flex-col md:p-20 max-w-auto pt-10">
+          <h3 className="text-title mt-4 ">/時程一覽/</h3>
+          <div className="w-full mt-[36px]"> {/* 調整圖片大小的容器 */}
+            <EventArrangement />
+          </div>
+        </div>
+
+
+        {/* event schedule */}
+        <div className="flex flex-col md:p-20 pt-10">
+          <h3 className="text-title mt-4">/賽程規劃/</h3>
           <EventDescription
             title="第一階段 - 個人篩選："
             text="每個領域會由兩位（暫定）具該領域專業之教授進行評分與篩選，根據結果會產生進入複賽的人選，AI、Web3、DevOps 各領域會有相應的人數限制，總共 100 人。(待改)"
@@ -53,8 +77,9 @@ export default function HomeInformation() {
         </div>
 
         {/* event awards */}
-        <h3 className="text-title mt-[60px]">/競賽獎項/</h3>
-        <div className="flex flex-col">
+        
+        <div className="flex flex-col md:p-20">
+          <h3 className="text-title mt-[60px]">/競賽獎項/</h3>
           <EventAward
             description="第一名：獎金 15,000 元、實體獎品、實習面試機會(暫定）"
             prize="gold"
@@ -69,6 +94,7 @@ export default function HomeInformation() {
           />
         </div>
       </section>
+      <hr/>
     </>
   );
 }
@@ -84,7 +110,7 @@ const InformationCard = ({ className, title, text }: InformationCardProps) => {
     <div className={cn("flex w-full", className)}>
       <div className={cn("sm:w-[712px] card")}>
         <h3 className="text-title">{title}</h3>
-        <p className="text-sm sm:text-[18px] leading-[44px] text-justify font-semibold">
+        <p className="text-sm sm:text-[18px] md:leading-[44px] text-justify font-semibold">
           {text}
         </p>
       </div>
@@ -134,7 +160,7 @@ const EventDescription = ({
         <div className="block w-[5px] bg-[#4c4c4c]"></div>
         <p className="ml-[24px]">{title}</p>
       </div>
-      <p className="text-sm sm:text-[18px] leading-[44px] text-justify ml-[29px]">
+      <p className="text-sm sm:text-[18px] md:leading-[44px] text-justify">
         {renderText(text, keyword || "")}
       </p>
     </div>
