@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
         {
           icon: svg_icon_facebook,
           label: "https://facebook.com/devjam.tw",
-          url: "@devjam.tw",
+          url: "https://facebook.com/devjam.tw",
         },
         {
           icon: svg_icon_instagram,
