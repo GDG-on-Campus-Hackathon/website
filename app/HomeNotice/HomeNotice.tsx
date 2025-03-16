@@ -1,6 +1,6 @@
 export default function HomeNotice() {
   return (
-    <div className="max-w-[1440px] mx-auto py-20 px-5 md:px-10">
+    <div id="notice" className="max-w-[1440px] mx-auto py-20 px-5 md:px-10">
       <h1 className="text-title-1 text-left text-[#4C4C4C] pb-9 pt-3">
         * 注意事項
       </h1>

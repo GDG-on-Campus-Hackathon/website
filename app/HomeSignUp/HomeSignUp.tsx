@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Swal from "sweetalert2";
-import HomeNotice from "../HomeNotice/HomeNotice";
 import ReactDOMServer from "react-dom/server";
 
 export default function HomeSignUp() {
@@ -91,22 +90,6 @@ export default function HomeSignUp() {
       ),
     });
   };
-  const ShowNotice = () => {
-    Swal.fire({
-      confirmButtonText: "關閉",
-      color: "black",
-      background: "rgba(237, 234, 229, 1)",
-      width: "80%",
-      backdrop: `
-        rgba(0, 0, 0, 0.4)
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='rgba(255, 255, 255, 0.3)'/%3E%3C/svg%3E")
-        left top
-        no-repeat
-        backdrop-filter: blur(1px);
-      `,
-      html: ReactDOMServer.renderToString(<HomeNotice />),
-    });
-  };
 
   const InfoIcon = () => {
     return (
@@ -190,15 +173,15 @@ export default function HomeSignUp() {
               個人資料使用辦法
             </p>
           </button>
-          <button
+          <a
             className="flex items-center rounded hover:bg-yellow-600"
-            onClick={() => ShowNotice()}
+            href="#notice"
           >
             {InfoIcon()}
             <p className=" text-yellow-700 text-left p-1 font-bold w-[10rem] rounded hover:bg-yellow-600 mb-1 ">
               活動注意事項
             </p>
-          </button>
+          </a>
         </div>
         <button
           className="bg-yellow-500 text-white p-1 font-bold w-[10rem]  mb-1 ml-auto"
