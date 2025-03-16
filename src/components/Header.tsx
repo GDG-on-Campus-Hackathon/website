@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
   const onPress = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     const target = window.document.getElementById(
-      e.currentTarget.href.split("#")[1]
+      e.currentTarget.href.split("#")[1],
     );
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
@@ -40,7 +40,8 @@ export const Header: React.FC = () => {
           <ul className="flex space-x-4 list-none justify-between">
             {menus.map((menu, index) => (
               <li
-                key={index} data-to-scrollspy-id={menu.value}
+                key={index}
+                data-to-scrollspy-id={menu.value}
                 className="border-b-0 m-[0.25rem] border-b-[#4c4c4c] transition-all duration-300"
               >
                 <a href={`#${menu.value}`} onClick={(e) => onPress(e)}>

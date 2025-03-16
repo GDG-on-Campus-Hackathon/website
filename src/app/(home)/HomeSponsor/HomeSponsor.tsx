@@ -4,7 +4,10 @@ import image_nthu from "./gdg_on_campus_nthu.svg";
 
 export default function HomeSponsor() {
   return (
-    <div className="text-center pt-20 md:px-10 max-w-[1440px] mx-auto" id="home-sponso">
+    <div
+      className="text-center pt-20 md:px-10 max-w-[1440px] mx-auto"
+      id="home-sponso"
+    >
       <h1 className="text-5xl text-title text-center md:text-left md:px-10">
         贊助單位
       </h1>
@@ -41,7 +44,7 @@ export default function HomeSponsor() {
           </div>
         </div>
       </div>
-      <hr/>
+      <hr />
     </div>
   );
 }

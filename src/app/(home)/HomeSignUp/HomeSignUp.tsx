@@ -128,7 +128,10 @@ export default function HomeSignUp() {
   };
 
   return (
-    <div className="pt-20 text-center md:text-left md:px-20 max-w-[1440px] mx-auto" id="home-sign-up">
+    <div
+      className="pt-20 text-center md:text-left md:px-20 max-w-[1440px] mx-auto"
+      id="home-sign-up"
+    >
       <h1 className="text-title-1 text-gray-700 text-center md:text-left">
         報名資訊
       </h1>
@@ -156,7 +159,9 @@ export default function HomeSignUp() {
         </div>
       </div>
       <div className="py-2 px-4 md:px-6 lg:px-8 text-left leading-10">
-        <h2 className="text-title-3 font-semibold text-left pt-10">/報名資格/</h2>
+        <h2 className="text-title-3 font-semibold text-left pt-10">
+          /報名資格/
+        </h2>
         <div>
           <p className="text-lg pt-4 tracking-wide">
             高中以上學生(具當學期在學證明)，單人或雙人組隊排名，組隊者將視為一單位評選，
