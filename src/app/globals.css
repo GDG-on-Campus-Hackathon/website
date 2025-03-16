@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-padding-top: 76px;
+}
+
 :root {
   --gold-color: rgba(255, 231, 165, 0.67);
   --silver-color: rgba(217, 217, 217, 0.72);
