@@ -4,17 +4,17 @@ import { cn } from "@/lib/utils";
 import EventArrangement from "./event_arrangement";
 export default function HomeInformation() {
   return (
-    <>
+    <div className="max-w-[1440px] mx-auto">
       <h2
         id="home-information"
-        className="text-4xl pt-20 font-bold md:pl-20 text-center md:text-left tracking-[0.1em]"
+        className="text-title-1 pt-20 md:pl-20 text-center md:text-left"
       >
         活動資訊
       </h2>
-      <section className="py-4 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl">
+      <section className="py-4 px-4 md:px-6 lg:px-8">
         {/* topic category */}
         <div className="pt-10  md:px-20">
-          <h2 className="mt-4 text-title text-left tracking-[0.1em]">/核心理念/</h2>
+          <h2 className="mt-4 text-title-3 text-left">/核心理念/</h2>
           <div>
             <p className="text-lg pt-4 tracking-wide md:leading-10 md:text-justify">
               DevJam TW 2025 以 「Google 技術創 新 x 全球影響力」
@@ -29,7 +29,7 @@ export default function HomeInformation() {
         </div>
 
         <div className="pt-10  md:px-20">
-          <h3 className="text-title mt-4">/主題分類/</h3>
+          <h3 className="text-title-3 mt-4">/主題分類/</h3>
           <div className="flex flex-col gap-[1rem] pt-4 ">
             {/* AI Card */}
             <InformationCard
@@ -56,7 +56,7 @@ export default function HomeInformation() {
 
         {/* event arrangement */}
         <div className="flex flex-col md:px-20 max-w-auto pt-10">
-          <h3 className="text-title mt-4 ">/時程一覽/</h3>
+          <h3 className="text-title-3 mt-4 ">/時程一覽/</h3>
           <div className="w-full pt-4">
             <EventArrangement />
           </div>
@@ -64,7 +64,7 @@ export default function HomeInformation() {
 
         {/* event schedule */}
         <div className="flex flex-col md:px-20 pt-10">
-          <h3 className="text-title mt-4">/賽程規劃/</h3>
+          <h3 className="text-title-3 mt-4">/賽程規劃/</h3>
           <EventDescription
             title="第一階段 - 個人篩選："
             text="每個領域會由兩位（暫定）具該領域專業之教授進行評分與篩選，根據結果會產生進入複賽的人選，AI、Web3、DevOps 各領域會有相應的人數限制，總共 100 人。(待改)"
@@ -83,7 +83,7 @@ export default function HomeInformation() {
         {/* event awards */}
 
         <div className="flex flex-col md:px-20">
-          <h3 className="text-title mt-[60px]">/競賽獎項/</h3>
+          <h3 className="text-title-3 mt-[60px]">/競賽獎項/</h3>
           <EventAward
             description="第一名：獎金 15,000 元、實體獎品、實習面試機會(暫定）"
             prize="gold"
@@ -99,7 +99,7 @@ export default function HomeInformation() {
         </div>
       </section>
       <hr />
-    </>
+    </div>
   );
 }
 
@@ -113,7 +113,7 @@ const InformationCard = ({ className, title, text }: InformationCardProps) => {
   return (
     <div className={cn("flex w-full", className)}>
       <div className={cn("sm:w-[712px] card")}>
-        <h3 className="text-title">{title}</h3>
+        <h3 className="text-title-3">{title}</h3>
         <p className="text-sm sm:text-[18px] md:leading-[44px] text-justify font-semibold">
           {text}
         </p>

@@ -4,11 +4,11 @@ import svg_devjam_tw_2025 from "./devjam_tw_2025.svg";
 
 export default function HomeIntroduction() {
   return (
-    <div className="text-center" id="home-introduction">
-      <h1 className="text-4xl pt-20 font-bold font-sans text-center md:text-left md:pl-20 tracking-[0.1em]">
+    <div className="text-center max-w-[1440px] mx-auto" id="home-introduction">
+      <h1 className="text-title-1 pt-20 text-center md:text-left md:pl-20">
         黑客松介紹
       </h1>
-      <h2 className="text-3xl text-gray-700 font-bold font-sans py-2 text-center pt-16 tracking-[0.1em]">
+      <h2 className="text-3xl text-gray-700 font-bold font-sans py-2 text-center pt-16">
         關於 GDG on Campus
       </h2>
       <div className="text-lg tracking-wider md:leading-10 pt-10">

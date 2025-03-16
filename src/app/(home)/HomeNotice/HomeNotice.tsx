@@ -1,10 +1,10 @@
 export default function HomeNotice() {
   return (
-    <div className="mx-auto">
-      <h1 className="font-bold text-2xl text-center text-[#4C4C4C] pb-9 pt-3 tracking-[0.1em]">
-        注意事項
+    <div className="max-w-[1440px] mx-auto py-20 px-5 md:px-10">
+      <h1 className="text-title-1 text-left text-[#4C4C4C] pb-9 pt-3">
+        * 注意事項
       </h1>
-      <ol className="list-decimal leading-10">
+      <ol className="px-5 md:px-10 list-decimal leading-10">
         <li className="text-left pl-1">
           主辦單位得於本活動及其他相關活動中，公開展示所有參賽作品。
         </li>

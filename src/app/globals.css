@@ -63,21 +63,27 @@ html {
     background-color: var(--copper-color);
   }
 
-  .text-title {
-    font-weight: bold;
+  .text-title-1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: left;
+  }
+
+  .text-title-2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .text-title-3 {
+    font-weight: 700;
     font-size: 28px;
-    line-height: 32px;
-  }
-
-  .text-subtitle {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .text-subsubtitle {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: left;
   }
 }

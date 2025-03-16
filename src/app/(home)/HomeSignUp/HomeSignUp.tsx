@@ -128,12 +128,12 @@ export default function HomeSignUp() {
   };
 
   return (
-    <div className="pt-20 text-center md:text-left md:px-20" id="home-sign-up">
-      <h1 className="text-4xl text-gray-700 font-extrabold font-sans text-center md:text-left tracking-[0.1em]">
+    <div className="pt-20 text-center md:text-left md:px-20 max-w-[1440px] mx-auto" id="home-sign-up">
+      <h1 className="text-title-1 text-gray-700 text-center md:text-left">
         報名資訊
       </h1>
-      <div className="py-2 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl text-left leading-10">
-        <h2 className="text-title text-left pt-10">/活動時間/</h2>
+      <div className="py-2 px-4 md:px-6 lg:px-8 text-left leading-10">
+        <h2 className="text-title-3 text-left pt-10">/活動時間/</h2>
         <div>
           <p className="text-lg pt-4 tracking-wide">
             報名：2025/03/15(六)~04/15(二)23:59
@@ -146,8 +146,8 @@ export default function HomeSignUp() {
           </p>
         </div>
       </div>
-      <div className="py-2 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl text-left leading-10">
-        <h2 className="text-title text-left pt-10">/活動地點/</h2>
+      <div className="py-2 px-4 md:px-6 lg:px-8 text-left leading-10">
+        <h2 className="text-title-3 text-left pt-10">/活動地點/</h2>
         <div>
           <p className="text-lg pt-4 tracking-wide">
             決賽：臺北醫學大學跨領域學院杏春樓（台北市信義區吳興街250號杏春樓）
@@ -155,8 +155,8 @@ export default function HomeSignUp() {
           <p className="text-lg pt-4 tracking-wide">成果發表: 未定</p>
         </div>
       </div>
-      <div className="py-2 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl text-left leading-10">
-        <h2 className="text-title font-semibold text-left pt-10">/報名資格/</h2>
+      <div className="py-2 px-4 md:px-6 lg:px-8 text-left leading-10">
+        <h2 className="text-title-3 font-semibold text-left pt-10">/報名資格/</h2>
         <div>
           <p className="text-lg pt-4 tracking-wide">
             高中以上學生(具當學期在學證明)，單人或雙人組隊排名，組隊者將視為一單位評選，
@@ -164,8 +164,8 @@ export default function HomeSignUp() {
           </p>
         </div>
       </div>
-      <div className="py-2 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl text-left leading-10">
-        <h2 className="text-title text-left pt-4">/報名方式/</h2>
+      <div className="py-2 px-4 md:px-6 lg:px-8 text-left leading-10">
+        <h2 className="text-title-3 text-left pt-4">/報名方式/</h2>
         <p className="text-lg pt-4 tracking-wide">
           活動一律透過線上表單報名，並於表單內繳交相關參考資料，主辦方將以表單填寫內容作為錄取參考依據，
           報名先後順序不列入計分標準。
@@ -174,7 +174,7 @@ export default function HomeSignUp() {
           完成報名後，則表示同意接受本辦法之拘束，如有未盡事宜，主辦單位保留各項競賽辦法解釋及變更之權利，敬請在參加前詳閱活動注意事項。
         </p>
       </div>
-      <div className="py-4 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl text-left flex flex-row gap-3">
+      <div className="py-4 px-4 md:px-6 lg:px-8 text-left flex flex-row gap-3">
         <div className="flex flex-col gap-1">
           <button
             className="flex items-center rounded hover:bg-yellow-600"

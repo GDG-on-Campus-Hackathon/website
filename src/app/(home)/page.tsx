@@ -6,6 +6,7 @@ import HomeInformation from "./HomeInformation/HomeInformation";
 import HomeSignUp from "@/app/(home)/HomeSignUp/HomeSignUp";
 import HomeSponsor from "@/app/(home)/HomeSponsor/HomeSponsor";
 import ScrollSpy from "react-ui-scrollspy";
+import HomeNotice from "@/app/(home)/HomeNotice/HomeNotice";
 //import HomeNotice from "@/app/(home)/HomeNotice/HomeNotice";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <HomeInformation />
         <HomeSignUp />
         <HomeSponsor />
+        <HomeNotice />
       </ScrollSpy>
     </div>
   );
