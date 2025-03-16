@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Swal from "sweetalert2";
-import HomeNotice from "@/app/(home)/HomeNotice/HomeNotice";
+import HomeNotice from "../HomeNotice/HomeNotice";
 import ReactDOMServer from "react-dom/server";
 
 export default function HomeSignUp() {

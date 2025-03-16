@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import svg_devjam_tw_2025 from "./devjam_tw_2025.svg";
+import svg_devjam_tw_2025 from "./assets/devjam_tw_2025.svg";
 
 export default function HomeIntroduction() {
   return (

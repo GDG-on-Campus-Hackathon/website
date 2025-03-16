@@ -1,13 +1,12 @@
 "use client";
 
-import HomeHero from "@/app/(home)/HomeHero/HomeHero";
-import HomeIntroduction from "@/app/(home)/HomeIntroduction/HomeIntroduction";
+import HomeHero from "./HomeHero/HomeHero";
+import HomeIntroduction from "./HomeIntroduction/HomeIntroduction";
 import HomeInformation from "./HomeInformation/HomeInformation";
-import HomeSignUp from "@/app/(home)/HomeSignUp/HomeSignUp";
-import HomeSponsor from "@/app/(home)/HomeSponsor/HomeSponsor";
+import HomeSignUp from "./HomeSignUp/HomeSignUp";
+import HomeSponsor from "./HomeSponsor/HomeSponsor";
+import HomeNotice from "./HomeNotice/HomeNotice";
 import ScrollSpy from "react-ui-scrollspy";
-import HomeNotice from "@/app/(home)/HomeNotice/HomeNotice";
-//import HomeNotice from "@/app/(home)/HomeNotice/HomeNotice";
 
 export default function Home() {
   return (

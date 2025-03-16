@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import svg_devjam from "@/assets/devjam.svg";
+import svg_devjam from "../assets/devjam.svg";
 import Link from "next/link";
 
 export const Header: React.FC = () => {

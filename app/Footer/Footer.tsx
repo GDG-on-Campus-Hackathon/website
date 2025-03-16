@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import svg_text_devjam from "./text_devjam.svg";
-import svg_text_hackathon from "./text_hackathon.svg";
-import svg_text_tw from "./text_tw.svg";
-import svg_text_2025 from "./text_2025.svg";
-import svg_icon_instagram from "@/assets/icon_instagram.svg";
-import svg_icon_facebook from "@/assets/icon_facebook.svg";
-import svg_icon_email from "@/assets/icon_email.svg";
+import svg_text_devjam from "./assets/text_devjam.svg";
+import svg_text_hackathon from "./assets/text_hackathon.svg";
+import svg_text_tw from "./assets/text_tw.svg";
+import svg_text_2025 from "./assets/text_2025.svg";
+import svg_icon_instagram from "../assets/icon_instagram.svg";
+import svg_icon_facebook from "../assets/icon_facebook.svg";
+import svg_icon_email from "../assets/icon_email.svg";
+import backgroundImage from "./assets/background.png";
 
 export const Footer: React.FC = () => {
   const links = [
@@ -57,9 +58,9 @@ export const Footer: React.FC = () => {
     },
   ];
   return (
-    <div
+    <footer
       className="w-full bg-cover bg-center bg-no-repeat pt-[72px] pb-[16px]"
-      style={{ backgroundImage: "./background.png" }}
+      style={{ backgroundImage: `url(${backgroundImage.src})` }}
     >
       <div className="max-w-[1440px] w-full mx-auto flex flex-col  justify-center items-center">
         <div className="w-full flex flex-col md:flex-row justify-between">
@@ -119,6 +120,6 @@ export const Footer: React.FC = () => {
           © 2025 DevJam TW 2025
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
