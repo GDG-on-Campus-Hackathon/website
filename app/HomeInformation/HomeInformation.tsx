@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import EventArrangement from "./event_arrangement";
 export default function HomeInformation() {
   return (
