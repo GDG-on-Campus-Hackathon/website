@@ -4,7 +4,7 @@ import image_cover from "./cover.png";
 export default function HomeAchievements() {
   return (
     <div className="text-center" id="home-achievements">
-      <h1>成果展現</h1>
+      <h1 className="text-4xl pt-20 font-bold md:pl-20 text-center md:text-left">成果展現</h1>
       <div>
         <h2>/活動花絮/</h2>
         <p>報名表單：https://forms.gle/LtZqTbtp3eBkLUuN9</p>

@@ -7,14 +7,14 @@ export default function HomeInformation() {
     <>
       <h2
         id="home-information"
-        className="text-5xl pt-20 font-bold md:pl-20 text-center md:text-left"
+        className="text-4xl pt-20 font-bold md:pl-20 text-center md:text-left tracking-[0.1em]"
       >
         活動資訊
       </h2>
       <section className="py-4 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl">
         {/* topic category */}
         <div className="pt-10  md:px-20">
-          <h2 className="mt-4 text-title text-left ">/核心理念/</h2>
+          <h2 className="mt-4 text-title text-left tracking-[0.1em]">/核心理念/</h2>
           <div>
             <p className="text-lg pt-4 tracking-wide md:leading-10 md:text-justify">
               DevJam TW 2025 以 「Google 技術創 新 x 全球影響力」

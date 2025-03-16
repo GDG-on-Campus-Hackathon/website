@@ -129,7 +129,7 @@ export default function HomeSignUp() {
 
   return (
     <div className="pt-20 text-center md:text-left md:px-20" id="home-sign-up">
-      <h1 className="text-5xl text-gray-700 font-extrabold font-sans text-center md:text-left">
+      <h1 className="text-4xl text-gray-700 font-extrabold font-sans text-center md:text-left tracking-[0.1em]">
         報名資訊
       </h1>
       <div className="py-2 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl text-left leading-10">

@@ -1,7 +1,7 @@
 export default function HomeNotice() {
   return (
     <div className="mx-auto">
-      <h1 className="font-bold text-2xl text-center text-[#4C4C4C] pb-9 pt-3">
+      <h1 className="font-bold text-2xl text-center text-[#4C4C4C] pb-9 pt-3 tracking-[0.1em]">
         注意事項
       </h1>
       <ol className="list-decimal leading-10">
