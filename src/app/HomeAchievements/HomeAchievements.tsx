@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image_cover from "./cover.png";
+import image_cover from "./assets/cover.png";
 
 export default function HomeAchievements() {
   return (

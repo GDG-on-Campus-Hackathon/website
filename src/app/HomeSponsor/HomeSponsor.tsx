@@ -1,6 +1,6 @@
 import Image from "next/image";
-import image_nccu from "./gdg_on_campus_nccu.svg";
-import image_nthu from "./gdg_on_campus_nthu.svg";
+import image_nccu from "./assets/gdg_on_campus_nccu.svg";
+import image_nthu from "./assets/gdg_on_campus_nthu.svg";
 
 export default function HomeSponsor() {
   return (

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Sans_TC } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer/Footer";
+import { Header } from "@/app/Header/Header";
+import { Footer } from "@/app/Footer/Footer";
 
 const notoSansTC = Noto_Sans_TC({
   weight: "variable",
