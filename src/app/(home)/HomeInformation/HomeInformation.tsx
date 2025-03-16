@@ -13,7 +13,7 @@ export default function HomeInformation() {
       </h2>
       <section className="py-4 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl">
         {/* topic category */}
-        <div className="pt-10  md:p-20">
+        <div className="pt-10  md:px-20">
           <h2 className="mt-4 text-title text-left ">/核心理念/</h2>
           <div>
             <p className="text-lg pt-4 tracking-wide md:leading-10 md:text-justify">
@@ -28,9 +28,9 @@ export default function HomeInformation() {
           </div>
         </div>
 
-        <div className="pt-10  md:p-20">
+        <div className="pt-10  md:px-20">
           <h3 className="text-title mt-4">/主題分類/</h3>
-          <div className="flex flex-col gap-[1rem] pt-10 ">
+          <div className="flex flex-col gap-[1rem] pt-4 ">
             {/* AI Card */}
             <InformationCard
               className="justify-start"
@@ -55,17 +55,15 @@ export default function HomeInformation() {
         </div>
 
         {/* event arrangement */}
-        <div className="flex flex-col md:p-20 max-w-auto pt-10">
+        <div className="flex flex-col md:px-20 max-w-auto pt-10">
           <h3 className="text-title mt-4 ">/時程一覽/</h3>
-          <div className="w-full mt-[36px]">
-            {" "}
-            {/* 調整圖片大小的容器 */}
+          <div className="w-full pt-4">
             <EventArrangement />
           </div>
         </div>
 
         {/* event schedule */}
-        <div className="flex flex-col md:p-20 pt-10">
+        <div className="flex flex-col md:px-20 pt-10">
           <h3 className="text-title mt-4">/賽程規劃/</h3>
           <EventDescription
             title="第一階段 - 個人篩選："
@@ -84,7 +82,7 @@ export default function HomeInformation() {
 
         {/* event awards */}
 
-        <div className="flex flex-col md:p-20">
+        <div className="flex flex-col md:px-20">
           <h3 className="text-title mt-[60px]">/競賽獎項/</h3>
           <EventAward
             description="第一名：獎金 15,000 元、實體獎品、實習面試機會(暫定）"

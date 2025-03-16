@@ -13,7 +13,6 @@ export default function Home() {
       <HomeInformation />
       <HomeSignUp />
       <HomeSponsor />
-      <HomeNotice />
     </div>
   );
 }

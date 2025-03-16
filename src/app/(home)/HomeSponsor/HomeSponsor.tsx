@@ -4,12 +4,12 @@ import image_nthu from "./gdg_on_campus_nthu.svg";
 
 export default function HomeSponsor() {
   return (
-    <div className="text-center pt-10" id="home-sponsor">
-      <h1 className="text-5xl text-title text-center md:text-left md:p-20">
+    <div className="text-center pt-20 md:px-10" id="home-sponsor">
+      <h1 className="text-5xl text-title text-center md:text-left md:px-10">
         贊助單位
       </h1>
-      <div className="mx-5 md:py-40">
-        <h2 className="text-title text-left pt-10 ">/主辦單位/</h2>
+      <div className="py-2 px-4 md:px-6 lg:px-8 mx-auto max-w-7xl text-left leading-10">
+        <h2 className="text-title text-left pt-10">/主辦單位/</h2>
         <div className="justify-center items-center pt-10 flex flex-col md:flex-row">
           <Image
             src={image_nccu.src}
@@ -32,7 +32,7 @@ export default function HomeSponsor() {
         </div>
         <h2 className="text-title text-left pt-10 ">/協辦單位/</h2>
         <div>
-          <p className="text-title text-center py-10">
+          <p className="text-title text-[1rem] text-center py-10">
             全台 GDG On Campus（共23間學校）
           </p>
         </div>
