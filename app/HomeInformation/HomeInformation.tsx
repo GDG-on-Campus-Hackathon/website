@@ -10,10 +10,10 @@ export default function HomeInformation() {
   return (
     <article id="home-information" className="container mx-auto px-6">
       <H1>活動資訊</H1>
-      {/* topic category */}
+
       <H2>核心理念</H2>
       <P>
-        DevJam TW 2025 以 「Google 技術創 新 x 全球影響力」 為核心，打造一場 24
+        DevJam TW 2025 以「Google 技術創新 x 全球影響力」為核心，打造一場 24
         小時黑客松，邀請來自全台各大專院校的開發者，運用 Google Cloud（Vertex
         AI）、Gemini API（AI Studio）、Flutter、Firebase、Google Maps
         API、TensorFlow、Google Earth Engine 等 Google
