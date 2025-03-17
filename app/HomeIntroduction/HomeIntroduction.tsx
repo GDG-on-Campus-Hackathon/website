@@ -1,12 +1,12 @@
 import Image from "next/image";
 import svg_devjam_tw_2025 from "./assets/devjam_tw_2025.svg";
 import H1 from "../components/H1";
-import H2 from "../components/H2";
+import H2 from "./H2";
 import P from "../components/P";
 
 export default function HomeIntroduction() {
   return (
-    <article id="home-introduction" className="px-6">
+    <article id="home-introduction" className="container mx-auto px-6">
       <H1>黑客松介紹</H1>
       <H2>關於 GDG on Campus</H2>
       <P>
