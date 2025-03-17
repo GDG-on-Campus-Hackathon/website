@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 html {
-  scroll-padding-top: 76px;
+  scroll-padding-top: 4rem;
 }
 
 :root {
@@ -21,6 +21,11 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
+  }
+
+  .active-scroll-spy {
+    border-bottom: 2px solid #4c4c4c;
+    margin-bottom: -2px;
   }
 
   .card {

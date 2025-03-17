@@ -10,8 +10,8 @@ import ScrollSpy from "react-ui-scrollspy";
 
 export default function Home() {
   return (
-    <div className="bg-[#EDEAE5]">
-      <ScrollSpy activeClass="border-b-[5px]" scrollThrottle={100}>
+    <div>
+      <ScrollSpy scrollThrottle={100}>
         <HomeHero />
         <HomeIntroduction />
         <HomeInformation />
