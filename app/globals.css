@@ -28,46 +28,6 @@ html {
     margin-bottom: -2px;
   }
 
-  .card {
-    display: flex;
-    flex-direction: column;
-    padding: 28px;
-    gap: 28px;
-    background-color: rgba(242, 241, 239, 0.2);
-    box-shadow:
-      3px 4px 7px rgba(0, 0, 0, 0.08),
-      inset -4px -4px 8px rgba(0, 0, 0, 0.08),
-      inset 4px 4px 8px rgba(255, 255, 255, 0.28);
-    border-radius: 9px;
-  }
-
-  .award-circle {
-    width: 65px;
-    height: 60px;
-    box-sizing: border-box;
-    text-align: center;
-    font:
-      bold 20px/60px "Roboto",
-      sans-serif;
-    box-shadow:
-      3px 4px 7px rgba(0, 0, 0, 0.08),
-      inset -4px -4px 8px rgba(0, 0, 0, 0.08),
-      inset 4px 4px 8px rgba(255, 255, 255, 0.28);
-    border-radius: 59px;
-  }
-
-  .award-circle.gold {
-    background-color: var(--gold-color);
-  }
-
-  .award-circle.silver {
-    background-color: var(--silver-color);
-  }
-
-  .award-circle.bronze {
-    background-color: var(--copper-color);
-  }
-
   .text-title-1 {
     font-weight: 700;
     font-size: 36px;
