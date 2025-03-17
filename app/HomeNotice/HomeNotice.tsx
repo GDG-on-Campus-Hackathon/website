@@ -1,7 +1,7 @@
 import H2 from "../components/H2";
 
 function ListItem({ children }: { children: React.ReactNode }) {
-  return <li className="text-left pl-1">{children}</li>;
+  return <li className="text-left mb-6 pl-1">{children}</li>;
 }
 
 export default function HomeNotice() {
@@ -9,7 +9,7 @@ export default function HomeNotice() {
     <article id="notice" className="container mx-auto px-6">
       <H2>注意事項</H2>
 
-      <ol className="space-y-6 list-decimal list-outside ml-6">
+      <ol className="list-decimal list-outside ml-6">
         <ListItem>
           主辦單位得於本活動及其他相關活動中，公開展示所有參賽作品。
         </ListItem>
