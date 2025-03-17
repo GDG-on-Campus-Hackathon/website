@@ -2,6 +2,9 @@
 import React from "react";
 import Swal from "sweetalert2";
 import ReactDOMServer from "react-dom/server";
+import H1 from "../components/H1";
+import H2 from "../components/H2";
+import P from "../components/P";
 
 export default function HomeSignUp() {
   const ShowInfo = () => {
@@ -110,89 +113,83 @@ export default function HomeSignUp() {
     );
   };
 
+  const ArrowIcon = () => {
+    return (
+      <svg
+        fill="none"
+        width="16"
+        height="16"
+        viewBox="0 0 22 22"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z"
+          fill="#4c4c4c"
+        />
+      </svg>
+    );
+  };
+
   return (
-    <div
-      className="pt-20 text-center md:text-left md:px-20 max-w-[1440px] mx-auto"
-      id="home-sign-up"
-    >
-      <h1 className="text-title-1 text-gray-700 text-center md:text-left">
-        報名資訊
-      </h1>
-      <div className="py-2 px-4 md:px-6 lg:px-8 text-left leading-10">
-        <h2 className="text-title-3 text-left pt-10">/活動時間/</h2>
-        <div>
-          <p className="text-lg pt-4 tracking-wide">
-            報名：2025/03/15(六)~04/15(二)23:59
-          </p>
-          <p className="text-lg pt-4 tracking-wide">
-            決賽名單公布：2025/5/1 (四)
-          </p>
-          <p className="text-lg pt-4 tracking-wide">
-            決賽：2025/06/07 (六) ~ 06/08 (日)
-          </p>
-        </div>
-      </div>
-      <div className="py-2 px-4 md:px-6 lg:px-8 text-left leading-10">
-        <h2 className="text-title-3 text-left pt-10">/活動地點/</h2>
-        <div>
-          <p className="text-lg pt-4 tracking-wide">
-            決賽：臺北醫學大學跨領域學院杏春樓（台北市信義區吳興街250號杏春樓）
-          </p>
-          <p className="text-lg pt-4 tracking-wide">成果發表: 未定</p>
-        </div>
-      </div>
-      <div className="py-2 px-4 md:px-6 lg:px-8 text-left leading-10">
-        <h2 className="text-title-3 font-semibold text-left pt-10">
-          /報名資格/
-        </h2>
-        <div>
-          <p className="text-lg pt-4 tracking-wide">
-            高中以上學生(具當學期在學證明)，單人或雙人組隊排名，組隊者將視為一單位評選，
-            入選或落選皆為整組計算，無法拆分個別晉級。
-          </p>
-        </div>
-      </div>
-      <div className="py-2 px-4 md:px-6 lg:px-8 text-left leading-10">
-        <h2 className="text-title-3 text-left pt-4">/報名方式/</h2>
-        <p className="text-lg pt-4 tracking-wide">
+    <article id="home-sign-up" className="container mx-auto px-6">
+      <H1>報名資訊</H1>
+
+      <div className="bg-[#F2F1EF33] rounded-lg shadow-[1.5px_2px_3.5px_0px_rgba(0,0,0,0.1),2px_2px_4px_0px_rgba(255,255,255,0.3),inset_-2px_-2px_4px_0px_rgba(0,0,0,0.1)] p-8 mb-10 max-w-4xl mx-auto">
+        <H2>活動時間</H2>
+        <P>報名：2025/03/15(六)~04/15(二)23:59</P>
+        <P>決賽名單公布：2025/5/1 (四)</P>
+        <P>決賽：2025/06/07 (六) ~ 06/08 (日)</P>
+
+        <H2>活動地點</H2>
+        <P>
+          決賽：臺北醫學大學跨領域學院杏春樓（台北市信義區吳興街250號杏春樓）
+        </P>
+        <P>成果發表: 未定</P>
+
+        <H2>報名資格</H2>
+        <P>
+          高中以上學生(具當學期在學證明)，單人或雙人組隊排名，組隊者將視為一單位評選，
+          入選或落選皆為整組計算，無法拆分個別晉級。
+        </P>
+
+        <H2>報名方式</H2>
+        <P>
           活動一律透過線上表單報名，並於表單內繳交相關參考資料，主辦方將以表單填寫內容作為錄取參考依據，
           報名先後順序不列入計分標準。
-        </p>
-        <p className="text-sm pt-3">
+        </P>
+        <p className="mb-5 text-xs text-justify tracking-wide">
+          *
           完成報名後，則表示同意接受本辦法之拘束，如有未盡事宜，主辦單位保留各項競賽辦法解釋及變更之權利，敬請在參加前詳閱活動注意事項。
         </p>
-      </div>
-      <div className="py-4 px-4 md:px-6 lg:px-8 text-left flex flex-row gap-3">
-        <div className="flex flex-col gap-1">
-          <button
-            className="flex items-center rounded hover:bg-yellow-600"
-            onClick={() => ShowInfo()}
-          >
-            {InfoIcon()}
-            <p className=" text-yellow-700 text-left p-1 font-bold w-[10rem]  mb-1 ">
-              個人資料使用辦法
-            </p>
-          </button>
+
+        <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-col gap-2">
+            <button
+              className="flex items-center gap-2 text-[#A07E3A] font-medium hover:underline align-middle"
+              onClick={() => ShowInfo()}
+            >
+              <InfoIcon />
+              <span>個人資料使用辦法</span>
+            </button>
+            <a
+              className="flex items-center gap-2 text-[#A07E3A] font-medium hover:underline align-middle"
+              href="#notice"
+            >
+              <InfoIcon />
+              <span>活動注意事項</span>
+            </a>
+          </div>
           <a
-            className="flex items-center rounded hover:bg-yellow-600"
-            href="#notice"
+            href="https://forms.gle/LtZqTbtp3eBkLUuN9"
+            target="_blank"
+            className="ml-auto px-6 py-2 text-[#4c4c4c] font-medium text-xl rounded-xl border border-[#4c4c4c] flex items-center justify-center gap-2"
           >
-            {InfoIcon()}
-            <p className=" text-yellow-700 text-left p-1 font-bold w-[10rem] rounded hover:bg-yellow-600 mb-1 ">
-              活動注意事項
-            </p>
+            <span className="inline-flex items-center content-center gap-2">
+              馬上報名 <ArrowIcon />
+            </span>
           </a>
         </div>
-        <button
-          className="bg-yellow-500 text-white p-1 font-bold w-[10rem]  mb-1 ml-auto"
-          onClick={() => {
-            window.open("https://forms.gle/LtZqTbtp3eBkLUuN9");
-          }}
-        >
-          報名表單
-        </button>
       </div>
-      <hr />
-    </div>
+    </article>
   );
 }
