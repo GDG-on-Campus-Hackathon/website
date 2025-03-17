@@ -1,13 +1,13 @@
-import H2 from "../components/H2";
+import H1 from "../components/H1";
 
 function ListItem({ children }: { children: React.ReactNode }) {
-  return <li className="text-left mb-6 pl-1">{children}</li>;
+  return <li className="text-left text-xs mb-6 pl-1">{children}</li>;
 }
 
 export default function HomeNotice() {
   return (
     <article id="notice" className="container mx-auto px-6">
-      <H2>注意事項</H2>
+      <H1>注意事項</H1>
 
       <ol className="list-decimal list-outside ml-6">
         <ListItem>
