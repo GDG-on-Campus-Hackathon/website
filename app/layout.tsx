@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-Hant">
-      <body className={`${notoSansTC.className} antialiased`}>
+      <body className={`${notoSansTC.className} antialiased bg-[#EDEAE5]`}>
         <Header />
         <main>{children}</main>
         <Footer />

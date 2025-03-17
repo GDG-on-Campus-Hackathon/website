@@ -23,40 +23,29 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <div className="w-full fixed top-0 bg-white/40 backdrop-blur-lg z-50 overflow-hidden px-4">
-      <div className="max-w-full mx-auto flex items-center justify-between">
-        <div className="flex items-center">
-          <Link href="/">
-            <Image
-              src={svg_devjam.src}
-              alt="DevJam"
-              width={158}
-              height={61}
-              className="md:w-[158px] md:h-[61px] w-[105px] h-[40px]"
-            />
-          </Link>
-        </div>
-        <div>
-          <ul className="flex space-x-4 list-none justify-between">
-            {menus.map((menu, index) => (
-              <li
-                key={index}
-                data-to-scrollspy-id={menu.value}
-                className="border-b-0 m-[0.25rem] border-b-[#4c4c4c] transition-all duration-300"
-              >
-                <a href={`#${menu.value}`} onClick={(e) => onPress(e)}>
-                  <span className="hidden md:block text-[1.5rem] p-[1rem]">
-                    {menu.label}
-                  </span>
-                  <span className="block md:hidden text-[1rem] p-[0.2rem]">
-                    {menu.mobileLabel}
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </div>
+    <header className="h-16 w-full fixed top-0 bg-white/40 backdrop-blur-lg z-50 overflow-hidden px-4 md:px-12 flex items-center justify-between">
+      <Link href="/">
+        <Image src={svg_devjam.src} alt="DevJam" width={158} height={61} />
+      </Link>
+
+      <ul className="flex gap-4 list-none justify-between">
+        {menus.map((menu) => (
+          <li
+            key={menu.value}
+            data-to-scrollspy-id={menu.value}
+            className="border-b-[#4c4c4c] transition-all duration-100"
+          >
+            <a
+              className="text-2xl"
+              href={`#${menu.value}`}
+              onClick={(e) => onPress(e)}
+            >
+              <div className="hidden md:block">{menu.label}</div>
+              <div className="md:hidden">{menu.mobileLabel}</div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </header>
   );
 };

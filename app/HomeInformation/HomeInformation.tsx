@@ -4,11 +4,8 @@ import { cn } from "@/lib/utils";
 import EventArrangement from "./event_arrangement";
 export default function HomeInformation() {
   return (
-    <div className="max-w-[1440px] mx-auto">
-      <h2
-        id="home-information"
-        className="text-title-1 pt-20 md:pl-20 text-center md:text-left"
-      >
+    <div id="home-information" className="max-w-[1440px] mx-auto">
+      <h2 className="text-title-1 pt-20 md:pl-20 text-center md:text-left">
         活動資訊
       </h2>
       <section className="py-4 px-4 md:px-6 lg:px-8">
