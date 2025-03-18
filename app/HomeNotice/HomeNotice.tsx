@@ -6,7 +6,7 @@ function ListItem({ children }: { children: React.ReactNode }) {
 
 export default function HomeNotice() {
   return (
-    <article id="notice" className="container mx-auto p-8">
+    <article id="notice" className="max-w-3xl mx-auto p-8">
       <H1>注意事項</H1>
 
       <ol className="list-decimal list-outside ml-6">

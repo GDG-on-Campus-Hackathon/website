@@ -7,7 +7,7 @@ import image_nthu from "./assets/gdg_on_campus_nthu.svg";
 
 export default function HomeSponsor() {
   return (
-    <article id="home-sponsor" className="container mx-auto p-8">
+    <article id="home-sponsor" className="max-w-3xl mx-auto p-8">
       <H1>贊助單位</H1>
 
       <H2>主辦單位</H2>
