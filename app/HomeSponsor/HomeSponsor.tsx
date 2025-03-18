@@ -34,7 +34,7 @@ export default function HomeSponsor() {
       </div>
 
       <H2>協辦單位</H2>
-      <P className="mb-9">全台 GDG On Campus（共23間學校）</P>
+      <P>全台 GDG On Campus（共23間學校）</P>
     </Article>
   );
 }
