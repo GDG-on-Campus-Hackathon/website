@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
 import P from "../components/P";
@@ -7,7 +8,7 @@ import image_nthu from "./assets/gdg_on_campus_nthu.svg";
 
 export default function HomeSponsor() {
   return (
-    <article id="home-sponsor" className="max-w-3xl mx-auto p-8">
+    <Article id="home-sponsor">
       <H1>贊助單位</H1>
 
       <H2>主辦單位</H2>
@@ -34,6 +35,6 @@ export default function HomeSponsor() {
 
       <H2>協辦單位</H2>
       <P className="mb-9">全台 GDG On Campus（共23間學校）</P>
-    </article>
+    </Article>
   );
 }

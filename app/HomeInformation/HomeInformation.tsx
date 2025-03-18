@@ -1,3 +1,4 @@
+import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
 import H3 from "../components/H3";
@@ -8,7 +9,7 @@ import InformationCard from "./InformationCard";
 
 export default function HomeInformation() {
   return (
-    <article id="home-information" className="max-w-3xl mx-auto p-8">
+    <Article id="home-information">
       <H1>活動資訊</H1>
 
       <H2>核心理念</H2>
@@ -88,6 +89,6 @@ export default function HomeInformation() {
         description="第三名：獎金 5,000 元、實體獎品(暫定）"
         prize="bronze"
       />
-    </article>
+    </Article>
   );
 }

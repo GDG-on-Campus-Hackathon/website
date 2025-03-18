@@ -2,6 +2,7 @@
 import React from "react";
 import Swal from "sweetalert2";
 import ReactDOMServer from "react-dom/server";
+import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
 import P from "../components/P";
@@ -131,7 +132,7 @@ export default function HomeSignUp() {
   };
 
   return (
-    <article id="home-sign-up" className="max-w-3xl mx-auto p-8">
+    <Article id="home-sign-up">
       <H1>報名資訊</H1>
 
       <div className="bg-[#F2F1EF33] rounded-lg shadow-[1.5px_2px_3.5px_0px_rgba(0,0,0,0.1),2px_2px_4px_0px_rgba(255,255,255,0.3),inset_-2px_-2px_4px_0px_rgba(0,0,0,0.1)] p-8 mb-10 max-w-4xl mx-auto">
@@ -190,6 +191,6 @@ export default function HomeSignUp() {
           </a>
         </div>
       </div>
-    </article>
+    </Article>
   );
 }
