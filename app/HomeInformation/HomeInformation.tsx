@@ -8,7 +8,7 @@ import InformationCard from "./InformationCard";
 
 export default function HomeInformation() {
   return (
-    <article id="home-information" className="container mx-auto px-6">
+    <article id="home-information" className="container mx-auto p-8">
       <H1>活動資訊</H1>
 
       <H2>核心理念</H2>

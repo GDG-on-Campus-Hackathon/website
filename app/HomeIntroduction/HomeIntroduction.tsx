@@ -6,7 +6,7 @@ import P from "../components/P";
 
 export default function HomeIntroduction() {
   return (
-    <article id="home-introduction" className="container mx-auto px-6">
+    <article id="home-introduction" className="container mx-auto p-8">
       <H1>黑客松介紹</H1>
       <H2>關於 GDG on Campus</H2>
       <P>
