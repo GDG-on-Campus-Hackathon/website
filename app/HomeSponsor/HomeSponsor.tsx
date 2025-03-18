@@ -11,7 +11,7 @@ export default function HomeSponsor() {
       <H1>贊助單位</H1>
 
       <H2>主辦單位</H2>
-      <div className="flex flex-col xl:flex-row items-center justify-center gap-8">
+      <div className="flex flex-col items-center justify-center gap-8 mb-9">
         <Image
           src={image_nccu.src}
           alt="GDG on Campus NCCU"
