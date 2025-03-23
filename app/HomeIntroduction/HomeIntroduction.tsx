@@ -1,12 +1,13 @@
 import Image from "next/image";
 import svg_devjam_tw_2025 from "./assets/devjam_tw_2025.svg";
+import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "./H2";
 import P from "../components/P";
 
 export default function HomeIntroduction() {
   return (
-    <article id="home-introduction" className="container mx-auto p-8">
+    <Article id="home-introduction">
       <H1>黑客松介紹</H1>
       <H2>關於 GDG on Campus</H2>
       <P>
@@ -40,6 +41,6 @@ export default function HomeIntroduction() {
         活動中更有機會向業界、投資者展示成果，促進跨校合作、共同推動技術社群茁壯的同時，開啟未來更多可能。
       </P>
       <P>如果你渴望用科技實現創新，千萬別錯過這場讓點子成真的挑戰！</P>
-    </article>
+    </Article>
   );
 }

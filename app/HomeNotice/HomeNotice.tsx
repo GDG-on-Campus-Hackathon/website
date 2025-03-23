@@ -1,3 +1,4 @@
+import Article from "../components/Article";
 import H1 from "../components/H1";
 
 function ListItem({ children }: { children: React.ReactNode }) {
@@ -6,7 +7,7 @@ function ListItem({ children }: { children: React.ReactNode }) {
 
 export default function HomeNotice() {
   return (
-    <article id="notice" className="container mx-auto p-8">
+    <Article id="notice">
       <H1>注意事項</H1>
 
       <ol className="list-decimal list-outside ml-6">
@@ -26,6 +27,6 @@ export default function HomeNotice() {
           主辦單位保留修改本辦法之權利，參加活動者一旦參加本活動，則表示同意接受本辦法之拘束，如有未盡事宜，主辦單位保留各項競賽辦法解釋及變更之權利。
         </ListItem>
       </ol>
-    </article>
+    </Article>
   );
 }
