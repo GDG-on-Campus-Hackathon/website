@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import svg_devjam_tw_2025 from "@/app/HomeIntroduction/assets/devjam_tw_2025.svg";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import svg_devjam_tw_2025 from "../assets/devjam_tw_2025.svg";
 
 export const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);

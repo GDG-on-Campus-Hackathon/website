@@ -1,5 +1,5 @@
 import Image from "next/image";
-import svg_devjam_tw_2025 from "./assets/devjam_tw_2025.svg";
+import svg_devjam_tw_2025 from "../assets/devjam_tw_2025.svg";
 import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "./H2";
