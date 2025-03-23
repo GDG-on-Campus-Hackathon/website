@@ -1,17 +1,46 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import svg_devjam from "../assets/devjam.svg";
 import Link from "next/link";
+import NavItem from "./NavItem";
+import svg_devjam_tw_2025 from "../assets/devjam_tw_2025.svg";
 
 export const Header: React.FC = () => {
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+
   const menus = [
-    { label: "黑客松介紹", value: "home-introduction", mobileLabel: "介紹" },
-    { label: "活動資訊", value: "home-information", mobileLabel: "資訊" },
-    { label: "報名資訊", value: "home-sign-up", mobileLabel: "報名" },
+    { label: "黑客松介紹", value: "home-introduction" },
+    { label: "活動資訊", value: "home-information" },
+    { label: "報名資訊", value: "home-sign-up" },
+    { label: "成果展現", value: "home-achievements" },
   ];
 
+  // it will be called when the component reach the viewport in 50%
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "-50% 0px -50% 0px",
+        threshold: 0,
+      },
+    );
+
+    menus.forEach((menu) => {
+      const section = document.getElementById(menu.value);
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  });
+
+  // scroll to the section when click the nav item
   const onPress = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     const target = window.document.getElementById(
@@ -25,27 +54,30 @@ export const Header: React.FC = () => {
   return (
     <header className="h-16 w-full fixed top-0 bg-white/40 backdrop-blur-lg z-50 overflow-hidden px-4 md:px-12 flex items-center justify-between">
       <Link href="/">
-        <Image src={svg_devjam.src} alt="DevJam" width={158} height={61} />
+        <Image
+          src={svg_devjam_tw_2025.src}
+          alt="DevJam TW 2025"
+          width={170}
+          height={19}
+        />
       </Link>
 
-      <ul className="flex gap-4 list-none justify-between">
+      {/* desktop: menubar */}
+      <ul className="hidden md:flex gap-9 list-none justify-between">
         {menus.map((menu) => (
-          <li
+          <NavItem
+            href={`#${menu.value}`}
+            isActive={activeSection === menu.value}
             key={menu.value}
-            data-to-scrollspy-id={menu.value}
-            className="border-b-[#4c4c4c] transition-all duration-100"
+            onClick={onPress}
           >
-            <a
-              className="text-2xl"
-              href={`#${menu.value}`}
-              onClick={(e) => onPress(e)}
-            >
-              <div className="hidden md:block">{menu.label}</div>
-              <div className="md:hidden">{menu.mobileLabel}</div>
-            </a>
-          </li>
+            {menu.label}
+          </NavItem>
         ))}
       </ul>
+
+      {/* mobile: menubar */}
+      {/* todo: waiting for designing */}
     </header>
   );
 };

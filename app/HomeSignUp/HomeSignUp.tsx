@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Swal from "sweetalert2";
 import ReactDOMServer from "react-dom/server";
