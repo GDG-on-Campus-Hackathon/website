@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
     });
 
     return () => observer.disconnect();
-  }, []);
+  });
 
   // scroll to the section when click the nav item
   const onPress = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
