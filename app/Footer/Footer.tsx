@@ -1,13 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import svg_text_devjam from "./assets/text_devjam.svg";
-import svg_text_hackathon from "./assets/text_hackathon.svg";
-import svg_text_tw from "./assets/text_tw.svg";
-import svg_text_2025 from "./assets/text_2025.svg";
+import svg_devjam_tw_2025 from "./assets/devjam_tw_2025.svg";
 import svg_icon_instagram from "./assets/icon_instagram.svg";
 import svg_icon_facebook from "./assets/icon_facebook.svg";
 import svg_icon_email from "./assets/icon_email.svg";
-import backgroundImage from "./assets/background.png";
+import backgroundImage from "./assets/background.webp";
 
 export const Footer: React.FC = () => {
   const links = [
@@ -16,17 +13,17 @@ export const Footer: React.FC = () => {
       children: [
         {
           icon: svg_icon_instagram,
-          label: "gdg.nccu",
+          label: "@gdg.nccu",
           url: "https://www.instagram.com/gdg.nccu/",
         },
         {
           icon: svg_icon_instagram,
-          label: "gdg.nthu",
+          label: "@gdg.nthu",
           url: "https://www.instagram.com/gdsc.nthu/",
         },
         {
           icon: svg_icon_instagram,
-          label: "gdg.ntust",
+          label: "@gdg.ntust",
           url: "https://www.instagram.com/gdg.ntust/",
         },
       ],
@@ -36,7 +33,7 @@ export const Footer: React.FC = () => {
       children: [
         {
           icon: svg_icon_facebook,
-          label: "https://facebook.com/devjam.tw",
+          label: "/devjam.tw",
           url: "https://facebook.com/devjam.tw",
         },
         {
@@ -57,69 +54,39 @@ export const Footer: React.FC = () => {
       ],
     },
   ];
+
   return (
     <footer
-      className="w-full bg-cover bg-center bg-no-repeat pt-[72px] pb-[16px]"
+      className="w-full p-6 flex flex-col items-center bg-cover bg-center bg-no-repeat shadow-[inset_0px_4px_24px_0px_rgba(0,0,0,0.25)]"
       style={{ backgroundImage: `url(${backgroundImage.src})` }}
     >
-      <div className="max-w-[1440px] w-full mx-auto flex flex-col  justify-center items-center">
-        <div className="w-full flex flex-col md:flex-row justify-between">
-          <div className="text-center flex flex-col justify-center items-center space-y-4">
-            <Image
-              src={svg_text_devjam.src}
-              alt={"DevJam"}
-              width={373}
-              height={75}
-            />
-            <Image
-              src={svg_text_hackathon.src}
-              alt={"Google Developer Groups on Campus • 2025 Hackathon"}
-              width={289}
-              height={12}
-            />
-            <div className="flex space-x-4">
-              <Image src={svg_text_tw.src} alt={"TW"} width={66} height={69} />
-              <Image
-                src={svg_text_2025.src}
-                alt={"2025"}
-                width={114}
-                height={69}
-              />
-            </div>
-          </div>
-          <div className="space-y-[32px] p-5">
-            {links.map((link, index) => (
-              <div key={index} className="space-x-4 md:flex-col">
-                <div className="text-[#4C4C4C] text-[1rem] font-bold no-wrap">
-                  {link.title}
-                </div>
-                <div className="flex space-x-4 flex-wrap md:no-wrap">
-                  {link.children.map((child, index) => (
-                    <a
-                      key={index}
-                      href={child.url}
-                      className="flex items-center space-x-2"
-                    >
-                      <Image
-                        src={child.icon.src}
-                        alt={child.label}
-                        width={24}
-                        height={24}
-                      />
-                      <div className="text-[#4C4C4C] text-[16px]">
-                        {child.label}
-                      </div>
-                    </a>
-                  ))}
-                </div>
+      <div className="flex flex-col md:flex-row items-center gap-4 mb-6">
+        <Image
+          src={svg_devjam_tw_2025}
+          alt="Google Developer Groups on Campus 2025 Hackathon"
+        />
+        <div className="self-stretch not-md:border-b-2 md:border-r-2 border-black"></div>
+        <div className="flex flex-col items-center md:items-start gap-6 md:p-4">
+          {links.map((link) => (
+            <div key={link.title} className="flex items-center gap-4">
+              <div className="font-bold text-xs tracking-[0.2em] mr-2">
+                {link.title}
               </div>
-            ))}
-          </div>
-        </div>
-        <div className="text-[#4C4C4C] text-[12px]/[44px] mt-[32px]">
-          © 2025 DevJam TW 2025
+              {link.children.map((child) => (
+                <a
+                  key={child.label}
+                  href={child.url}
+                  className="text-[11px] tracking-widest flex flex-col sm:flex-row items-center gap-2"
+                >
+                  <Image src={child.icon} alt={child.label} />
+                  {child.label}
+                </a>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
+      <p className="text-[11px] tracking-wide">© 2025 DevJam TW 2025</p>
     </footer>
   );
 };
