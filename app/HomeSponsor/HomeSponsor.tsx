@@ -36,7 +36,7 @@ export default function HomeSponsor() {
 
       <H2>協辦單位</H2>
       <SponsorContainer>
-        <p className="text-sm/relaxed text-justify tracking-wide">
+        <p className="text-sm/relaxed tracking-wide">
           全台 GDG On Campus（共26間學校）
         </p>
         <Image
