@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+import NavItem from "./NavItem";
 import svg_devjam_tw_2025 from "../assets/devjam_tw_2025.svg";
 
 export const Header: React.FC = () => {
@@ -79,30 +79,5 @@ export const Header: React.FC = () => {
       {/* mobile: menubar */}
       {/* todo: waiting for designing */}
     </header>
-  );
-};
-
-interface NavItemProps {
-  children: React.ReactNode;
-  href: string;
-  isActive: boolean;
-  onClick?: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
-}
-
-const NavItem = ({ children, href, isActive, onClick }: NavItemProps) => {
-  return (
-    <Link
-      href={href}
-      onClick={onClick}
-      className={cn(
-        "hover:text-black pb-1 relative transition-colors",
-        isActive && "text-black font-medium",
-      )}
-    >
-      <span>{children}</span>
-      {isActive && (
-        <span className="active-scroll-spy absolute bottom-0 left-0 w-full transition-all"></span>
-      )}
-    </Link>
   );
 };
