@@ -78,16 +78,12 @@ export default function HomeInformation() {
       {/* event awards */}
       <H2>競賽獎項</H2>
       <EventAward
-        description="第一名：獎金 15,000 元、實體獎品、實習面試機會(暫定）"
+        description="優勝：各主題擇一隊伍，優勝獎金 10,000 元、獎狀、企業實體獎品，並另訂時間至 Google 101 與大中華地區社群生態系統負責人交流餐敘"
         prize="gold"
       />
       <EventAward
-        description="第二名：獎金 10,000 元、實體獎品(暫定）"
+        description="佳作：最終進入決賽之 8 組，佳作獎狀、企業實體獎品"
         prize="silver"
-      />
-      <EventAward
-        description="第三名：獎金 5,000 元、實體獎品(暫定）"
-        prize="bronze"
       />
     </Article>
   );
