@@ -4,9 +4,9 @@ import svg_text_devjam from "./assets/text_devjam.svg";
 import svg_text_hackathon from "./assets/text_hackathon.svg";
 import svg_text_tw from "./assets/text_tw.svg";
 import svg_text_2025 from "./assets/text_2025.svg";
-import svg_icon_instagram from "../assets/icon_instagram.svg";
-import svg_icon_facebook from "../assets/icon_facebook.svg";
-import svg_icon_email from "../assets/icon_email.svg";
+import svg_icon_instagram from "./assets/icon_instagram.svg";
+import svg_icon_facebook from "./assets/icon_facebook.svg";
+import svg_icon_email from "./assets/icon_email.svg";
 import backgroundImage from "./assets/background.png";
 
 export const Footer: React.FC = () => {
