@@ -15,6 +15,7 @@ html {
   body {
     overflow-x: hidden;
   }
+
   body {
     color: #4c4c4c;
     background-size: cover;
@@ -26,29 +27,5 @@ html {
   .active-scroll-spy {
     border-bottom: 2px solid #4c4c4c;
     margin-bottom: -2px;
-  }
-
-  .text-title-1 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 100%;
-    letter-spacing: 0.1em;
-    text-align: left;
-  }
-
-  .text-title-2 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0.1em;
-    text-align: center;
-  }
-
-  .text-title-3 {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 100%;
-    letter-spacing: 0.1em;
-    text-align: left;
   }
 }

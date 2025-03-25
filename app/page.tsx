@@ -10,15 +10,13 @@ import ScrollSpy from "react-ui-scrollspy";
 
 export default function Home() {
   return (
-    <div>
-      <ScrollSpy scrollThrottle={100}>
-        <HomeHero />
-        <HomeIntroduction />
-        <HomeInformation />
-        <HomeSignUp />
-        <HomeSponsor />
-        <HomeNotice />
-      </ScrollSpy>
-    </div>
+    <ScrollSpy scrollThrottle={100}>
+      <HomeHero />
+      <HomeIntroduction />
+      <HomeInformation />
+      <HomeSignUp />
+      <HomeSponsor />
+      <HomeNotice />
+    </ScrollSpy>
   );
 }

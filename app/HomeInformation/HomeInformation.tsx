@@ -23,7 +23,7 @@ export default function HomeInformation() {
 
       <H2>主題分類</H2>
 
-      <div className="mb-8 flex flex-col gap-6">
+      <div className="mb-5 flex flex-col gap-6">
         {/* AI Card */}
         <InformationCard
           className="self-start"
