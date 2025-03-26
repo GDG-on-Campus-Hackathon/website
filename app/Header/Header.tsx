@@ -40,17 +40,6 @@ export const Header: React.FC = () => {
     return () => observer.disconnect();
   });
 
-  // scroll to the section when click the nav item
-  const onPress = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
-    const target = window.document.getElementById(
-      e.currentTarget.href.split("#")[1],
-    );
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <header className="h-16 w-full fixed top-0 bg-white/40 backdrop-blur-lg z-50 overflow-hidden px-4 md:px-12 flex items-center justify-between">
       <Link href="/">
@@ -69,7 +58,6 @@ export const Header: React.FC = () => {
             href={`#${menu.value}`}
             isActive={activeSection === menu.value}
             key={menu.value}
-            onClick={onPress}
           >
             {menu.label}
           </NavItem>
