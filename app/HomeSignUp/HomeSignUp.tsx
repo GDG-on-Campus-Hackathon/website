@@ -102,7 +102,7 @@ export default function HomeSignUp() {
 
       <div className="bg-[#F2F1EF33] rounded-lg shadow-[1.5px_2px_3.5px_0px_rgba(0,0,0,0.1),2px_2px_4px_0px_rgba(255,255,255,0.3),inset_-2px_-2px_4px_0px_rgba(0,0,0,0.1)] p-8 max-w-4xl mx-auto">
         <H2>活動時間</H2>
-        <P>報名：2025/03/15(六)~04/15(二) 23:59</P>
+        <P>報名：2025/03/15(六) ~ 04/15(二) 23:59</P>
         <P>決賽名單公布：2025/5/1 (四)</P>
         <P>決賽：2025/06/07 (六) ~ 06/08 (日)</P>
 
