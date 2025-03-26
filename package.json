@@ -2,7 +2,7 @@
   "name": "gdg-on-campus-hackathon-website",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.6.5",
+  "packageManager": "pnpm@10.7.0",
   "engines": {
     "node": ">=20.17.0"
   },
@@ -22,8 +22,8 @@
     "@radix-ui/react-dialog": "^1.1.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.482.0",
-    "next": "15.2.3",
+    "lucide-react": "^0.484.0",
+    "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-ui-scrollspy": "^2.3.0",
@@ -31,16 +31,16 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4.0.14",
+    "@tailwindcss/postcss": "^4.0.17",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.2.3",
+    "eslint-config-next": "15.2.4",
     "eslint-config-prettier": "^10.1.1",
     "postcss": "^8",
     "prettier": "^3.5.3",
-    "tailwindcss": "^4.0.14",
+    "tailwindcss": "^4.0.17",
     "typescript": "^5"
   },
   "pnpm": {
