@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
@@ -9,24 +9,13 @@ import PrivacyPolicy from "./PrivacyPolicy";
 
 export default function HomeSignUp() {
   const dialogRef = useRef<HTMLDialogElement>(null);
-  const [isOpen, setIsOpen] = useState(false);
 
   const showInfo = () => {
-    if (dialogRef.current) {
-      dialogRef.current.showModal();
-      requestAnimationFrame(() => {
-        setIsOpen(true);
-      });
-    }
+    dialogRef.current?.showModal();
   };
 
   const closeDialog = () => {
-    if (dialogRef.current) {
-      setIsOpen(false);
-      setTimeout(() => {
-        dialogRef.current?.close();
-      }, 200);
-    }
+    dialogRef.current?.close();
   };
 
   return (
@@ -90,15 +79,13 @@ export default function HomeSignUp() {
       <dialog
         ref={dialogRef}
         className={`
-          flex flex-col m-auto p-2 rounded-lg bg-[#EDEAE5]
-          text-[#4c4c4c]
-          fixed inset-0 
-          transform
-          ${isOpen ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}
-          transition-all duration-200
-          backdrop:bg-black/60 
-          backdrop:transition-opacity
-          backdrop:duration-200
+          fixed inset-0
+          open:flex flex-col m-auto p-2 rounded-lg bg-[#EDEAE5] text-[#4C4C4C]
+          transition-discrete duration-200 backdrop:duration-200
+          opacity-0 starting:open:opacity-0 open:opacity-100
+          scale-95 starting:open:scale-95 open:scale-100
+          backdrop:opacity-0 starting:open:backdrop:opacity-0 open:backdrop:opacity-100
+          backdrop:bg-black/60
         `}
       >
         <div className="flex justify-end sticky top-0 bg-[#EDEAE5]">
