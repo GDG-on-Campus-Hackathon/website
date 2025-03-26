@@ -16,8 +16,8 @@ export default function HomeSponsor() {
       <H2>主辦單位</H2>
       <SponsorContainer>
         <Image src={image_nccu} alt="GDG on Campus NCCU" height={40} />
-        <Image src={image_nthu} alt="GDG on Campus NTHU" height={40} />
         <Image src={image_ntust} alt="GDG on Campus NTUST" height={40} />
+        <Image src={image_nthu} alt="GDG on Campus NTHU" height={40} />
       </SponsorContainer>
 
       <H2>協辦單位</H2>
