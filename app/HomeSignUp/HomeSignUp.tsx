@@ -79,7 +79,6 @@ export default function HomeSignUp() {
       <dialog
         ref={dialogRef}
         className={`
-          fixed inset-0
           open:flex flex-col m-auto p-2 rounded-lg bg-[#EDEAE5] text-[#4C4C4C]
           transition-discrete duration-200 backdrop:duration-200
           opacity-0 starting:open:opacity-0 open:opacity-100
