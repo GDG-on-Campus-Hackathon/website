@@ -11,7 +11,8 @@ import ArrowIcon from "./ArrowIcon";
 export default function HomeSignUp() {
   const ShowInfo = () => {
     Swal.fire({
-      confirmButtonText: "關閉",
+      showConfirmButton: false,
+      showCloseButton: true,
       color: "black",
       background: "rgba(237, 234, 229, 1)",
       width: "80%",
@@ -22,21 +23,24 @@ export default function HomeSignUp() {
         no-repeat
         backdrop-filter: blur(1px);
       `,
+      customClass: {
+        closeButton: "swal2-close-button",
+      },
       html: ReactDOMServer.renderToString(
-        <div className="text-left">
-          <h2 className="text-left text-2xl font-bold">
-            DevJam TW 2025個人資料使用辦法
+        <div className="text-left text-[#4c4c4c]">
+          <h2 className="font-bold mt-8 mb-5 text-sm md:text-xl">
+            DevJam TW 2025 個人資料使用辦法
           </h2>
-          <h2 className="text-[1rem] m-3">
-            以上說明DevJam TW 2025
-            黑客松（以下稱本競賽）所收集、處理及利用個人資料之情形
-          </h2>
+          <P className="text-xs md:text-base">
+            以下說明DevJam TW 2025
+            黑客松（以下稱本競賽）所收集、處理及利用個人資料之情形。
+          </P>
           <div className="text-left">
             <div className="my-5">
-              <p className="text-left text-xl font-bold">
-                一、個人資料之蒐集目的：
+              <p className="font-bold mb-3 text-xs md:text-xl">
+                一、個人資料之蒐集目的
               </p>
-              <p className="text-[1rem]">
+              <P className="text-xs md:text-base">
                 本競賽執行DevJam TW
                 2025黑客松之相關業務時，將收集參賽者的個人資料。
                 <br />
@@ -46,13 +50,13 @@ export default function HomeSignUp() {
                 <br />
                 主辦單位收集的個人資料夾用於競賽相關業務，使用期限為即日起至2025年12月31日止，並以電子郵件、電話、社群媒體或其他適當方式聯繫參賽者
                 <br />
-              </p>
+              </P>
             </div>
             <div className="my-5">
-              <p className="text-left text-xl font-bold">
-                二、個人資料之使用方式：
+              <p className="font-bold mb-3 text-xs md:text-xl">
+                二、個人資料之使用方式
               </p>
-              <p className="text-[1rem]">
+              <P className="text-xs md:text-base">
                 本競賽依據 中華民國個人資料保護法
                 及相關法規範，合理處理及利用參賽者的個人資料。
                 <br />
@@ -60,20 +64,24 @@ export default function HomeSignUp() {
                 <br />
                 參賽者同意主辦單位得基於競賽執行之需要，於活動期間使用個人資料，以利賽事通知、獎勵發放、成果展示、後續聯繫等用途。
                 <br />
-              </p>
+              </P>
             </div>
             <div className="my-5">
-              <p className="text-left text-xl font-bold">三、個人資料之保護</p>
-              <p className="text-[1rem]">
+              <p className="font-bold mb-3 text-xs md:text-xl">
+                三、個人資料之保護
+              </p>
+              <P className="text-xs md:text-base">
                 參賽者個人資料將受 個人資料保護法 規範，並由主辦單位妥善保存。
                 <br />
                 若因不可抗力（如天災、系統故障、駭客攻擊等）導致個人資料洩漏，主辦單位將依法通報，並採取補救措施，確保個人資料安全。
                 <br />
-              </p>
+              </P>
             </div>
             <div className="my-5">
-              <p className="text-left text-xl font-bold">四、同意及效力</p>
-              <p className="text-[1rem]">
+              <p className="font-bold mb-3 text-xs md:text-xl">
+                四、同意及效力
+              </p>
+              <P className="text-xs md:text-base">
                 當參賽者填寫報名表並提交，即代表已閱讀、理解並同意本競賽之
                 個人資料使用條款。
                 <br />
@@ -82,13 +90,13 @@ export default function HomeSignUp() {
                 <br />
                 如有爭議，應依據中華民國法律為準。
                 <br />
-              </p>
+              </P>
             </div>
             <div className="my-5">
-              <p className="text-left text-xs font-bold">
+              <P className="text-xs md:text-base">
                 📌 聯繫方式：如有個人資料相關問題，請聯絡 DevJam TW 2025
-                黑客松主辦單位 Email：devjamtw@gmail.com
-              </p>
+                黑客松主辦單位 （Email：devjamtw@gmail.com）。
+              </P>
             </div>
           </div>
         </div>,

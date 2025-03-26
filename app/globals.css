@@ -28,4 +28,16 @@ html {
     border-bottom: 2px solid #4c4c4c;
     margin-bottom: -2px;
   }
+
+  .swal2-close-button {
+    color: #4c4c4c !important;
+    margin-right: 20px !important;
+    margin-top: 20px !important;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .swal2-close-button:hover {
+    color: #666666 !important;
+    transform: scale(1.1);
+  }
 }
