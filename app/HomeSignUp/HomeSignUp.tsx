@@ -92,6 +92,7 @@ export default function HomeSignUp() {
         className={`
           flex flex-col m-auto p-2 rounded-lg bg-[#EDEAE5]
           text-[#4c4c4c]
+          fixed inset-0 
           transform
           ${isOpen ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}
           transition-all duration-200
