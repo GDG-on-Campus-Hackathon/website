@@ -128,14 +128,14 @@ export default function HomeSignUp() {
         <div className="flex flex-wrap items-center gap-4">
           <div className="flex flex-col gap-2">
             <button
-              className="flex items-center gap-2 text-[#A07E3A] text-xs font-medium hover:underline align-middle"
+              className="flex items-center gap-2 text-[#A07E3A] text-xs font-medium hover:underline"
               onClick={() => ShowInfo()}
             >
               <InfoIcon />
               <span>個人資料使用辦法</span>
             </button>
             <a
-              className="flex items-center gap-2 text-[#A07E3A] text-xs font-medium hover:underline align-middle"
+              className="flex items-center gap-2 text-[#A07E3A] text-xs font-medium hover:underline"
               href="#notice"
             >
               <InfoIcon />
