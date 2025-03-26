@@ -78,14 +78,16 @@ export default function HomeSignUp() {
 
       <dialog
         ref={dialogRef}
-        className="m-auto p-5 rounded-lg backdrop:bg-black/60 text-[#4c4c4c]"
+        className="open:flex flex-col m-auto py-2 rounded-lg backdrop:bg-black/60 text-[#4c4c4c]"
       >
-        <button
-          onClick={closeDialog}
-          className="absolute top-0 right-0 hover:brightness-50 hover:cursor-pointer px-4 py-2"
-        >
-          &#10006;
-        </button>
+        <div className="flex justify-end sticky top-0 bg-white">
+          <button
+            onClick={closeDialog}
+            className="px-4 py-2 hover:brightness-50 hover:cursor-pointer"
+          >
+            &#10006;
+          </button>
+        </div>
         <PrivacyPolicy />
       </dialog>
     </Article>
