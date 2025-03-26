@@ -102,15 +102,12 @@ export default function HomeSignUp() {
 
       <div className="bg-[#F2F1EF33] rounded-lg shadow-[1.5px_2px_3.5px_0px_rgba(0,0,0,0.1),2px_2px_4px_0px_rgba(255,255,255,0.3),inset_-2px_-2px_4px_0px_rgba(0,0,0,0.1)] p-8 max-w-4xl mx-auto">
         <H2>活動時間</H2>
-        <P>複賽報名：2025/03/15(六)~04/15(二)23:59</P>
+        <P>報名：2025/03/15(六) ~ 04/15(二) 23:59</P>
         <P>決賽名單公布：2025/5/1 (四)</P>
-        <P>複賽、決賽：2025/06/07 (六) ~ 06/08 (日)</P>
+        <P>決賽：2025/06/07 (六) ~ 06/08 (日)</P>
 
-        <H2>活動地點</H2>
-        <P>
-          複賽、決賽：臺北醫學大學跨領域學院杏春樓（台北市信義區吳興街250號杏春樓）
-        </P>
-        <P>成果發表: 未定</P>
+        <H2>場地資訊</H2>
+        <P>臺北醫學大學跨領域學院杏春樓（台北市信義區吳興街250號杏春樓）</P>
 
         <H2>報名資格</H2>
         <P>
@@ -131,14 +128,14 @@ export default function HomeSignUp() {
         <div className="flex flex-wrap items-center gap-4">
           <div className="flex flex-col gap-2">
             <button
-              className="flex items-center gap-2 text-[#A07E3A] font-medium hover:underline align-middle"
+              className="flex items-center gap-2 text-[#A07E3A] text-xs font-medium hover:underline"
               onClick={() => ShowInfo()}
             >
               <InfoIcon />
               <span>個人資料使用辦法</span>
             </button>
             <a
-              className="flex items-center gap-2 text-[#A07E3A] font-medium hover:underline align-middle"
+              className="flex items-center gap-2 text-[#A07E3A] text-xs font-medium hover:underline"
               href="#notice"
             >
               <InfoIcon />
@@ -148,7 +145,7 @@ export default function HomeSignUp() {
           <a
             href="https://forms.gle/LtZqTbtp3eBkLUuN9"
             target="_blank"
-            className="ml-auto px-6 py-2 text-[#4c4c4c] font-medium text-xl rounded-xl border border-[#4c4c4c] flex items-center justify-center gap-2"
+            className="ml-auto px-6 py-2 text-[#4c4c4c] font-medium text-sm rounded-xl border border-[#4c4c4c] flex items-center justify-center gap-2"
           >
             <span className="inline-flex items-center content-center gap-2">
               馬上報名 <ArrowIcon />
