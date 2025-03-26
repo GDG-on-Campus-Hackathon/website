@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
@@ -9,13 +9,24 @@ import PrivacyPolicy from "./PrivacyPolicy";
 
 export default function HomeSignUp() {
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   const showInfo = () => {
-    dialogRef.current?.showModal();
+    if (dialogRef.current) {
+      dialogRef.current.showModal();
+      requestAnimationFrame(() => {
+        setIsOpen(true);
+      });
+    }
   };
 
   const closeDialog = () => {
-    dialogRef.current?.close();
+    if (dialogRef.current) {
+      setIsOpen(false);
+      setTimeout(() => {
+        dialogRef.current?.close();
+      }, 200);
+    }
   };
 
   return (
@@ -78,9 +89,18 @@ export default function HomeSignUp() {
 
       <dialog
         ref={dialogRef}
-        className="open:flex flex-col m-auto py-2 rounded-lg backdrop:bg-black/60 text-[#4c4c4c]"
+        className={`
+          flex flex-col m-auto p-2 rounded-lg bg-[#EDEAE5]
+          text-[#4c4c4c]
+          transform
+          ${isOpen ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}
+          transition-all duration-200
+          backdrop:bg-black/60 
+          backdrop:transition-opacity
+          backdrop:duration-200
+        `}
       >
-        <div className="flex justify-end sticky top-0 bg-white">
+        <div className="flex justify-end sticky top-0 bg-[#EDEAE5]">
           <button
             onClick={closeDialog}
             className="px-4 py-2 hover:brightness-50 hover:cursor-pointer"
