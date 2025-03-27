@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import H2 from "../components/H2";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface ToggleBarProps {
   title: string;
-  image: string;
-  mobileImage: string;
+  image: StaticImageData;
+  mobileImage: StaticImageData;
 }
 
 export default function ToggleBar({

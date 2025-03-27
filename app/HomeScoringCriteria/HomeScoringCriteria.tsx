@@ -13,15 +13,11 @@ export default function HomeScoringCriteria() {
 
       <ToggleBar
         title="複賽評分標準"
-        image={semiFinal as unknown as string}
-        mobileImage={mobileSemiFinal as unknown as string}
+        image={semiFinal}
+        mobileImage={mobileSemiFinal}
       />
 
-      <ToggleBar
-        title="決賽評分標準"
-        image={final as unknown as string}
-        mobileImage={mobileFinal as unknown as string}
-      />
+      <ToggleBar title="決賽評分標準" image={final} mobileImage={mobileFinal} />
     </Article>
   );
 }
