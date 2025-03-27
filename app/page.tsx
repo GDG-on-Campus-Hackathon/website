@@ -8,6 +8,7 @@ import HomeInformation from "./HomeInformation/HomeInformation";
 import HomeSignUp from "./HomeSignUp/HomeSignUp";
 import HomeSponsor from "./HomeSponsor/HomeSponsor";
 import HomeNotice from "./HomeNotice/HomeNotice";
+import HomeScoringCriteria from "./HomeScoringCriteira/HomeScoringCriteria";
 
 export default function Home() {
   // Smooth scrolling for anchor links
@@ -43,6 +44,7 @@ export default function Home() {
       <HomeHero />
       <HomeIntroduction />
       <HomeInformation />
+      <HomeScoringCriteria />
       <HomeSignUp />
       <HomeSponsor />
       <HomeNotice />
