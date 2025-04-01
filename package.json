@@ -18,17 +18,17 @@
     "@radix-ui/react-dialog": "1.1.6",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "lucide-react": "0.484.0",
+    "lucide-react": "0.486.0",
     "next": "15.2.4",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "react-ui-scrollspy": "2.3.0",
-    "tailwind-merge": "3.0.2"
+    "tailwind-merge": "3.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "3.3.1",
     "@tailwindcss/postcss": "4.0.17",
-    "@types/node": "22.13.14",
+    "@types/node": "22.13.15",
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
     "eslint": "9.23.0",
