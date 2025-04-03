@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@radix-ui/react-dialog": "1.1.6",
+    "babel-plugin-react-compiler": "19.0.0-beta-e993439-20250328",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "lucide-react": "0.486.0",
