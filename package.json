@@ -2,7 +2,7 @@
   "name": "gdg-on-campus-hackathon-website",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.7.0",
+  "packageManager": "pnpm@10.7.1",
   "engines": {
     "node": ">=20.17.0"
   },
