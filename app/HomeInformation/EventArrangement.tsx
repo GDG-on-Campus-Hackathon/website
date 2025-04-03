@@ -9,10 +9,6 @@ export default function EventArrangement() {
           media="(min-width: 768px)"
           srcSet={event_arrangement_desktop.src}
         />
-        <source
-          media="(max-width: 767px)"
-          srcSet={event_arrangement_mobile.src}
-        />
         <img
           src={event_arrangement_mobile.src}
           alt="Event Arrangement"
