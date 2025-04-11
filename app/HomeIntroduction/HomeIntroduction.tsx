@@ -30,7 +30,7 @@ export default function HomeIntroduction() {
         />
       </H2>
       <P>
-        DevJam TW 2025 是由全台 23 所大學的 Google Developer Groups on Campus
+        DevJam TW 2025 是由全台 26 所大學的 Google Developer Groups on Campus
         合作舉辦，專為學生開發者打造的黑客松舞台。
       </P>
       <P>
