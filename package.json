@@ -2,7 +2,7 @@
   "name": "gdg-on-campus-hackathon-website",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.7.0",
+  "packageManager": "pnpm@10.8.0",
   "engines": {
     "node": ">=20.17.0"
   },
@@ -15,29 +15,29 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@radix-ui/react-dialog": "1.1.6",
+    "@radix-ui/react-dialog": "1.1.7",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "lucide-react": "0.486.0",
-    "next": "15.2.4",
+    "lucide-react": "0.487.0",
+    "next": "15.3.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-ui-scrollspy": "2.3.0",
-    "tailwind-merge": "3.1.0"
+    "tailwind-merge": "3.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "3.3.1",
-    "@tailwindcss/postcss": "4.0.17",
-    "@types/node": "22.13.15",
-    "@types/react": "19.0.12",
-    "@types/react-dom": "19.0.4",
-    "eslint": "9.23.0",
-    "eslint-config-next": "15.2.4",
-    "eslint-config-prettier": "10.1.1",
+    "@tailwindcss/postcss": "4.1.3",
+    "@types/node": "22.14.1",
+    "@types/react": "19.1.1",
+    "@types/react-dom": "19.1.2",
+    "eslint": "9.24.0",
+    "eslint-config-next": "15.3.0",
+    "eslint-config-prettier": "10.1.2",
     "postcss": "8.5.3",
     "prettier": "3.5.3",
-    "tailwindcss": "4.0.17",
-    "typescript": "5.8.2"
+    "tailwindcss": "4.1.3",
+    "typescript": "5.8.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
