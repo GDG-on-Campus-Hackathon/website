@@ -1,11 +1,12 @@
+import Image from "next/image";
 import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
 import H3 from "../components/H3";
 import P from "../components/P";
-import EventArrangement from "./EventArrangement";
 import EventAward from "./EventAward";
 import InformationCard from "./InformationCard";
+import event_arrangement from "./event_arrangement.svg";
 
 export default function HomeInformation() {
   return (
@@ -48,7 +49,13 @@ export default function HomeInformation() {
 
       {/* event arrangement */}
       <H2>時程一覽</H2>
-      <EventArrangement />
+      <div className="overflow-auto mx-auto mb-5">
+        <Image
+          className="min-w-fit"
+          src={event_arrangement}
+          alt="Event Arrangement"
+        />
+      </div>
 
       {/* event schedule */}
       <H2>賽程規劃</H2>
