@@ -49,9 +49,9 @@ export default function HomeInformation() {
 
       {/* event arrangement */}
       <H2>時程一覽</H2>
-      <div className="overflow-auto mx-auto mb-5">
+      <div className="overflow-auto mb-5">
         <Image
-          className="min-w-fit"
+          className="min-w-fit mx-auto pb-2"
           src={event_arrangement}
           alt="Event Arrangement"
         />
