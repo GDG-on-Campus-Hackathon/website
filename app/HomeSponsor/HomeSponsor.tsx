@@ -5,7 +5,7 @@ import H2 from "../components/H2";
 import SponsorContainer from "./SponsorContainer";
 import image_nccu from "./assets/gdg_on_campus_nccu.webp";
 import image_ntust from "./assets/gdg_on_campus_ntust.webp";
-import image_tmu from "./assets/gdg_on_campus_tmu.png";
+import image_tmu from "./assets/gdg_on_campus_tmu.webp";
 import image_tmu_ieec from "./assets/tmu_ieec.svg";
 
 export default function HomeSponsor() {
