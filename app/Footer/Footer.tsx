@@ -18,13 +18,13 @@ export const Footer: React.FC = () => {
         },
         {
           icon: svg_icon_instagram,
-          label: "@gdg.nthu",
-          url: "https://www.instagram.com/gdsc.nthu/",
+          label: "@gdg.ntust",
+          url: "https://www.instagram.com/gdg.ntust/",
         },
         {
           icon: svg_icon_instagram,
-          label: "@gdg.ntust",
-          url: "https://www.instagram.com/gdg.ntust/",
+          label: "@gdg.tmu",
+          url: "https://www.instagram.com/tmu_gdgoncampus/",
         },
       ],
     },

@@ -4,8 +4,8 @@ import H1 from "../components/H1";
 import H2 from "../components/H2";
 import SponsorContainer from "./SponsorContainer";
 import image_nccu from "./assets/gdg_on_campus_nccu.webp";
-import image_nthu from "./assets/gdg_on_campus_nthu.webp";
 import image_ntust from "./assets/gdg_on_campus_ntust.webp";
+import image_tmu from "./assets/gdg_on_campus_tmu.webp";
 import image_tmu_ieec from "./assets/tmu_ieec.svg";
 
 export default function HomeSponsor() {
@@ -17,7 +17,7 @@ export default function HomeSponsor() {
       <SponsorContainer>
         <Image src={image_nccu} alt="GDG on Campus NCCU" height={40} />
         <Image src={image_ntust} alt="GDG on Campus NTUST" height={40} />
-        <Image src={image_nthu} alt="GDG on Campus NTHU" height={40} />
+        <Image src={image_tmu} alt="GDG on Campus TMU" height={40} />
       </SponsorContainer>
 
       <H2>協辦單位</H2>
