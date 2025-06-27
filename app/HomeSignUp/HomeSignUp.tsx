@@ -6,16 +6,26 @@ import P from "../components/P";
 import InfoIcon from "./InfoIcon";
 import ArrowIcon from "./ArrowIcon";
 import PrivacyPolicy from "./PrivacyPolicy";
+import NoticeComponent from "./NoticeComponent";
 
 export default function HomeSignUp() {
-  const dialogRef = useRef<HTMLDialogElement>(null);
+  const privacyDialogRef = useRef<HTMLDialogElement>(null);
+  const noticeDialogRef = useRef<HTMLDialogElement>(null);
 
-  const showInfo = () => {
-    dialogRef.current?.showModal();
+  const showPrivacyInfo = () => {
+    privacyDialogRef.current?.showModal();
   };
 
-  const closeDialog = () => {
-    dialogRef.current?.close();
+  const showNoticeInfo = () => {
+    noticeDialogRef.current?.showModal();
+  };
+
+  const closePrivacyDialog = () => {
+    privacyDialogRef.current?.close();
+  };
+
+  const closeNoticeDialog = () => {
+    noticeDialogRef.current?.close();
   };
 
   return (
@@ -50,23 +60,26 @@ export default function HomeSignUp() {
         <div className="flex flex-wrap items-center gap-4">
           <div className="flex flex-col gap-2">
             <button
+              type="button"
               className="flex items-center gap-2 text-[#A07E3A] text-xs font-medium hover:underline"
-              onClick={showInfo}
+              onClick={showPrivacyInfo}
             >
               <InfoIcon />
               <span>個人資料使用辦法</span>
             </button>
-            <a
+            <button
+              type="button"
               className="flex items-center gap-2 text-[#A07E3A] text-xs font-medium hover:underline"
-              href="#notice"
+              onClick={showNoticeInfo}
             >
               <InfoIcon />
               <span>活動注意事項</span>
-            </a>
+            </button>
           </div>
           <a
             href="https://forms.gle/LtZqTbtp3eBkLUuN9"
             target="_blank"
+            rel="noreferrer"
             className="ml-auto px-6 py-2 font-medium text-sm rounded-xl border border-[#4c4c4c] flex items-center justify-center gap-2"
           >
             <span className="inline-flex items-center content-center gap-2">
@@ -77,7 +90,7 @@ export default function HomeSignUp() {
       </div>
 
       <dialog
-        ref={dialogRef}
+        ref={privacyDialogRef}
         className={`
           open:flex flex-col m-auto p-2 rounded-lg bg-[#EDEAE5] text-[#4C4C4C]
           transition-discrete duration-200 backdrop:duration-200
@@ -89,13 +102,37 @@ export default function HomeSignUp() {
       >
         <div className="flex justify-end sticky top-0 bg-[#EDEAE5]">
           <button
-            onClick={closeDialog}
+            type="button"
+            onClick={closePrivacyDialog}
             className="px-4 py-2 hover:brightness-50 hover:cursor-pointer"
           >
             &#10006;
           </button>
         </div>
         <PrivacyPolicy />
+      </dialog>
+
+      <dialog
+        ref={noticeDialogRef}
+        className={`
+          open:flex flex-col m-auto p-2 rounded-lg bg-[#EDEAE5] text-[#4C4C4C]
+          transition-discrete duration-200 backdrop:duration-200
+          opacity-0 starting:open:opacity-0 open:opacity-100
+          scale-95 starting:open:scale-95 open:scale-100
+          backdrop:opacity-0 starting:open:backdrop:opacity-0 open:backdrop:opacity-100
+          backdrop:bg-black/60
+        `}
+      >
+        <div className="flex justify-end sticky top-0 bg-[#EDEAE5]">
+          <button
+            type="button"
+            onClick={closeNoticeDialog}
+            className="px-4 py-2 hover:brightness-50 hover:cursor-pointer"
+          >
+            &#10006;
+          </button>
+        </div>
+        <NoticeComponent />
       </dialog>
     </Article>
   );
