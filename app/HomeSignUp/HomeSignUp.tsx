@@ -7,7 +7,7 @@ import ArrowIcon from "./ArrowIcon";
 import InfoButton from "./InfoButton";
 import PrivacyPolicy from "./PrivacyPolicy";
 import NoticeComponent from "./NoticeComponent";
-import Dialog from "./Dialog";
+import Dialog from "../components/Dialog";
 
 export default function HomeSignUp() {
   const privacyDialogRef = useRef<HTMLDialogElement>(null);
