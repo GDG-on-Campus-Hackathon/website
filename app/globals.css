@@ -25,5 +25,6 @@ html {
 
   .lucide {
     display: inline;
+    padding-block-start: 0.11em;
   }
 }
