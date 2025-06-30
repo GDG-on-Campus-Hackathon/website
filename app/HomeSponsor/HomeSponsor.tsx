@@ -68,7 +68,7 @@ export default function HomeSponsor() {
           </p>
           <button
             type="button"
-            className="self-end mt-4 px-6 py-2 flex items-center gap-1 cursor-pointer rounded-lg border border-[#7F642E] font-medium text-sm leading-none tracking-widest text-[#7F642E]"
+            className="self-end mt-4 px-6 py-2 flex items-center gap-1 cursor-pointer rounded-lg border border-brand-brown font-medium text-sm leading-none tracking-widest text-brand-brown"
             onClick={showJobOpportunities}
           >
             查看職缺

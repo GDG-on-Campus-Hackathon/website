@@ -33,7 +33,7 @@ export default function HomeSignUp() {
     <Article id="home-sign-up">
       <H1>報名資訊</H1>
 
-      <div className="bg-[#F2F1EF33] rounded-lg shadow-[1.5px_2px_3.5px_0px_rgba(0,0,0,0.1),2px_2px_4px_0px_rgba(255,255,255,0.3),inset_-2px_-2px_4px_0px_rgba(0,0,0,0.1)] p-8 max-w-4xl mx-auto">
+      <div className="bg-brand-beige-light/20 rounded-lg shadow-[1.5px_2px_3.5px_0px_rgba(0,0,0,0.1),2px_2px_4px_0px_rgba(255,255,255,0.3),inset_-2px_-2px_4px_0px_rgba(0,0,0,0.1)] p-8 max-w-4xl mx-auto">
         <H2>活動時間</H2>
         <P>延長報名：2025/03/15（六）~ 04/27（日）23:59</P>
         <P>決賽名單公布：2025/5/1（四）</P>
@@ -67,7 +67,7 @@ export default function HomeSignUp() {
             href="https://forms.gle/LtZqTbtp3eBkLUuN9"
             target="_blank"
             rel="noreferrer"
-            className="ml-auto px-6 py-2 font-medium text-sm rounded-xl border border-[#4c4c4c] flex items-center justify-center gap-2"
+            className="ml-auto px-6 py-2 font-medium text-sm rounded-xl border border-brand-gray flex items-center justify-center gap-2"
           >
             <span className="inline-flex items-center content-center gap-2">
               馬上報名

@@ -12,9 +12,9 @@ interface EventAwardProps {
 
 export default function EventAward({ description, prize }: EventAwardProps) {
   const prizeAppearance: Record<Prize, PrizeAppearance> = {
-    gold: { className: "bg-[#F9E8BA]", text: "1" },
-    silver: { className: "bg-[#DFDEDC]", text: "2" },
-    bronze: { className: "bg-[#F0D9A7]", text: "3" },
+    gold: { className: "bg-prize-gold", text: "1" },
+    silver: { className: "bg-prize-silver", text: "2" },
+    bronze: { className: "bg-prize-bronze", text: "3" },
   };
 
   return (

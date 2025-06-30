@@ -5,7 +5,7 @@ export default function H3({
   ...props
 }: React.ComponentPropsWithoutRef<"h3">) {
   const baseClassName =
-    "mb-5 font-bold text-sm tracking-wider relative pl-3 border-l-4 border-[#4c4c4c]";
+    "mb-5 font-bold text-sm tracking-wider relative pl-3 border-l-4 border-brand-gray";
 
   return <h3 {...props} className={cn(baseClassName, className)} />;
 }

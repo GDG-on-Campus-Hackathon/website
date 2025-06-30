@@ -12,7 +12,7 @@ const Dialog = forwardRef<HTMLDialogElement, DialogProps>(
       <dialog
         ref={ref}
         className={`
-          open:flex flex-col m-auto p-2 rounded-lg bg-[#EDEAE5] text-[#4C4C4C]
+          open:flex flex-col m-auto p-2 rounded-lg bg-brand-beige text-brand-gray
           transition-discrete duration-200 backdrop:duration-200
           opacity-0 starting:open:opacity-0 open:opacity-100
           scale-95 starting:open:scale-95 open:scale-100
@@ -20,7 +20,7 @@ const Dialog = forwardRef<HTMLDialogElement, DialogProps>(
           backdrop:bg-black/60
         `}
       >
-        <div className="flex justify-end sticky top-0 bg-[#EDEAE5]">
+        <div className="flex justify-end sticky top-0 bg-brand-beige">
           <button
             type="button"
             onClick={onClose}
