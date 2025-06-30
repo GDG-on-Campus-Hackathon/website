@@ -1,8 +1,10 @@
+import { useRef } from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
+import Dialog from "../components/Dialog";
 import SponsorContainer from "./SponsorContainer";
 import image_nccu from "./assets/gdg_on_campus_nccu.webp";
 import image_ntust from "./assets/gdg_on_campus_ntust.webp";
@@ -10,8 +12,19 @@ import image_tmu from "./assets/gdg_on_campus_tmu.webp";
 import image_tmu_ieec from "./assets/tmu_ieec.svg";
 import image_google_for_developers from "./assets/google_for_developers.svg";
 import image_cathay_ins from "./assets/cathay_ins.svg";
+import JobOpportunities from "./JobOpportunities";
 
 export default function HomeSponsor() {
+  const jobOpportunitiesRef = useRef<HTMLDialogElement>(null);
+
+  const showJobOpportunities = () => {
+    jobOpportunitiesRef.current?.showModal();
+  };
+
+  const closeJobOpportunities = () => {
+    jobOpportunitiesRef.current?.close();
+  };
+
   return (
     <Article id="home-sponsor">
       <H1>贊助單位</H1>
@@ -55,13 +68,18 @@ export default function HomeSponsor() {
           </p>
           <button
             type="button"
-            className="self-end px-6 py-2 flex items-center gap-1 cursor-pointer rounded-lg border border-[#A07E3A] font-medium text-sm tracking-widest text-[#A07E3A] mt-4"
+            className="self-end mt-4 px-6 py-2 flex items-center gap-1 cursor-pointer rounded-lg border border-[#A07E3A] font-medium text-sm leading-none tracking-widest text-[#A07E3A]"
+            onClick={showJobOpportunities}
           >
             查看職缺
             <ArrowRight size={14} />
           </button>
         </div>
       </div>
+
+      <Dialog ref={jobOpportunitiesRef} onClose={closeJobOpportunities}>
+        <JobOpportunities />
+      </Dialog>
     </Article>
   );
 }
