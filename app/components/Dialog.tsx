@@ -32,6 +32,7 @@ const Dialog = forwardRef<HTMLDialogElement, DialogProps>(
         <article className="max-w-3xl overflow-y-auto px-[3vw] text-sm/8 text-justify tracking-wide">
           {children}
         </article>
+        <div className="h-4" aria-hidden="true" />
       </dialog>
     );
   },
