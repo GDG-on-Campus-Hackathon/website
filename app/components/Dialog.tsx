@@ -29,7 +29,9 @@ const Dialog = forwardRef<HTMLDialogElement, DialogProps>(
             <X />
           </button>
         </div>
-        {children}
+        <article className="max-w-3xl overflow-y-auto px-[3vw] text-sm/8 text-justify tracking-wide">
+          {children}
+        </article>
       </dialog>
     );
   },

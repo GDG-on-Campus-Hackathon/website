@@ -20,7 +20,7 @@ function P({ children }: Props) {
 
 export default function PrivacyPolicy() {
   return (
-    <article className="overflow-y-auto px-[3vw] text-justify">
+    <>
       <h1 className="mb-6 font-bold text-lg">
         DevJam TW 2025 個人資料使用辦法
       </h1>
@@ -72,6 +72,6 @@ export default function PrivacyPolicy() {
         📌 聯繫方式：如有個人資料相關問題，請聯絡 DevJam TW 2025 黑客松主辦單位
         （Email：devjamtw@gmail.com）。
       </P>
-    </article>
+    </>
   );
 }
