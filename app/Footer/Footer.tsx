@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import svg_devjam_tw_2025 from "./assets/devjam_tw_2025.svg";
 import svg_icon_instagram from "./assets/icon_instagram.svg";
