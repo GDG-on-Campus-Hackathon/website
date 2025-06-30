@@ -15,18 +15,20 @@ export default function NavItem({
   onClick,
 }: NavItemProps) {
   return (
-    <Link
-      href={href}
-      onClick={onClick}
-      className={cn(
-        "hover:text-black pb-1 relative transition-colors",
-        isActive && "text-black font-medium",
-      )}
-    >
-      <span>{children}</span>
-      {isActive && (
-        <span className="active-scroll-spy absolute bottom-0 left-0 w-full transition-all"></span>
-      )}
-    </Link>
+    <li>
+      <Link
+        href={href}
+        onClick={onClick}
+        className={cn(
+          "hover:text-black pb-1 relative transition-colors",
+          isActive && "text-black font-medium",
+        )}
+      >
+        <span>{children}</span>
+        {isActive && (
+          <span className="active-scroll-spy absolute bottom-0 left-0 w-full transition-all"></span>
+        )}
+      </Link>
+    </li>
   );
 }
