@@ -104,7 +104,7 @@ export default function JobOpportunities() {
         href="https://reurl.cc/paNzWZ"
         target="_blank"
         rel="noreferrer"
-        className="w-fit ml-auto mt-4 px-6 py-2 flex items-center gap-1 cursor-pointer rounded-lg border border-[#A07E3A] font-medium text-sm leading-none tracking-widest text-[#A07E3A]"
+        className="w-fit ml-auto mt-4 px-6 py-2 flex items-center gap-1 cursor-pointer rounded-lg border border-[#7F642E] font-medium text-sm leading-none tracking-widest text-[#7F642E]"
       >
         詳細職缺資訊
         <SquareArrowOutUpRight size={14} />
