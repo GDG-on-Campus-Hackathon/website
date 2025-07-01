@@ -9,7 +9,7 @@ export default function InfoButton({ onClick, children }: InfoButtonProps) {
   return (
     <button
       type="button"
-      className="flex items-center gap-2 text-brand-brown text-xs font-medium hover:underline"
+      className="flex items-center gap-2 text-brand-brown text-xs font-medium cursor-pointer hover:underline"
       onClick={onClick}
     >
       <Info />

@@ -24,7 +24,7 @@ const Dialog = forwardRef<HTMLDialogElement, DialogProps>(
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2 hover:brightness-50 hover:cursor-pointer"
+            className="px-4 py-2 hover:brightness-50 cursor-pointer"
           >
             <X />
           </button>
