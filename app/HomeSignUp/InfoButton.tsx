@@ -1,4 +1,4 @@
-import InfoIcon from "./InfoIcon";
+import { Info } from "lucide-react";
 
 interface InfoButtonProps {
   onClick: () => void;
@@ -12,7 +12,7 @@ export default function InfoButton({ onClick, children }: InfoButtonProps) {
       className="flex items-center gap-2 text-brand-brown text-xs font-medium hover:underline"
       onClick={onClick}
     >
-      <InfoIcon />
+      <Info />
       <span>{children}</span>
     </button>
   );
