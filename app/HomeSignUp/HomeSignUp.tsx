@@ -1,13 +1,13 @@
 import { useRef } from "react";
+import { ArrowRight } from "lucide-react";
 import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
 import P from "../components/P";
-import ArrowIcon from "./ArrowIcon";
 import InfoButton from "./InfoButton";
 import PrivacyPolicy from "./PrivacyPolicy";
 import NoticeComponent from "./NoticeComponent";
-import Dialog from "./Dialog";
+import Dialog from "../components/Dialog";
 
 export default function HomeSignUp() {
   const privacyDialogRef = useRef<HTMLDialogElement>(null);
@@ -70,7 +70,8 @@ export default function HomeSignUp() {
             className="ml-auto px-6 py-2 font-medium text-sm rounded-xl border border-[#4c4c4c] flex items-center justify-center gap-2"
           >
             <span className="inline-flex items-center content-center gap-2">
-              馬上報名 <ArrowIcon />
+              馬上報名
+              <ArrowRight size={14} />
             </span>
           </a>
         </div>

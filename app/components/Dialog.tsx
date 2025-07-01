@@ -1,3 +1,4 @@
+import { X } from "lucide-react";
 import { forwardRef } from "react";
 
 interface DialogProps {
@@ -25,10 +26,13 @@ const Dialog = forwardRef<HTMLDialogElement, DialogProps>(
             onClick={onClose}
             className="px-4 py-2 hover:brightness-50 hover:cursor-pointer"
           >
-            &#10006;
+            <X />
           </button>
         </div>
-        {children}
+        <article className="max-w-3xl overflow-y-auto px-[3vw] text-sm/8 text-justify tracking-wide">
+          {children}
+        </article>
+        <div className="h-4" aria-hidden="true" />
       </dialog>
     );
   },
