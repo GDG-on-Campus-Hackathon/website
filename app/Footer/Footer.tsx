@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import svg_devjam_tw_2025 from "./assets/devjam_tw_2025.svg";
 import svg_icon_instagram from "./assets/icon_instagram.svg";
@@ -14,16 +13,19 @@ export const Footer: React.FC = () => {
         {
           icon: svg_icon_instagram,
           label: "@gdg.nccu",
+          alt: "Instagram icon",
           url: "https://www.instagram.com/gdg.nccu/",
         },
         {
           icon: svg_icon_instagram,
           label: "@gdg.ntust",
+          alt: "Instagram icon",
           url: "https://www.instagram.com/gdg.ntust/",
         },
         {
           icon: svg_icon_instagram,
           label: "@gdg.tmu",
+          alt: "Instagram icon",
           url: "https://www.instagram.com/tmu_gdgoncampus/",
         },
       ],
@@ -34,11 +36,13 @@ export const Footer: React.FC = () => {
         {
           icon: svg_icon_facebook,
           label: "/devjam.tw",
+          alt: "Facebook icon",
           url: "https://facebook.com/devjam.tw",
         },
         {
           icon: svg_icon_instagram,
           label: "@devjam.tw",
+          alt: "Instagram icon",
           url: "https://www.instagram.com/devjam.tw/",
         },
       ],
@@ -49,6 +53,7 @@ export const Footer: React.FC = () => {
         {
           icon: svg_icon_email,
           label: "devjamtw@gmail.com",
+          alt: "Email icon",
           url: "mailto:devjamtw@gmail.com",
         },
       ],
@@ -57,7 +62,7 @@ export const Footer: React.FC = () => {
 
   return (
     <footer
-      className="w-full p-6 flex flex-col items-center bg-cover bg-center bg-no-repeat shadow-[inset_0px_4px_24px_0px_rgba(0,0,0,0.25)]"
+      className="w-full p-6 flex flex-col items-center bg-cover bg-center bg-no-repeat shadow-footer-inset"
       style={{ backgroundImage: `url(${backgroundImage.src})` }}
     >
       <div className="flex flex-col md:flex-row items-center gap-4 mb-6">
@@ -78,7 +83,7 @@ export const Footer: React.FC = () => {
                   href={child.url}
                   className="text-[11px] tracking-widest flex flex-col sm:flex-row items-center gap-2"
                 >
-                  <Image src={child.icon} alt={child.label} />
+                  <Image src={child.icon} alt={child.alt} />
                   {child.label}
                 </a>
               ))}

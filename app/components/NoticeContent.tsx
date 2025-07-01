@@ -18,12 +18,10 @@ export const noticeItems = [
   "如有未盡事宜，主辦單位保留競賽辦法解釋與變更之權利。",
 ];
 
-export function NoticeContent({ className = "" }: { className?: string }) {
+export function NoticeContent() {
   return (
     <>
-      <p
-        className={`mb-3 text-sm/relaxed text-justify tracking-wide ${className}`}
-      >
+      <p className="mb-3 text-sm/relaxed text-justify tracking-wide">
         參賽者請務必詳閱以下競賽注意事項，違反規定可能影響比賽資格及獎勵發放。
       </p>
 
