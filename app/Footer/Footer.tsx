@@ -62,7 +62,7 @@ export const Footer: React.FC = () => {
 
   return (
     <footer
-      className="w-full p-6 flex flex-col items-center bg-cover bg-center bg-no-repeat shadow-[inset_0px_4px_24px_0px_rgba(0,0,0,0.25)]"
+      className="w-full p-6 flex flex-col items-center bg-cover bg-center bg-no-repeat shadow-footer-inset"
       style={{ backgroundImage: `url(${backgroundImage.src})` }}
     >
       <div className="flex flex-col md:flex-row items-center gap-4 mb-6">
