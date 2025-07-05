@@ -119,14 +119,14 @@ export default function ImageCarousel() {
             setSelectedIndex={setSelectedIndex}
           />
         )}
-         <a  
-          href="https://photos.app.goo.gl/MwV2tBbE1YxWxuL18"  
-          target="_blank"  
-          rel="noopener noreferrer"  
-          className="text-gray-500 underline hover:text-blue-600 cursor-pointer"  
-        >  
-          前往共用相簿  
-        </a>  
+        <a
+          href="https://photos.app.goo.gl/MwV2tBbE1YxWxuL18"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-500 underline hover:text-blue-600 cursor-pointer"
+        >
+          前往共用相簿
+        </a>
       </Article>
     </>
   );
