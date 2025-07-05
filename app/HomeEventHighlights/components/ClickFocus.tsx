@@ -1,13 +1,13 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
-import { images } from "../data/Images";
+import { images, ImageItem } from "../data/Images";
 
 export default function ClickFocus(
   closeModal: () => void,
-  selectedImage: { src: string; alt: string },
-  setSelectedImage: (image: { src: string; alt: string }) => void,
+  selectedImage: ImageItem,
+  setSelectedImage: (image: ImageItem) => void,
   selectedIndex: number,
   setSelectedIndex: (index: number) => void,
 ) {

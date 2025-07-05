@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import HL1 from "../asset/HL1.svg";
 import HL2 from "../asset/HL2.svg";
 import HL3 from "../asset/HL3.svg";
@@ -10,7 +11,7 @@ import HL9 from "../asset/HL9.svg";
 
 export interface ImageItem {
   id: number;
-  src: any;
+  src: StaticImageData;
   alt: string;
 }
 

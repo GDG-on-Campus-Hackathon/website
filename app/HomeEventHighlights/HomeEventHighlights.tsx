@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 import H1 from "../components/H1";
@@ -16,7 +16,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function ImageCarousel() {
-  const [selectedImage, setSelectedImage] = useState<any>(null);
+  const [selectedImage, setSelectedImage] = useState<ImageItem | null>(null);
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
 
   const openModal = (image: ImageItem) => {
