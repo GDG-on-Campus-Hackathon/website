@@ -34,36 +34,45 @@ export default function ImageCarousel() {
       <Article>
         <H1>成果展現</H1>
         <H2>活動花絮</H2>
-        <div className="relative max-w-6xl mx-auto mt-8 overflow-hidden group h-64 ">
+        <div className="relative max-w-6xl mx-auto mt-8 overflow-hidden group md:h-64">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={1}
-            slidesPerView={3.2}
+            spaceBetween={10}
+            slidesPerView={2}
             centeredSlides={true}
             loop={true}
             autoplay={{
               delay: 3000,
             }}
             breakpoints={{
-              // mobile
+              // Mobile
               320: {
                 slidesPerView: 1.5,
-                spaceBetween: 10,
+                spaceBetween: 0,
               },
-              // tablet
+              // Mobile L
+              480: {
+                slidesPerView: 1.5,
+                spaceBetween: 0,
+              },
+              // Tablet
               768: {
-                slidesPerView: 2.5,
+                slidesPerView: 2,
+                spaceBetween: 11,
+              },
+              // Desktop
+              1024: {
+                slidesPerView: 2.2,
                 spaceBetween: 10,
               },
-              // desktop
-              1024: {
-                slidesPerView: 3.2,
+              // Desktop L
+              1280: {
+                slidesPerView: 2.2,
                 spaceBetween: 10,
               },
             }}
             pagination={{
               clickable: true,
-              el: ".swiper-pagination-custom",
             }}
             navigation={{
               nextEl: ".swiper-button-next-custom",
@@ -78,12 +87,12 @@ export default function ImageCarousel() {
                     className={`h-full transition-transform duration-300 ease-in-out ${isActive ? "scale-100" : "scale-75 opacity-60"}`}
                     onClick={() => openModal(image)}
                   >
-                    <div className="relative w-full h-full">
+                    <div className="relative w-full aspect-video md:h-full">
                       <Image
                         src={image.src}
                         alt={image.alt}
                         fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 33vw"
                         className="object-cover rounded-md"
                         priority={image.id === 1}
                       />
@@ -100,8 +109,6 @@ export default function ImageCarousel() {
           <div className="swiper-button-next-custom absolute right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100">
             <ChevronRightIcon className="h-4 w-4 text-black" />
           </div>
-
-          <div className="swiper-pagination-custom absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex space-x-2"></div>
         </div>
         {selectedImage &&
           ClickFocus(
