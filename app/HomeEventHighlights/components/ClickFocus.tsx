@@ -43,6 +43,7 @@ export default function ClickFocus(
               quality={100}
               style={{ objectFit: "contain" }}
               className="drop-shadow-2xl"
+              unoptimized={true}
             />
           </div>
 
@@ -52,7 +53,7 @@ export default function ClickFocus(
             <button
               className="absolute left-2 md:left-4 lg:left-6 top-1/2 -translate-y-1/2 
                           text-white p-2 md:p-3 lg:p-4 
-                          rounded-full bg-black bg-opacity-40 hover:bg-opacity-70 
+                          rounded-full bg-black bg-opacity-40 hover:bg-yellow-500 hover:bg-opacity-70 
                           transition-all duration-300 
                           backdrop-blur-sm border border-white border-opacity-20
                           focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
@@ -62,14 +63,14 @@ export default function ClickFocus(
               }}
               aria-label="Previous image"
             >
-              <ChevronLeftIcon className="h-3 w-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />
+              <ChevronLeftIcon className="h-3 w-3 md:h-4 md:w-4 lg:h-5 lg:w-5  " />
             </button>
 
             {/* Next button */}
             <button
               className="absolute right-2 md:right-4 lg:right-6 top-1/2 -translate-y-1/2 
                           text-white p-2 md:p-3 lg:p-4 
-                          rounded-full bg-black bg-opacity-40 hover:bg-opacity-70 
+                          rounded-full bg-black bg-opacity-40 hover:bg-yellow-500 hover:bg-opacity-70 
                           transition-all duration-300 
                           backdrop-blur-sm border border-white border-opacity-20
                           focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
@@ -125,8 +126,8 @@ export default function ClickFocus(
         <button
           className="absolute top-2 right-2 sm:top-4 sm:right-4 md:top-6 md:right-6 z-20
                         text-white text-2xl sm:text-3xl md:text-4xl 
-                        p-2 sm:p-3 md:p-4 
-                        rounded-full bg-black bg-opacity-50 hover:bg-opacity-70 
+                        p-1 sm:p-2 md:p-3 
+                        rounded-full bg-black bg-opacity-50 hover:bg-yellow-500 hover:bg-opacity-70 
                         transition-all duration-300 
                         backdrop-blur-sm border border-white border-opacity-20
                         focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
