@@ -1,8 +1,8 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
-import { images, ImageItem } from "../data/Images";
+import { images } from "../data/Images";
 
 export default function ClickFocus(
   closeModal: () => void,
