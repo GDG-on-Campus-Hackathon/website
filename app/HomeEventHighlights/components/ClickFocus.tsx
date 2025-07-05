@@ -4,13 +4,21 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 import { images, ImageItem } from "../data/Images";
 
-export default function ClickFocus(
-  closeModal: () => void,
-  selectedImage: ImageItem,
-  setSelectedImage: (image: ImageItem) => void,
-  selectedIndex: number,
-  setSelectedIndex: (index: number) => void,
-) {
+interface Props {
+  closeModal: () => void;
+  selectedImage: ImageItem;
+  setSelectedImage: (image: ImageItem) => void;
+  selectedIndex: number;
+  setSelectedIndex: (index: number) => void;
+}
+
+export default function ClickFocus({
+  closeModal,
+  selectedImage,
+  setSelectedImage,
+  selectedIndex,
+  setSelectedIndex,
+}: Props) {
   const goToPrevious = () => {
     const newIndex =
       selectedIndex === 0 ? images.length - 1 : selectedIndex - 1;

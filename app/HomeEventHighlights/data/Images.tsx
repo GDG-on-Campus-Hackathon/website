@@ -16,13 +16,13 @@ export interface ImageItem {
 }
 
 export const images: ImageItem[] = [
-  { id: 1, src: HL1, alt: "Highlight1" },
-  { id: 2, src: HL2, alt: "Highlight2" },
-  { id: 3, src: HL3, alt: "Highlight3" },
-  { id: 4, src: HL4, alt: "Highlight4" },
-  { id: 5, src: HL5, alt: "Highlight5" },
-  { id: 6, src: HL6, alt: "Highlight6" },
-  { id: 7, src: HL7, alt: "Highlight7" },
-  { id: 8, src: HL8, alt: "Highlight8" },
-  { id: 9, src: HL9, alt: "Highlight9" },
+  { id: 1, src: HL1, alt: "Highlight 1" },
+  { id: 2, src: HL2, alt: "Highlight 2" },
+  { id: 3, src: HL3, alt: "Highlight 3" },
+  { id: 4, src: HL4, alt: "Highlight 4" },
+  { id: 5, src: HL5, alt: "Highlight 5" },
+  { id: 6, src: HL6, alt: "Highlight 6" },
+  { id: 7, src: HL7, alt: "Highlight 7" },
+  { id: 8, src: HL8, alt: "Highlight 8" },
+  { id: 9, src: HL9, alt: "Highlight 9" },
 ];

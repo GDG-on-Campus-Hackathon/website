@@ -110,22 +110,23 @@ export default function ImageCarousel() {
             <ChevronRightIcon className="h-4 w-4 text-black" />
           </div>
         </div>
-        {selectedImage &&
-          ClickFocus(
-            closeModal,
-            selectedImage,
-            setSelectedImage,
-            selectedIndex,
-            setSelectedIndex,
-          )}
-        <span
-          onClick={() =>
-            window.open("https://photos.app.goo.gl/MwV2tBbE1YxWxuL18", "_blank")
-          }
-          className="text-gray-500 underline hover:text-blue-600 cursor-pointer"
-        >
-          前往共用相簿
-        </span>
+        {selectedImage && (
+          <ClickFocus
+            closeModal={closeModal}
+            selectedImage={selectedImage}
+            setSelectedImage={setSelectedImage}
+            selectedIndex={selectedIndex}
+            setSelectedIndex={setSelectedIndex}
+          />
+        )}
+         <a  
+          href="https://photos.app.goo.gl/MwV2tBbE1YxWxuL18"  
+          target="_blank"  
+          rel="noopener noreferrer"  
+          className="text-gray-500 underline hover:text-blue-600 cursor-pointer"  
+        >  
+          前往共用相簿  
+        </a>  
       </Article>
     </>
   );
