@@ -47,11 +47,9 @@ export default function Home() {
       <HomeInformation />
       <HomeScoringCriteria />
       <HomeSignUp />
-      <HomeEventHighlights/>
+      <HomeEventHighlights />
       <HomeSponsor />
       <HomeNotice />
     </ScrollSpy>
   );
 }
-
-
