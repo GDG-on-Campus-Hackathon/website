@@ -31,7 +31,7 @@ export default function ImageCarousel() {
 
   return (
     <>
-      <Article>
+      <Article id="home-achievements">
         <H1>成果展現</H1>
         <H2>活動花絮</H2>
         <div className="relative max-w-6xl mx-auto mt-8 overflow-hidden group md:h-64">
