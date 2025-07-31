@@ -1,7 +1,7 @@
-import { StaticImageData } from "next/image";
-import winnerImg1 from "../asset/winner1.svg";
-import winnerImg2 from "../asset/winner2.svg";
-import winnerImg3 from "../asset/winner3.svg";
+import type { StaticImageData } from "next/image";
+import winnerImg1 from "../assets/winner1.svg";
+import winnerImg2 from "../assets/winner2.svg";
+import winnerImg3 from "../assets/winner3.svg";
 
 export interface winnerSectionProps {
   id: number;

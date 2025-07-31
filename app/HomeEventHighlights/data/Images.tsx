@@ -1,13 +1,13 @@
-import { StaticImageData } from "next/image";
-import HL1 from "../asset/HL1.svg";
-import HL2 from "../asset/HL2.svg";
-import HL3 from "../asset/HL3.svg";
-import HL4 from "../asset/HL4.svg";
-import HL5 from "../asset/HL5.svg";
-import HL6 from "../asset/HL6.svg";
-import HL7 from "../asset/HL7.svg";
-import HL8 from "../asset/HL8.svg";
-import HL9 from "../asset/HL9.svg";
+import type { StaticImageData } from "next/image";
+import HL1 from "../assets/HL1.svg";
+import HL2 from "../assets/HL2.svg";
+import HL3 from "../assets/HL3.svg";
+import HL4 from "../assets/HL4.svg";
+import HL5 from "../assets/HL5.svg";
+import HL6 from "../assets/HL6.svg";
+import HL7 from "../assets/HL7.svg";
+import HL8 from "../assets/HL8.svg";
+import HL9 from "../assets/HL9.svg";
 
 export interface ImageItem {
   id: number;
