@@ -33,7 +33,7 @@ importers:
         specifier: 2.3.0
         version: 2.3.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       swiper:
-        specifier: ^11.2.10
+        specifier: 11.2.10
         version: 11.2.10
       tailwind-merge:
         specifier: 3.3.1
