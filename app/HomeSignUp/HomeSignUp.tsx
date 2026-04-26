@@ -66,7 +66,7 @@ export default function HomeSignUp() {
             <InfoButton onClick={showNoticeInfo}>活動注意事項</InfoButton>
           </div>
           <a
-            href="https://forms.gle/LtZqTbtp3eBkLUuN9"
+            href="https://forms.gle/ThjV82e3UQLgzKgi7"
             target="_blank"
             rel="noreferrer"
             className="ml-auto px-6 py-2 font-medium text-sm rounded-xl border border-[#4c4c4c] flex items-center justify-center gap-2"

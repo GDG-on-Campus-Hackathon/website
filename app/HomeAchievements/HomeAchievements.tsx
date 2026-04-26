@@ -9,7 +9,7 @@ export default function HomeAchievements() {
       </h1>
       <div>
         <h2>/活動花絮/</h2>
-        <p>報名表單：https://forms.gle/LtZqTbtp3eBkLUuN9</p>
+        <p>報名表單：https://forms.gle/ThjV82e3UQLgzKgi7</p>
         <p>
           活動一律透過線上表單報名，並於表單內繳交相關參考資料，主辦方將以表單填寫內容作為錄取參考依據，
           報名先後順序不列入計分標準。
