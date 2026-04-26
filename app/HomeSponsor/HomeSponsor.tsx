@@ -17,8 +17,6 @@ export default function HomeSponsor() {
       <H2>主辦單位</H2>
       <SponsorContainer>
         <Image src={image_nccu} alt="GDG on Campus NCCU" height={40} />
-        <Image src={image_ntust} alt="GDG on Campus NTUST" height={40} />
-        <Image src={image_tmu} alt="GDG on Campus TMU" height={40} />
       </SponsorContainer>
 
       <H2>協辦單位</H2>
@@ -26,7 +24,6 @@ export default function HomeSponsor() {
         <p className="text-sm/relaxed tracking-wide">
           全臺 GDG on Campus（共 26 間學校）
         </p>
-        <Image src={image_tmu_ieec} alt="北醫創新創業教育中心" height={40} />
       </SponsorContainer>
 
       <H2>指導單位</H2>

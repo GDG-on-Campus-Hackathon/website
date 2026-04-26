@@ -15,17 +15,7 @@ export const Footer: React.FC = () => {
           icon: svg_icon_instagram,
           label: "@gdg.nccu",
           url: "https://www.instagram.com/gdg.nccu/",
-        },
-        {
-          icon: svg_icon_instagram,
-          label: "@gdg.ntust",
-          url: "https://www.instagram.com/gdg.ntust/",
-        },
-        {
-          icon: svg_icon_instagram,
-          label: "@gdg.tmu",
-          url: "https://www.instagram.com/tmu_gdgoncampus/",
-        },
+        }
       ],
     },
     {
