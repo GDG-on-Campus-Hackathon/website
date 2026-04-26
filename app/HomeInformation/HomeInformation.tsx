@@ -6,7 +6,6 @@ import H3 from "../components/H3";
 import P from "../components/P";
 import EventAward from "./EventAward";
 import InformationCard from "./InformationCard";
-import event_arrangement from "./event_arrangement.svg";
 
 export default function HomeInformation() {
   return (
@@ -44,16 +43,6 @@ export default function HomeInformation() {
           className="self-start"
           title="其他 Google 相關技術"
           text="其他 Google 相關技術，如 Flutter、Firebase、Google Maps API、TensorFlow、Android、Google Earth Engine 等，用於強化應用的功能與可行性。"
-        />
-      </div>
-
-      {/* event arrangement */}
-      <H2>時程一覽</H2>
-      <div className="overflow-auto mb-5">
-        <Image
-          className="min-w-fit mx-auto pb-2"
-          src={event_arrangement}
-          alt="Event Arrangement"
         />
       </div>
 
