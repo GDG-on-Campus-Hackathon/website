@@ -1,5 +1,5 @@
 import Image from "next/image";
-import svg_devjam_tw_2025 from "../assets/devjam_tw_2025.svg";
+import svg_devjam_tw_2026 from "../assets/devjam_tw_2026.svg";
 import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "./H2";
@@ -22,15 +22,15 @@ export default function HomeIntroduction() {
       </P>
       <H2>
         <Image
-          src={svg_devjam_tw_2025.src}
-          alt="DevJam TW 2025"
+          src={svg_devjam_tw_2026.src}
+          alt="DevJam TW 2026"
           width={170}
           height={19}
           className="mt-5"
         />
       </H2>
       <P>
-        DevJam TW 2025 是由全台 26 所大學的 Google Developer Groups on Campus
+        DevJam TW 2026 是由全台 26 所大學的 Google Developer Groups on Campus
         合作舉辦，專為學生開發者打造的黑客松舞台。
       </P>
       <P>

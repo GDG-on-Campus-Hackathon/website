@@ -15,7 +15,7 @@ export default function HomeInformation() {
 
       <H2>核心理念</H2>
       <P>
-        DevJam TW 2025 以「Google 技術創新 x 全球影響力」為核心，打造一場 24
+        DevJam TW 2026 以「Google 技術創新 x 全球影響力」為核心，打造一場 24
         小時黑客松，邀請來自全台各大專院校的開發者，運用 Google Cloud（Vertex
         AI）、Gemini API（AI Studio）、Flutter、Firebase、Google Maps
         API、TensorFlow、Google Earth Engine 等 Google

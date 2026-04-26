@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import svg_devjam_tw_2025 from "./assets/devjam_tw_2025.svg";
+import svg_devjam_tw_2026 from "../assets/devjam_tw_2026.svg";
 import svg_icon_instagram from "./assets/icon_instagram.svg";
 import svg_icon_facebook from "./assets/icon_facebook.svg";
 import svg_icon_email from "./assets/icon_email.svg";
@@ -62,8 +62,10 @@ export const Footer: React.FC = () => {
     >
       <div className="flex flex-col md:flex-row items-center gap-4 mb-6">
         <Image
-          src={svg_devjam_tw_2025}
-          alt="Google Developer Groups on Campus 2025 Hackathon"
+          src={svg_devjam_tw_2026.src}
+          alt="Google Developer Groups on Campus 2026 Hackathon"
+          width={170}
+          height={19}
         />
         <div className="self-stretch not-md:border-b-2 md:border-r-2 border-black"></div>
         <div className="flex flex-col items-center md:items-start gap-6 md:p-4">
@@ -78,7 +80,12 @@ export const Footer: React.FC = () => {
                   href={child.url}
                   className="text-[11px] tracking-widest flex flex-col sm:flex-row items-center gap-2"
                 >
-                  <Image src={child.icon} alt={child.label} />
+                  <Image
+                    src={child.icon}
+                    alt={child.label}
+                    width={14}
+                    height={14}
+                  />
                   {child.label}
                 </a>
               ))}
@@ -86,7 +93,7 @@ export const Footer: React.FC = () => {
           ))}
         </div>
       </div>
-      <p className="text-[11px] tracking-wide">© 2025 DevJam TW 2025</p>
+      <p className="text-[11px] tracking-wide">© 2026 DevJam TW 2026</p>
     </footer>
   );
 };
