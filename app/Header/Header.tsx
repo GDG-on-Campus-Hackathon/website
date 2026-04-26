@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavItem from "./NavItem";
-import svg_devjam_tw_2025 from "../assets/devjam_tw_2025.svg";
+import svg_devjam_tw_2026 from "../assets/devjam_tw_2026.svg";
 
 export const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -44,8 +44,8 @@ export const Header: React.FC = () => {
     <header className="h-16 w-full fixed top-0 bg-white/40 backdrop-blur-lg z-50 overflow-hidden px-4 md:px-12 flex items-center justify-between">
       <Link href="/">
         <Image
-          src={svg_devjam_tw_2025.src}
-          alt="DevJam TW 2025"
+          src={svg_devjam_tw_2026.src}
+          alt="DevJam TW 2026"
           width={170}
           height={19}
         />
