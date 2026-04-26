@@ -16,7 +16,7 @@ export default function HomeInformation() {
       <H2>核心理念</H2>
       <P>
         DevJam TW 2026 以「Google 技術創新 x 全球影響力」為核心，打造一場 24
-        小時黑客松，邀請來自全台各大專院校的開發者，運用 Google Cloud（Vertex
+        小時黑客松，邀請來自全臺各大專院校的開發者，運用 Google Cloud（Vertex
         AI）、Gemini API（AI Studio）、Flutter、Firebase、Google Maps
         API、TensorFlow、Google Earth Engine 等 Google
         旗下技術，針對這些全球挑戰提出創新解決方案。
@@ -89,7 +89,7 @@ export default function HomeInformation() {
       {/* event awards */}
       <H2>競賽獎項</H2>
       <EventAward
-        description="優勝：各主題擇一隊伍，優勝獎金 10,000 元、獎狀、企業實體獎品，並另訂時間至 Google 台北 101 辦公室與 Google 開發者生態團對大中華區負責人交流餐敘"
+        description="優勝：各主題擇一隊伍，優勝獎金 10,000 元、獎狀、企業實體獎品，並另訂時間至 Google 臺北 101 辦公室與 Google 開發者生態團對大中華區負責人交流餐敘"
         prize="gold"
       />
       <EventAward

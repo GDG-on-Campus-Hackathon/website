@@ -39,7 +39,7 @@ export default function HomeSponsor() {
       <H2>協辦單位</H2>
       <SponsorContainer>
         <p className="text-sm/relaxed tracking-wide">
-          全台 GDG on Campus（共 26 間學校）
+          全臺 GDG on Campus（共 26 間學校）
         </p>
         <Image src={image_tmu_ieec} alt="北醫創新創業教育中心" height={40} />
       </SponsorContainer>
@@ -64,7 +64,7 @@ export default function HomeSponsor() {
         <div className="flex flex-col">
           <p className="text-sm/relaxed tracking-[3px]">
             國泰世紀產險成立於 1993 年，2002 年加入國泰金控並更名，自 2007
-            年起穩居台灣第二大產險公司。公司重視費用控管與業務品質，積極參與公益、推動校園安全與環保，未來將以創新服務滿足客戶需求，實踐企業社會責任。
+            年起穩居臺灣第二大產險公司。公司重視費用控管與業務品質，積極參與公益、推動校園安全與環保，未來將以創新服務滿足客戶需求，實踐企業社會責任。
           </p>
           <button
             type="button"
