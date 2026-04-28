@@ -78,7 +78,7 @@ export default function HomeInformation() {
       {/* event awards */}
       <H2>競賽獎項</H2>
       <EventAward
-        description="優勝：各主題擇一隊伍，優勝獎金 10,000 元、獎狀、企業實體獎品，並另訂時間至 Google 臺北 101 辦公室與 Google 開發者生態團對大中華區負責人交流餐敘"
+        description="優勝：各主題擇一隊伍，優勝獎金 10,000 元、獎狀、企業實體獎品，並另訂時間至 Google 臺北 101 辦公室與 Google 開發者生態團對大中華區負責人交流"
         prize="gold"
       />
       <EventAward
