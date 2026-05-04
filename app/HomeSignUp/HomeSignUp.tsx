@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 import Article from "../components/Article";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
@@ -7,11 +8,13 @@ import P from "../components/P";
 import InfoButton from "./InfoButton";
 import PrivacyPolicy from "./PrivacyPolicy";
 import NoticeComponent from "./NoticeComponent";
+import CountdownTimer, { useCountdown } from "./CountdownTimer";
 import Dialog from "../components/Dialog";
 
 export default function HomeSignUp() {
   const privacyDialogRef = useRef<HTMLDialogElement>(null);
   const noticeDialogRef = useRef<HTMLDialogElement>(null);
+  const countdown = useCountdown();
 
   const showPrivacyInfo = () => {
     privacyDialogRef.current?.showModal();
@@ -34,12 +37,22 @@ export default function HomeSignUp() {
       <H1>報名資訊</H1>
 
       <div className="bg-[#F2F1EF33] rounded-lg shadow-[1.5px_2px_3.5px_0px_rgba(0,0,0,0.1),2px_2px_4px_0px_rgba(255,255,255,0.3),inset_-2px_-2px_4px_0px_rgba(0,0,0,0.1)] p-8 max-w-4xl mx-auto">
-        <H2>活動時間</H2>
-        <P>報名：2026/04/27（一）~ 05/31（日）23:59</P>
-        <P>正賽名單公布：2026/06/06（六）</P>
-        <P>遞補名單公布：2026/07/11（六）</P>
-        <P>賽前工作坊：2026/08/01（六）</P>
-        <P>黑客松競賽：2026/08/17（一）~ 08/18（二）</P>
+        <div className={cn(countdown && "sm:relative")}>
+          <H2>活動時間</H2>
+          {countdown && (
+            <CountdownTimer
+              state={countdown}
+              className="mb-4 sm:absolute sm:right-0 sm:top-0 sm:mb-0"
+            />
+          )}
+          <div className={cn(countdown && "sm:pr-[240px]")}>
+            <P>報名：2026/04/27（一）~ 05/31（日）23:59</P>
+            <P>正賽名單公布：2026/06/06（六）</P>
+            <P>遞補名單公布：2026/07/11（六）</P>
+            <P>賽前工作坊：2026/08/01（六）</P>
+            <P>黑客松競賽：2026/08/17（一）~ 08/18（二）</P>
+          </div>
+        </div>
 
         <H2>場地資訊</H2>
         <P>臺北醫學大學跨領域學院杏春樓（臺北市信義區吳興街250號杏春樓）</P>
