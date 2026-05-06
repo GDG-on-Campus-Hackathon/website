@@ -11,6 +11,7 @@ import HomeNotice from "./HomeNotice/HomeNotice";
 import HomeScoringCriteria from "./HomeScoringCriteria/HomeScoringCriteria";
 import HomeEventHighlights from "./HomeEventHighlights/HomeEventHighlights";
 import HomeWinnerCarousel from "./HomeWinnerCarousel/HomeWinnerCarousel";
+import HomeFAQCarousel from "./HomeFAQCarousel/HomeFAQCarousel";
 
 export default function Home() {
   // Smooth scrolling for anchor links
@@ -48,6 +49,7 @@ export default function Home() {
       <HomeInformation />
       <HomeScoringCriteria />
       <HomeSignUp />
+      <HomeFAQCarousel />
       <HomeEventHighlights />
       <HomeWinnerCarousel />
       <HomeSponsor />
