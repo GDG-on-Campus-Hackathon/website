@@ -2,7 +2,7 @@
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 import Article from "../components/Article";
 import H1 from "../components/H1";
@@ -141,15 +141,11 @@ export default function HomeFAQCarousel() {
 
       <div className="relative mx-auto mt-8 overflow-hidden group">
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Pagination]}
           spaceBetween={14}
           slidesPerView={1.06}
           centeredSlides={true}
           loop={true}
-          autoplay={{
-            delay: 3600,
-            disableOnInteraction: false,
-          }}
           breakpoints={{
             480: {
               slidesPerView: 1.2,
