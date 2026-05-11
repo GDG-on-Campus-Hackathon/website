@@ -2,7 +2,7 @@
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 import Article from "../components/Article";
 import H1 from "../components/H1";
@@ -20,7 +20,7 @@ const faqItems = [
       <>
         <p>可以！只要組員間彼此協調分工沒問題，我們都非常歡迎。</p>
         <p>
-          報名須知：若初賽以雙人組隊，兩位成員將共同承擔晉級或淘汰的可能性；入選後，主辦團隊會多方評估，協助大家安排複賽中適合的隊伍配置。
+          報名須知：本次採單人報名為主，至多可選擇一位欲同組之組員；是否晉級複賽將以個人為單位篩選，入選後主辦團隊會再多方評估，協助大家安排複賽中適合的隊伍配置。
         </p>
         <p>
           一個好的科技專案不僅僅包含技術實力，視覺介面、可能獲得考量差異化、商業潛力等層面，而且更多人一起集思廣益，說不定能激發意想不到的創意呢。
@@ -141,15 +141,11 @@ export default function HomeFAQCarousel() {
 
       <div className="relative mx-auto mt-8 overflow-hidden group">
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Pagination]}
           spaceBetween={14}
           slidesPerView={1.06}
           centeredSlides={true}
           loop={true}
-          autoplay={{
-            delay: 3600,
-            disableOnInteraction: false,
-          }}
           breakpoints={{
             480: {
               slidesPerView: 1.2,
