@@ -1,10 +1,9 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-
 import H2 from "../components/H2";
 import Article from "../components/Article";
+import CarouselNavButton from "../components/CarouselNavButton";
 import WinnerSectionCard from "./component/winnerSectionCard";
 import {
   type winnerSectionProps,
@@ -47,22 +46,18 @@ export default function HomeWinnerCarousel() {
             ))}
           </Swiper>
 
-          <button
-            type="button"
-            aria-label="上一個優勝作品"
-            onMouseDown={(e) => e.preventDefault()}
-            className="swiper-button-prev-winners absolute left-1 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/40"
-          >
-            <ChevronLeft size={16} />
-          </button>
-          <button
-            type="button"
-            aria-label="下一個優勝作品"
-            onMouseDown={(e) => e.preventDefault()}
-            className="swiper-button-next-winners absolute right-1 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/40"
-          >
-            <ChevronRight size={16} />
-          </button>
+          <CarouselNavButton
+            direction="prev"
+            triggerClassName="swiper-button-prev-winners"
+            positionClassName="left-1"
+            ariaLabel="上一個優勝作品"
+          />
+          <CarouselNavButton
+            direction="next"
+            triggerClassName="swiper-button-next-winners"
+            positionClassName="right-1"
+            ariaLabel="下一個優勝作品"
+          />
         </div>
       </Article>
     </div>

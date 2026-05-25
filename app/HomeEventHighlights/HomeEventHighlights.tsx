@@ -13,7 +13,7 @@ import { images, type ImageItem } from "./data/Images";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import CarouselNavButton from "../components/CarouselNavButton";
 
 export default function HomeEventHighlights() {
   const [selectedImage, setSelectedImage] = useState<ImageItem | null>(null);
@@ -104,22 +104,18 @@ export default function HomeEventHighlights() {
           ))}
         </Swiper>
 
-        <button
-          type="button"
-          aria-label="上一張花絮"
-          onMouseDown={(e) => e.preventDefault()}
-          className="swiper-button-prev-highlights absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/40"
-        >
-          <ChevronLeft size={16} />
-        </button>
-        <button
-          type="button"
-          aria-label="下一張花絮"
-          onMouseDown={(e) => e.preventDefault()}
-          className="swiper-button-next-highlights absolute right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/40"
-        >
-          <ChevronRight size={16} />
-        </button>
+        <CarouselNavButton
+          direction="prev"
+          triggerClassName="swiper-button-prev-highlights"
+          positionClassName="left-4"
+          ariaLabel="上一張花絮"
+        />
+        <CarouselNavButton
+          direction="next"
+          triggerClassName="swiper-button-next-highlights"
+          positionClassName="right-4"
+          ariaLabel="下一張花絮"
+        />
       </div>
       {selectedImage && (
         <ClickFocus
