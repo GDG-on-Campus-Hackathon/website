@@ -108,7 +108,7 @@ export default function HomeEventHighlights() {
           type="button"
           aria-label="上一張花絮"
           onMouseDown={(e) => e.preventDefault()}
-          className="swiper-button-prev-highlights absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100"
+          className="swiper-button-prev-highlights absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/40"
         >
           <ChevronLeft size={16} />
         </button>
@@ -116,7 +116,7 @@ export default function HomeEventHighlights() {
           type="button"
           aria-label="下一張花絮"
           onMouseDown={(e) => e.preventDefault()}
-          className="swiper-button-next-highlights absolute right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100"
+          className="swiper-button-next-highlights absolute right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/40"
         >
           <ChevronRight size={16} />
         </button>

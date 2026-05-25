@@ -201,14 +201,14 @@ export default function HomeFAQCarousel() {
 
         <button
           type="button"
-          className="swiper-button-prev-faq absolute left-2 top-1/2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-white/60 p-2 leading-none opacity-0 transition-all duration-300 hover:bg-white/80 group-hover:opacity-100"
+          className="swiper-button-prev-faq absolute left-2 top-1/2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-white/60 p-2 leading-none opacity-0 transition-all duration-300 hover:bg-white/80 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/40"
           aria-label="上一張 FAQ"
         >
           <ChevronLeft size={16} />
         </button>
         <button
           type="button"
-          className="swiper-button-next-faq absolute right-2 top-1/2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-white/60 p-2 leading-none opacity-0 transition-all duration-300 hover:bg-white/80 group-hover:opacity-100"
+          className="swiper-button-next-faq absolute right-2 top-1/2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-white/60 p-2 leading-none opacity-0 transition-all duration-300 hover:bg-white/80 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/40"
           aria-label="下一張 FAQ"
         >
           <ChevronRight size={16} />
