@@ -1,10 +1,10 @@
 "use client";
 
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
 import Article from "../components/Article";
+import CarouselNavButton from "../components/CarouselNavButton";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
 
@@ -199,20 +199,18 @@ export default function HomeFAQCarousel() {
           ))}
         </Swiper>
 
-        <button
-          type="button"
-          className="swiper-button-prev-faq absolute left-2 top-1/2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-white/60 p-2 leading-none opacity-0 transition-all duration-300 hover:bg-white/80 group-hover:opacity-100"
-          aria-label="上一張 FAQ"
-        >
-          <ChevronLeft size={16} />
-        </button>
-        <button
-          type="button"
-          className="swiper-button-next-faq absolute right-2 top-1/2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-white/60 p-2 leading-none opacity-0 transition-all duration-300 hover:bg-white/80 group-hover:opacity-100"
-          aria-label="下一張 FAQ"
-        >
-          <ChevronRight size={16} />
-        </button>
+        <CarouselNavButton
+          direction="prev"
+          triggerClassName="swiper-button-prev-faq"
+          positionClassName="left-2"
+          ariaLabel="上一張 FAQ"
+        />
+        <CarouselNavButton
+          direction="next"
+          triggerClassName="swiper-button-next-faq"
+          positionClassName="right-2"
+          ariaLabel="下一張 FAQ"
+        />
       </div>
     </Article>
   );
