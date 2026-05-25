@@ -14,7 +14,14 @@ export default function WinnerSectionCard(winner: winnerSectionProps) {
 
       <div className="flex flex-col lg:flex-row lg:items-stretch lg:space-x-12">
         <div className="w-full lg:w-1/3 flex justify-center lg:justify-start mb-8 lg:mb-0">
-          <Image src={winner.img} alt={winner.alt} width={300} height={100} />
+          <Image
+            src={winner.img}
+            alt={winner.alt}
+            width={300}
+            height={100}
+            draggable={false}
+            className="pointer-events-none select-none"
+          />
         </div>
 
         <div className="w-full lg:w-2/3 flex flex-col justify-between">

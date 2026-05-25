@@ -104,12 +104,22 @@ export default function HomeEventHighlights() {
           ))}
         </Swiper>
 
-        <div className="swiper-button-prev-highlights absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100">
+        <button
+          type="button"
+          aria-label="上一張花絮"
+          onMouseDown={(e) => e.preventDefault()}
+          className="swiper-button-prev-highlights absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100"
+        >
           <ChevronLeft size={16} />
-        </div>
-        <div className="swiper-button-next-highlights absolute right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100">
+        </button>
+        <button
+          type="button"
+          aria-label="下一張花絮"
+          onMouseDown={(e) => e.preventDefault()}
+          className="swiper-button-next-highlights absolute right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer p-2 rounded-full leading-none bg-white bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 opacity-0 group-hover:opacity-100"
+        >
           <ChevronRight size={16} />
-        </div>
+        </button>
       </div>
       {selectedImage && (
         <ClickFocus
