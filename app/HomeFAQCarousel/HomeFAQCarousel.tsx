@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useRef, useState } from "react";
+import { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -138,27 +138,29 @@ export default function HomeFAQCarousel() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [maxHeight, setMaxHeight] = useState<number>(0);
 
-  useLayoutEffect(() => {
+  const measure = useCallback(() => {
     const container = containerRef.current;
     if (!container) return;
+    const cards = container.querySelectorAll<HTMLElement>("[data-faq-card]");
+    if (cards.length === 0) return;
+    cards.forEach((card) => {
+      card.style.minHeight = "0px";
+    });
+    let tallest = 0;
+    cards.forEach((card) => {
+      tallest = Math.max(tallest, card.scrollHeight);
+    });
+    cards.forEach((card) => {
+      card.style.minHeight = `${tallest}px`;
+    });
+    setMaxHeight(tallest);
+  }, []);
 
-    const measure = () => {
-      const cards = container.querySelectorAll<HTMLElement>("[data-faq-card]");
-      if (cards.length === 0) return;
-      cards.forEach((card) => {
-        card.style.minHeight = "0px";
-      });
-      let tallest = 0;
-      cards.forEach((card) => {
-        tallest = Math.max(tallest, card.scrollHeight);
-      });
-      setMaxHeight(tallest);
-    };
-
+  useLayoutEffect(() => {
     measure();
     window.addEventListener("resize", measure);
     return () => window.removeEventListener("resize", measure);
-  }, []);
+  }, [measure]);
 
   return (
     <Article id="home-faq">
@@ -196,6 +198,8 @@ export default function HomeFAQCarousel() {
             nextEl: ".swiper-button-next-faq",
             prevEl: ".swiper-button-prev-faq",
           }}
+          onInit={measure}
+          onSlideChangeTransitionEnd={measure}
           className="w-full pb-10 [&_.swiper-slide]:h-auto [&_.swiper-wrapper]:items-stretch"
         >
           {faqItems.map((item) => (
