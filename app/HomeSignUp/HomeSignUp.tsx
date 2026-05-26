@@ -55,10 +55,22 @@ export default function HomeSignUp() {
         </div>
 
         <H2>場地資訊</H2>
-        <P className="mb-0">
-          競賽首日：臺北醫學大學跨領域學院杏春樓（臺北市信義區吳興街250號杏春樓）
+        <P className="mb-2">
+          <span className="font-medium">複賽（8/17 - 8/18 上午）</span>
+          <br />
+          臺北醫學大學跨領域學院杏春樓
+          <span className="ml-2 text-xs opacity-70">
+            臺北市信義區吳興街 250 號杏春樓
+          </span>
         </P>
-        <P>競賽次日：Google 101 總部（臺北市信義區西村里信義路五段7號）</P>
+        <P>
+          <span className="font-medium">決賽（8/18 下午）</span>
+          <br />
+          Google 臺北 101 總部
+          <span className="ml-2 text-xs opacity-70">
+            臺北市信義區西村里信義路五段 7 號
+          </span>
+        </P>
 
         <H2>報名資格</H2>
         <P>
