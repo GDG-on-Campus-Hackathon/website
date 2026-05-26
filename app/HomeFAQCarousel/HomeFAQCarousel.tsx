@@ -1,5 +1,6 @@
 "use client";
 
+import { useLayoutEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -134,12 +135,40 @@ const faqItems = [
 ];
 
 export default function HomeFAQCarousel() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [maxHeight, setMaxHeight] = useState<number>(0);
+
+  useLayoutEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const measure = () => {
+      const cards = container.querySelectorAll<HTMLElement>("[data-faq-card]");
+      if (cards.length === 0) return;
+      cards.forEach((card) => {
+        card.style.minHeight = "0px";
+      });
+      let tallest = 0;
+      cards.forEach((card) => {
+        tallest = Math.max(tallest, card.scrollHeight);
+      });
+      setMaxHeight(tallest);
+    };
+
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, []);
+
   return (
     <Article id="home-faq">
       <H1>常見問題</H1>
       <H2>報名前 FAQ</H2>
 
-      <div className="relative mx-auto mt-8 overflow-hidden group">
+      <div
+        ref={containerRef}
+        className="relative mx-auto mt-8 overflow-hidden group"
+      >
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={14}
@@ -177,7 +206,11 @@ export default function HomeFAQCarousel() {
                     isActive ? "scale-100" : "scale-95 opacity-70"
                   }`}
                 >
-                  <div className="relative flex h-[540px] flex-col overflow-hidden rounded-md bg-[#F3F1EC] p-6 text-[#4C4C4C] shadow-[1.5px_2px_3.5px_0px_rgba(0,0,0,0.1),2px_2px_4px_0px_rgba(255,255,255,0.3),inset_-2px_-2px_4px_0px_rgba(0,0,0,0.06)] sm:h-[520px] sm:p-7 md:h-[505px]">
+                  <div
+                    data-faq-card
+                    style={maxHeight > 0 ? { minHeight: maxHeight } : undefined}
+                    className="relative flex flex-col overflow-hidden rounded-md bg-[#F3F1EC] p-6 text-[#4C4C4C] shadow-[1.5px_2px_3.5px_0px_rgba(0,0,0,0.1),2px_2px_4px_0px_rgba(255,255,255,0.3),inset_-2px_-2px_4px_0px_rgba(0,0,0,0.06)] sm:p-7"
+                  >
                     <div className="absolute right-5 top-0 h-16 w-9 border-l-4 border-[#1E1E1E] bg-[#39A85A]" />
                     <div className="absolute -left-12 -top-16 h-32 w-32 rounded-full bg-[#F5B600]" />
 
