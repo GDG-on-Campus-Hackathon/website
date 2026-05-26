@@ -21,7 +21,7 @@ export const winnerSectionList: winnerSectionProps[] = [
     alt: "Winner 1",
     route: "Google Cloud 賽道",
     groupNumber: "二",
-    groupMember: "陳若瑛、黃乙家、陳昕宏、林雨臻",
+    groupMember: "許新翎、陳乃嘉、周恩宇、顏子綺",
     title: "Solarlytics: 陽光下的智慧決策",
     content:
       "Solarlytics: 陽光下的智慧決策是一個自助試算太陽能評估平台，專為解決民眾在安裝屋頂太陽能時遇到的資訊不透明、難以評估與決策門檻高等問題。平台結合 Google Cloud 技術，整合日照、地點、品牌、效率、成本等多元參數，讓使用者能夠快速評估自家安裝太陽能的適配性、投資回收期與效益，並提供多品牌比較與個人化方案建議，協助用戶做出最佳決策。",
@@ -48,6 +48,6 @@ export const winnerSectionList: winnerSectionProps[] = [
     groupMember: "陳若瑛、黃乙家、陳昕宏、林雨臻",
     title: "GreenBubble 綠泡泡",
     content:
-      "「陽光下的智慧決策」是臺灣首個自助試算太陽能評估平台，專為解決民眾在安裝屋頂太陽能時遇到的資訊不透明、難以評估與決策門檻高等問題。平台結合 Google Cloud 技術，整合日照、地點、品牌、效率、成本等多元參數，讓使用者能夠快速評估自家安裝太陽能的適配性、投資回收期與效益，並提供多品牌比較與個人化方案建議，協助用戶做出最佳決策。",
+      "你知道自己每天吸入多少 PM2.5 和微塑膠嗎？這款應用程式透過記錄交通、飲食、運動等日常行為，將污染暴露量轉化為視覺化圖表，讓永續不再只是口號，而是成為每個人可感知、可實踐的生活指南。團隊運用 Flutter、Supabase、Firebase 與 Google Maps API 打造完整 App，實現個人化環境數據追蹤。",
   },
 ];
