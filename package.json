@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build:archive": "./scripts/build-archive.sh",
+    "build": "pnpm build:archive && next build",
     "start": "next start",
     "format": "prettier --write .",
     "lint": "next lint",

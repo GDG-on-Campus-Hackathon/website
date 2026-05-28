@@ -17,6 +17,10 @@
 /.next/
 /out/
 
+# archive build (generated at deploy time)
+/.archive-2025/
+/public/2025/
+
 # production
 /build
 

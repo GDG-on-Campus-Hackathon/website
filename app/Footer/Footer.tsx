@@ -45,6 +45,8 @@ export const Footer: React.FC = () => {
     },
   ];
 
+  const years = [{ label: "2025", url: "/2025" }];
+
   return (
     <footer
       className="w-full p-6 flex flex-col items-center bg-cover bg-center bg-no-repeat shadow-[inset_0px_4px_24px_0px_rgba(0,0,0,0.25)]"
@@ -81,6 +83,21 @@ export const Footer: React.FC = () => {
               ))}
             </div>
           ))}
+        </div>
+        <div className="self-stretch not-md:border-b-2 md:border-r-2 border-black"></div>
+        <div className="flex flex-col items-center md:items-start gap-4 md:self-start md:p-4">
+          <div className="font-bold text-xs tracking-[0.2em]">歷年網站</div>
+          <div className="grid grid-cols-3 gap-x-6 gap-y-3">
+            {years.map((year) => (
+              <a
+                key={year.label}
+                href={year.url}
+                className="text-[11px] tracking-widest"
+              >
+                {year.label}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
       <p className="text-[11px] tracking-wide">© 2026 DevJam TW 2026</p>
