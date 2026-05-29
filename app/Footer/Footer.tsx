@@ -72,7 +72,7 @@ export const Footer: React.FC = () => {
         />
         <div className="self-stretch not-md:border-b-2 md:border-r-2 border-black"></div>
         <div className="flex flex-col gap-6 md:p-4">
-            {links.map((link) => (
+          {links.map((link) => (
             <div key={link.title} className="flex items-center gap-4">
               <div className="font-bold text-xs tracking-[0.2em] mr-2">
                 {link.title}

@@ -116,9 +116,7 @@ export default function SideDecorations() {
         <div className="absolute right-56 bottom-60 h-0 w-0 border-x-[8px] border-t-[14px] border-x-transparent border-t-[#EA4335] opacity-50" />
 
         {/* cloud */}
-        <div className="absolute right-36 top-120 text-[110px] text-[#8FCFC3]/35">
-          
-        </div>
+        <div className="absolute right-36 top-120 text-[110px] text-[#8FCFC3]/35"></div>
 
         {/* binary */}
         <div className="absolute right-18 top-48 text-5xl font-bold tracking-widest text-[#8FCFC3]/25">
@@ -148,9 +146,30 @@ export default function SideDecorations() {
         {/* radar */}
         <div className="absolute right-0 top-[500px] opacity-35">
           <svg width="270" height="270" viewBox="0 0 270 270">
-            <circle cx="135" cy="135" r="105" stroke="#8FCFC3" strokeWidth="2" fill="none" />
-            <circle cx="135" cy="135" r="72" stroke="#8FCFC3" strokeWidth="2" fill="none" />
-            <circle cx="135" cy="135" r="34" stroke="#8FCFC3" strokeWidth="2" fill="none" />
+            <circle
+              cx="135"
+              cy="135"
+              r="105"
+              stroke="#8FCFC3"
+              strokeWidth="2"
+              fill="none"
+            />
+            <circle
+              cx="135"
+              cy="135"
+              r="72"
+              stroke="#8FCFC3"
+              strokeWidth="2"
+              fill="none"
+            />
+            <circle
+              cx="135"
+              cy="135"
+              r="34"
+              stroke="#8FCFC3"
+              strokeWidth="2"
+              fill="none"
+            />
           </svg>
         </div>
 
