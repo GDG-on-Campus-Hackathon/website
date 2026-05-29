@@ -86,8 +86,8 @@ export const Footer: React.FC = () => {
                   <Image
                     src={child.icon}
                     alt={child.label}
-                    width={child.label === "企劃書" ? 17 : 14}
-                    height={child.label === "企劃書" ? 17 : 14}
+                    width={14}
+                    height={14}
                   />
                   {child.label}
                 </a>
