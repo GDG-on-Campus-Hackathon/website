@@ -93,7 +93,7 @@ export default function CountdownTimer({
   return (
     <div className={cn("flex flex-col items-center gap-2", className)}>
       <div className="text-center text-[11px] tracking-[0.2em] text-[#4c4c4c]/75 sm:text-xs">
-        <span className="relative px-1 font-medium text-[#4c4c4c] before:absolute before:inset-x-0 before:bottom-0 before:-z-10 before:h-1/3 before:bg-[#FFDB72]">
+        <span className="relative px-1 font-medium text-[#4c4c4c] before:absolute before:inset-x-0 before:bottom-0 before:-z-10 before:h-1/3 before:bg-[#A9D5CC]">
           {milestone.label}
         </span>
       </div>

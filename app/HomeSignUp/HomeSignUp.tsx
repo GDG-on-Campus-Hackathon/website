@@ -36,7 +36,7 @@ export default function HomeSignUp() {
     <Article id="home-sign-up">
       <H1>報名資訊</H1>
 
-      <div className="bg-[#F2F1EF33] rounded-lg shadow-[1.5px_2px_3.5px_0px_rgba(0,0,0,0.1),2px_2px_4px_0px_rgba(255,255,255,0.3),inset_-2px_-2px_4px_0px_rgba(0,0,0,0.1)] p-8 max-w-4xl mx-auto">
+      <div className="bg-[#F7FBFA] rounded-lg shadow-[1.5px_2px_3.5px_0px_rgba(0,0,0,0.1),2px_2px_4px_0px_rgba(255,255,255,0.3),inset_-2px_-2px_4px_0px_rgba(0,0,0,0.1)] p-8 max-w-4xl mx-auto">
         <div className={cn(countdown && "sm:relative")}>
           <H2>活動時間</H2>
           {countdown && (
@@ -82,7 +82,7 @@ export default function HomeSignUp() {
             href="https://forms.gle/ThjV82e3UQLgzKgi7"
             target="_blank"
             rel="noreferrer"
-            className="ml-auto px-6 py-2 font-medium text-sm rounded-xl border border-[#4c4c4c] flex items-center justify-center gap-2"
+            className="ml-auto px-6 py-2 font-medium text-sm rounded-xl border border-[#4C4C4C] text-[4C4C4C] flex items-center justify-center gap-2 transition-all duration-300 hover:bg-[#8FCFC3] hover:border-[#8FCFC3] hover:text-white hover:shadow-md hover:-translate-y-0.5"
           >
             <span className="inline-flex items-center content-center gap-2">
               馬上報名
