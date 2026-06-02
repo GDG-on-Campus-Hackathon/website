@@ -30,7 +30,7 @@ export default function HomeIntroduction() {
         />
       </H2>
       <P>
-        DevJam TW 2026 是由全臺 26 所大學的 Google Developer Groups on Campus
+        DevJam TW 2026 是由全臺 25 所大學的 Google Developer Groups on Campus
         合作舉辦，專為學生開發者打造的黑客松舞台。
       </P>
       <P>

@@ -22,7 +22,7 @@ export default function HomeSponsor() {
       <H2>協辦單位</H2>
       <SponsorContainer>
         <p className="text-sm/relaxed tracking-wide">
-          全臺 GDG on Campus（共 26 間學校）
+          全臺 GDG on Campus（共 25 間學校）
         </p>
       </SponsorContainer>
 
