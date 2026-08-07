@@ -5,6 +5,8 @@ import H2 from "../components/H2";
 import SponsorContainer from "./SponsorContainer";
 import image_nccu from "./assets/gdg_on_campus_nccu.webp";
 import image_google_for_developers from "./assets/google_for_developers.svg";
+import image_btp from "./assets/btp.png";
+import image_pegavision from "./assets/pegavision.png";
 import image_trend_micro from "./assets/trend_micro.jpg";
 
 export default function HomeSponsor() {
@@ -26,6 +28,8 @@ export default function HomeSponsor() {
 
       <H2>贊助廠商</H2>
       <SponsorContainer>
+        <Image src={image_btp} alt="BTP" height={80} />
+        <Image src={image_pegavision} alt="PegaVision" height={80} />
         <Image src={image_trend_micro} alt="Trend Micro" height={80} />
       </SponsorContainer>
 
