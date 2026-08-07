@@ -29,7 +29,7 @@ export default function HomeSponsor() {
       <H2>贊助廠商</H2>
       <SponsorContainer>
         <Image src={image_btp} alt="BTP" height={80} />
-        <Image src={image_pegavision} alt="Pegavision" height={80} />
+        <Image src={image_pegavision} alt="PegaVision" height={80} />
         <Image src={image_trend_micro} alt="Trend Micro" height={80} />
       </SponsorContainer>
 
