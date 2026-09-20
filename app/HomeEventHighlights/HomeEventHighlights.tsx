@@ -15,6 +15,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import CarouselNavButton from "../components/CarouselNavButton";
 
+const ALBUM_LINKS = [
+  {
+    label: "前往共用相簿 1",
+    href: "https://drive.google.com/drive/folders/1fPkYRRUnUFaHE94XC3117P6qPooJfKp1?usp=drive_link",
+  },
+  {
+    label: "前往共用相簿 2",
+    href: "https://drive.google.com/drive/folders/1NtCH_HlQ4eUJaczZvUOS71v1FIXZsAgS?usp=drive_link",
+  },
+];
+
 export default function HomeEventHighlights() {
   const [selectedImage, setSelectedImage] = useState<ImageItem | null>(null);
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
@@ -86,16 +97,15 @@ export default function HomeEventHighlights() {
                   type="button"
                   className={`h-full transition-transform duration-300 ease-in-out ${isActive ? "scale-100" : "scale-75 opacity-60"} w-full`}
                   onClick={() => openModal(image)}
-                  aria-label={`View ${image.alt}`}
+                  aria-label={`${image.alt}（點擊放大）`}
                 >
                   <div className="relative w-full aspect-video md:h-full">
                     <Image
                       src={image.src}
                       alt={image.alt}
                       fill
-                      sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 33vw"
+                      sizes="(max-width: 768px) 60vw, 340px"
                       className="object-cover rounded-md"
-                      priority={image.id === 1}
                     />
                   </div>
                 </button>
@@ -126,14 +136,19 @@ export default function HomeEventHighlights() {
           setSelectedIndex={setSelectedIndex}
         />
       )}
-      <a
-        href="https://photos.app.goo.gl/MwV2tBbE1YxWxuL18"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-500 underline hover:text-blue-600 cursor-pointer"
-      >
-        前往共用相簿
-      </a>
+      <div className="flex flex-col items-start gap-1">
+        {ALBUM_LINKS.map((album) => (
+          <a
+            key={album.href}
+            href={album.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-500 underline hover:text-blue-600 cursor-pointer"
+          >
+            {album.label}
+          </a>
+        ))}
+      </div>
     </Article>
   );
 }
