@@ -137,14 +137,14 @@ export default function HomeEventHighlights() {
           setSelectedIndex={setSelectedIndex}
         />
       )}
-      <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+      <div className="flex flex-col items-start gap-1">
         {ALBUM_LINKS.map((album) => (
           <a
             key={album.href}
             href={album.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 underline hover:text-blue-600 cursor-pointer"
+            className="text-sm text-gray-500 underline hover:text-blue-600 cursor-pointer"
           >
             {album.label}
           </a>
