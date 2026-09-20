@@ -97,16 +97,15 @@ export default function HomeEventHighlights() {
                   type="button"
                   className={`h-full transition-transform duration-300 ease-in-out ${isActive ? "scale-100" : "scale-75 opacity-60"} w-full`}
                   onClick={() => openModal(image)}
-                  aria-label={`View ${image.alt}`}
+                  aria-label={`${image.alt}（點擊放大）`}
                 >
                   <div className="relative w-full aspect-video md:h-full">
                     <Image
                       src={image.src}
                       alt={image.alt}
                       fill
-                      sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 33vw"
+                      sizes="(max-width: 768px) 60vw, 340px"
                       className="object-cover rounded-md"
-                      priority={image.id === 1}
                     />
                   </div>
                 </button>
