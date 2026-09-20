@@ -15,6 +15,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import CarouselNavButton from "../components/CarouselNavButton";
 
+const ALBUM_LINKS = [
+  {
+    label: "前往共用相簿 1",
+    href: "https://drive.google.com/drive/folders/1fPkYRRUnUFaHE94XC3117P6qPooJfKp1?usp=drive_link",
+  },
+  {
+    label: "前往共用相簿 2",
+    href: "https://drive.google.com/drive/folders/1NtCH_HlQ4eUJaczZvUOS71v1FIXZsAgS?usp=drive_link",
+  },
+];
+
 export default function HomeEventHighlights() {
   const [selectedImage, setSelectedImage] = useState<ImageItem | null>(null);
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
@@ -126,14 +137,19 @@ export default function HomeEventHighlights() {
           setSelectedIndex={setSelectedIndex}
         />
       )}
-      <a
-        href="https://photos.app.goo.gl/MwV2tBbE1YxWxuL18"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-500 underline hover:text-blue-600 cursor-pointer"
-      >
-        前往共用相簿
-      </a>
+      <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+        {ALBUM_LINKS.map((album) => (
+          <a
+            key={album.href}
+            href={album.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 underline hover:text-blue-600 cursor-pointer"
+          >
+            {album.label}
+          </a>
+        ))}
+      </div>
     </Article>
   );
 }

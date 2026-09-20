@@ -1,13 +1,14 @@
 import type { StaticImageData } from "next/image";
-import HL1 from "../assets/HL1.svg";
-import HL2 from "../assets/HL2.svg";
-import HL3 from "../assets/HL3.svg";
-import HL4 from "../assets/HL4.svg";
-import HL5 from "../assets/HL5.svg";
-import HL6 from "../assets/HL6.svg";
-import HL7 from "../assets/HL7.svg";
-import HL8 from "../assets/HL8.svg";
-import HL9 from "../assets/HL9.svg";
+import HL1 from "../assets/HL1.jpg";
+import HL2 from "../assets/HL2.jpg";
+import HL3 from "../assets/HL3.jpg";
+import HL4 from "../assets/HL4.jpg";
+import HL5 from "../assets/HL5.jpg";
+import HL6 from "../assets/HL6.jpg";
+import HL7 from "../assets/HL7.jpg";
+import HL8 from "../assets/HL8.jpg";
+import HL9 from "../assets/HL9.jpg";
+import HL10 from "../assets/HL10.jpg";
 
 export interface ImageItem {
   id: number;
@@ -25,4 +26,5 @@ export const images: ImageItem[] = [
   { id: 7, src: HL7, alt: "Highlight 7" },
   { id: 8, src: HL8, alt: "Highlight 8" },
   { id: 9, src: HL9, alt: "Highlight 9" },
+  { id: 10, src: HL10, alt: "Highlight 10" },
 ];
