@@ -1,12 +1,5 @@
-import type { StaticImageData } from "next/image";
-import winnerImg1 from "../assets/winner1.svg";
-import winnerImg2 from "../assets/winner2.svg";
-import winnerImg3 from "../assets/winner3.svg";
-
 export interface winnerSectionProps {
   id: number;
-  img: StaticImageData;
-  alt: string;
   route: string;
   groupNumber: string;
   groupMember: string;
@@ -17,37 +10,31 @@ export interface winnerSectionProps {
 export const winnerSectionList: winnerSectionProps[] = [
   {
     id: 1,
-    img: winnerImg1,
-    alt: "Winner 1",
     route: "Google Cloud 賽道",
-    groupNumber: "二",
-    groupMember: "許新翎、陳乃嘉、周恩宇、顏子綺",
-    title: "Solarlytics: 陽光下的智慧決策",
+    groupNumber: "五",
+    groupMember: "林吟蓁、陳宥錡、林鈺臻、賴世光",
+    title: "ReVision City",
     content:
-      "Solarlytics: 陽光下的智慧決策是一個自助試算太陽能評估平台，專為解決民眾在安裝屋頂太陽能時遇到的資訊不透明、難以評估與決策門檻高等問題。平台結合 Google Cloud 技術，整合日照、地點、品牌、效率、成本等多元參數，讓使用者能夠快速評估自家安裝太陽能的適配性、投資回收期與效益，並提供多品牌比較與個人化方案建議，協助用戶做出最佳決策。",
+      "為視障族群打造的智慧城市輔助系統，透過 Gemini 影像辨識與個人化介面，依使用者視野狀況即時辨識障礙物、公車與環境資訊，提升行動與搭乘安全，並將使用數據回饋城市治理，打造更具包容性的智慧城市。",
   },
 
   {
     id: 2,
-    img: winnerImg2,
-    alt: "Winner 2",
     route: "Gemini API 賽道",
-    groupNumber: "一",
-    groupMember: "杜凱朗、王瀚、廖梓雲、蘇郁凱",
-    title: "申寶 SAMBOU",
+    groupNumber: "二",
+    groupMember: "陳佳朋、羅子祐、張珈薰、程陳宥",
+    title: "CITY TASK",
     content:
-      "申寶 SAMBOU 是一個專為留學申請打造的一站式自助平台，致力於推動教育平權，讓每位學生都能用得起、用得懂、用得安心的申請工具。申寶認為，申請留學不該等於高額顧問費，也不該是少數人的特權。透過科技自動化與流程標準化，申寶將原本資訊不對稱、高價且繁瑣的申請流程，轉化為人人都能輕鬆掌握的智慧服務。",
+      "結合 Gemini 與智慧代理的城市大型廢棄物處理系統。民眾只需拍照上傳，系統即可理解需求、自動建立案件，並協助清潔隊進行案件判定、路線規劃與調度，降低重複人工處理，提升城市清運效率與服務品質。",
   },
 
   {
     id: 3,
-    img: winnerImg3,
-    alt: "Winner 3",
-    route: "其他 Google 技術賽道",
-    groupNumber: "二",
-    groupMember: "陳若瑛、黃乙家、陳昕宏、林雨臻",
-    title: "GreenBubble 綠泡泡",
+    route: "其他技術賽道",
+    groupNumber: "六",
+    groupMember: "方澤享、黃大益、葉恩慈、林玟伶",
+    title: "Coolpath",
     content:
-      "你知道自己每天吸入多少 PM2.5 和微塑膠嗎？這款應用程式透過記錄交通、飲食、運動等日常行為，將污染暴露量轉化為視覺化圖表，讓永續不再只是口號，而是成為每個人可感知、可實踐的生活指南。團隊運用 Flutter、Supabase、Firebase 與 Google Maps API 打造完整 App，實現個人化環境數據追蹤。",
+      "以「熱風險」為核心的智慧導航系統，整合即時氣象、日照、遮蔭、距離與交通資訊，計算各候選路線的 Heat Risk Score，重新排序並推薦較涼爽、安全的路徑與休息點，讓使用者在效率與舒適度間取得更好的平衡。",
   },
 ];
