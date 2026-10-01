@@ -3,6 +3,7 @@ import { Noto_Sans_TC } from "next/font/google";
 import "./globals.css";
 import { Header } from "./Header/Header";
 import { Footer } from "./Footer/Footer";
+import SideDecorations from "./components/SideDecorations";
 
 const notoSansTC = Noto_Sans_TC({
   weight: "variable",
@@ -20,10 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-Hant">
-      <body className={`${notoSansTC.className} antialiased bg-[#EDEAE5]`}>
+      <body className={`${notoSansTC.className} antialiased bg-[#EAF6F1]`}>
         <Header />
-        <main>{children}</main>
-        <Footer />
+        <SideDecorations />
+        <main className="relative z-10">{children}</main>
+        <div className="relative z-20">
+          <Footer />
+        </div>
       </body>
     </html>
   );
