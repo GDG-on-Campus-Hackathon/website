@@ -29,5 +29,8 @@ jobs:
       - name: Run Prettier
         run: pnpm exec -- prettier --check .
 
+      - name: Run ESLint
+        run: pnpm lint
+
       - name: Build Next.js
         run: pnpm build
