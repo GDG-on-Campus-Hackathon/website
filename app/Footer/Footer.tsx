@@ -4,6 +4,7 @@ import svg_devjam_tw_2026 from "../assets/devjam_tw_2026.svg";
 import svg_icon_instagram from "./assets/icon_instagram.svg";
 import svg_icon_facebook from "./assets/icon_facebook.svg";
 import svg_icon_email from "./assets/icon_email.svg";
+import svg_icon_proposal from "./assets/icon_proposal.svg";
 import backgroundImage from "./assets/background.webp";
 
 export const Footer: React.FC = () => {
@@ -15,6 +16,16 @@ export const Footer: React.FC = () => {
           icon: svg_icon_instagram,
           label: "@gdg.nccu",
           url: "https://www.instagram.com/gdg.nccu/",
+        },
+      ],
+    },
+    {
+      title: "關於我們",
+      children: [
+        {
+          icon: svg_icon_proposal,
+          label: "企劃書",
+          url: "https://drive.google.com/file/d/1zesMQe4VB2Zvi6tJke9TzakT9zmpWppm/view?usp=sharing",
         },
       ],
     },
@@ -60,7 +71,7 @@ export const Footer: React.FC = () => {
           height={19}
         />
         <div className="self-stretch not-md:border-b-2 md:border-r-2 border-black"></div>
-        <div className="flex flex-col items-center md:items-start gap-6 md:p-4">
+        <div className="flex flex-col gap-6 md:p-4">
           {links.map((link) => (
             <div key={link.title} className="flex items-center gap-4">
               <div className="font-bold text-xs tracking-[0.2em] mr-2">
